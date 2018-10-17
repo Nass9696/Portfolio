@@ -97,21 +97,155 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/***************************GENERAL RULES***************************/
+header {
+  height: 15em;
+}
 
+footer a {
+  text-decoration: none;
+}
 
+.Cercle {
+  height: 10em;
+  width: 10em;
+}
+/***************************GENERAL RULES***************************/
 
+/***************************COLORS CLASS***************************/
+.backred {
+  background-color: red;
+}
 
+.backgreen {
+  background-color: green;
+}
 
+.backblue {
+  background-color: blue;
+}
 
+.backyellow {
+  background-color: yellow
+}
+/***************************COLORS CLASS***************************/
 
+/***************************UTILITIES CLASS***************************/
+.flex {
+  display: flex;
+}
 
+.none {
+  display: none;
+}
 
+.row {
+  flex-direction: row;
+}
 
+.column {
+  flex-direction: column;
+}
 
+.justifyCenter {
+  justify-content: center;
+}
 
+.alignContent {
+  align-content: center;
+}
 
+.alignItemCenter {
+  align-items: center;
+}
 
+.spaceAround {
+  justify-content: space-around;
+}
 
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.spaceAroundC {
+  align-content: space-around;
+}
+
+.spaceBetweenC {
+  align-content: space-between;
+}
+
+.textAlignC {
+  text-align: center;
+}
+
+.marginAuto {
+  margin: auto;
+}
+
+.styleLien {
+  width: 10em;
+  height: 10em;
+  padding: 1em;
+  border: 1px solid red;
+  border-radius: 200%;
+}
+
+.margin {
+  margin: 1em;
+}
+
+.styleButton {
+  border: 1px solid red;
+  padding: 1em;
+  width: 10em;
+}
+/***************************UTILITIES CLASS***************************/
+
+/************HEADER**********/
+/************HEADER**********/
+
+/************MAIN**********/
+.Navigation {
+  width: 15em;
+  margin: 1em 0;
+}
+
+/************MAIN**********/
+
+/************FOOTER**********/
+/************FOOTER**********/
+
+/***************************TOUCHPAD***************************/
+@media screen and (min-width: 500px) {
+/************HEADER**********/
+/************HEADER**********/
+/************MAIN**********/
+
+.Navigation {
+  width: 30em;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/************MAIN**********/
+/************FOOTER**********/
+/************FOOTER**********/
+
+}
+/***************************TOUCHPAD***************************/
+
+/***************************DESKTOP***************************/
+@media screen and (min-width: 1199px) {
+/************MAIN**********/
+.Navigation {
+  width: 70em;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+/************MAIN**********/
+}
+/***************************DESKTOP***************************/
 
 /* ==========================================================================
    Helper classes
