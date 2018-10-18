@@ -98,21 +98,42 @@ textarea {
    ========================================================================== */
 
 /***************************GENERAL RULES***************************/
-header {
-  height: 15em;
+body {
+  background-image: url("../img/test1.jpeg");
+  background-size: cover;
 }
 
-footer a {
+main {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-color: rgba(0,0,0,0.5);
+}
+
+header {
+  height: 15em;
+  color: white;
+}
+
+a {
   text-decoration: none;
+  color: white;
 }
 
 .Cercle {
   height: 10em;
   width: 10em;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.Cercle:hover {
+  background-color: rgba(255,255,255,0.2);
 }
 /***************************GENERAL RULES***************************/
 
 /***************************COLORS CLASS***************************/
+.white {
+  color: white;
+}
 .backred {
   background-color: red;
 }
@@ -184,8 +205,6 @@ footer a {
 }
 
 .styleLien {
-  width: 10em;
-  height: 10em;
   padding: 1em;
   border: 1px solid red;
   border-radius: 200%;
@@ -207,7 +226,7 @@ footer a {
 
 /************MAIN**********/
 .Navigation {
-  width: 15em;
+  width: 10em;
   margin: 1em 0;
 }
 
@@ -239,7 +258,7 @@ footer a {
 @media screen and (min-width: 1199px) {
 /************MAIN**********/
 .Navigation {
-  width: 70em;
+  width: 100em;
   flex-direction: row;
   flex-wrap: nowrap;
 }
