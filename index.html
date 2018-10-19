@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>GACEM NASSIM</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -15,13 +15,15 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
 </head>
 
 <body>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header class = "textAlignC flex justifyCenter alignItemCenter  white">
-  <section>
+  <section id="landing">
     <h1>GACEM NASSIM</h1>
+    <hr>
     <p>Développeur Web Junior</p>
   </section>
 </header>
@@ -29,39 +31,49 @@
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main class = "flex justifyCenter white">
-  <nav class = "Navigation flex column spaceAround alignItemCenter">
+  <nav class = "Navigation hoverUnderline flex column spaceAround alignItemCenter">
     <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin textAlignC ">
-      <a  href="#">À PROPOS</a>
+      <a class = "flex justifyCenter alignItemCenter indexFirst" href="#">
+        <span>MON PROFIL</span>
+      </a>
+      <i class="far fa-user-circle fa-8x index0 absolute"></i>
     </div>
     <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
-      <a  href="#">COMPÉTENCES</a>
+      <a class = "flex justifyCenter alignItemCenter indexFirst" href="#">
+        <span>RÉALISATIONS</span>
+      </a>
+        <i class="Tools fas fa-toolbox fa-8x index0 absolute"></i>
     </div>
     <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
-      <a href="#">RÉALISATIONS</a>
-    </div>
-    <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
-      <a  href="#">CONTACT</a>
+      <a  class = "flex justifyCenter alignItemCenter indexFirst" href="#">
+        <span>CONTACTER</span>
+      </a>
+      <i class="fas fa-mobile-alt fa-8x index0 absolute"></i>
     </div>
   </nav>
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<footer class = "textAlignC white">
+<footer class = "flex column spaceBetween justifyCenter textAlignC white">
+  <!--
   <h2>Informations</h2>
   <nav class = "flex column justifyCenter alignItemCenter">
     <a  class = "styleButton margin" href="mailto:dev.nassim.pro@gmail.com">MAIL</a>
     <a class = "styleButton margin" href="tel:+33622752818">TELEPHONE</a>
   </nav>
+-->
   <h3>Vous pouvez aussi me retrouver sur :</h3>
   <nav class = "flex row spaceAround justifyCenter">
-    <i class="fab fa-twitter fa-2x"><a href = ""></a></i>
-    <i class="fab fa-linkedin-in fa-2x"><a href = ""></a></i>
-    <i class="fab fa-github fa-2x"><a href = ""></a></i>
+    <a href = ""><i class="fab fa-twitter fa-2x"></i></a>
+    <a href = ""><i class="fab fa-linkedin-in fa-2x"></i></a>
+    <a href = ""><i class="fab fa-github fa-2x"></i></a>
   </nav>
-  <div class = "">
-    <p>Copytight Nassim 2018</p>
-  </div>
+  <div class = "BlockCopy flex justifyCenter alignItemCenter">
+    <div class = "Copy">
+      <p>Copyright Nassim 2018</p>
+    </div>
+</div>
 </footer>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>

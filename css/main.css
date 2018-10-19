@@ -44,7 +44,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid red;
     margin: 1em 0;
     padding: 0;
 }
@@ -99,19 +99,27 @@ textarea {
 
 /***************************GENERAL RULES***************************/
 body {
+  height: 100vh;
   background-image: url("../img/test1.jpeg");
   background-size: cover;
+  font-family: 'Trade Winds', cursive;
+}
+header {
+  color: white;
 }
 
 main {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
   background-color: rgba(0,0,0,0.5);
 }
 
-header {
-  height: 15em;
-  color: white;
+main a {
+  height: 100%;
+  width: 100%;
+  border-radius: 200%;
+}
+
+footer a:hover {
+  color: red;
 }
 
 a {
@@ -219,6 +227,31 @@ a {
   padding: 1em;
   width: 10em;
 }
+
+.borderT {
+  border-top: 1px solid red;
+}
+
+.Copy {
+  width: 30em;
+}
+
+.indexO {
+  z-index: 0
+}
+
+.indexFirst {
+  z-index: 1;
+}
+
+.absolute {
+  position: absolute;
+  opacity: 0.3;
+}
+
+.hoverUnderline a:hover {
+  text-decoration: underline;
+}
 /***************************UTILITIES CLASS***************************/
 
 /************HEADER**********/
@@ -233,6 +266,10 @@ a {
 /************MAIN**********/
 
 /************FOOTER**********/
+.Copy {
+  border-top: 1px solid red;
+  width: 80%;
+}
 /************FOOTER**********/
 
 /***************************TOUCHPAD***************************/
@@ -263,6 +300,10 @@ a {
   flex-wrap: nowrap;
 }
 /************MAIN**********/
+
+footer {
+  height: 13em;
+}
 }
 /***************************DESKTOP***************************/
 
