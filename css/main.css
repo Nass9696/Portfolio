@@ -123,6 +123,11 @@ a {
 .white {
   color: white;
 }
+
+.black {
+  color: black;
+}
+
 .backred {
   background-color: red;
 }
@@ -335,13 +340,11 @@ a {
 /************HEADER**********/
 /************HEADER**********/
 /************MAIN**********/
-
 .Navigation {
   width: 30em;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 /************MAIN**********/
 /************FOOTER**********/
 /************FOOTER**********/
@@ -371,9 +374,11 @@ a {
 }
 /************MAIN**********/
 
+/************FOOTER**********/
 footer {
   height: 13em;
 }
+/************FOOTER**********/
 
 /***************************END MEDIA QUERY INDEX.HTML**************************/
 
