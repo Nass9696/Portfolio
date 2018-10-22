@@ -128,7 +128,6 @@ a {
   width: 100%;
   height: 3em;
   position: fixed;
-  left: 0px;
   top: 0px;
 }
 
@@ -232,7 +231,7 @@ a {
   border-radius: 200%;
   border: 1px solid red;
   height: 10em;
-  width: 8em;
+  width: 9em;
 }
 
 .margin {
@@ -271,7 +270,7 @@ a {
 }
 
 .BodyRulesIndex {
-  height: 100vh;
+  height: 100%;
   background-image: url("../img/test1.jpeg");
   background-size: cover;
   font-family: 'Trade Winds', cursive;
@@ -285,6 +284,14 @@ a {
 
 .ListStyleNone li{
   list-style-type: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.Fullwidth {
+  width: 100%;
 }
 
 /***************************UTILITIES CLASS***************************/
@@ -321,15 +328,25 @@ a {
 /************HEADER**********/
 
 /************MAIN**********/
+
+
 .ArticlePageProfil {
-  height: 20em;
+  height: 30em;
 }
 
 .ArticlePageCompetence {
-  height: 50em;
+ height: 50em;
+}
+
+.Biographie {
+  width: 100%;
+}
+
+.Objectifs {
+  width: 100%;
 }
 .HTML, .CSS, .PHP {
-  width: 60%;
+  width: 10em;
 }
 /************MAIN**********/
 
@@ -388,12 +405,24 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
 }
-/************MAIN**********/
-/************FOOTER**********/
-/************FOOTER**********/
+
 /***************************END MEDIA QUERY INDEX.HTML**************************/
 
 /***************************START MEDIA QUERY PROFIL.HTML**************************/
+/************HEADER**********/
+/************HEADER**********/
+/************MAIN**********/
+
+.ArticlePageCompetence {
+  height: 30em;
+  width: 30em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/************MAIN**********/
+/************FOOTER**********/
+/************FOOTER**********/
 /***************************END MEDIA QUERY PROFIL.HTML**************************/
 
 /***************************START MEDIA QUERY RÉALISATIONS.HTML**************************/
@@ -426,6 +455,17 @@ footer {
 /***************************END MEDIA QUERY INDEX.HTML**************************/
 
 /***************************START MEDIA QUERY PROFIL.HTML**************************/
+
+/************HEADER**********/
+
+/************HEADER**********/
+.ArticlePageCompetence {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+/************MAIN**********/
+
 /***************************END MEDIA QUERY PROFIL.HTML**************************/
 
 /***************************START MEDIA QUERY RÉALISATIONS.HTML**************************/

@@ -21,42 +21,49 @@
 <body class = "BodyRulesIndex">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
-  <nav class = "NavigationFixed flex row spaceAround alignItemCenter backOpacityBlack ListStyleNone">
-    <a href = "">Acceuil</a>
-    <a href = "">Réalisations</a>
-    <a href = "">Contacter</a>
-  </nav>
+  <aside class = "NavigationFixed backOpacityBlack flex row justifyCenter">
+    <nav class = "flex row alignItemCenter spaceAround Fullwidth">
+      <a href = "">Réalisations</a>
+      <a href = "">Contacter</a>
+      <a href = ""><i class="fas fa-home white"></i></a>
+    </nav>
+  </aside>
 </header>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main class = "MainProfil flex column white">
-  <section class = "SectionProfil textAlignC">
+<main class = "MainProfil white">
+  <section class = "SectionProfil flex column textAlignC">
     <h2>Qui suis-je ?</h2>
-    <article class = "ArticlePageProfil flex column spaceAround alignItemCenter backOpacityBlack">
-      <img class = "stylePortrait" src="img/imagestest.png" alt=""/>
-      <span>
-        Bonjour, je m'appelle Nassim etc... balalalal
+    <article class = "ArticlePageProfil flex column spaceAround alignItemCenter">
+      <div>
+        <img class = "stylePortrait" src="img/imagestest.png" alt=""/>
+      </div>
+      <span class = "Biographie backOpacityBlack">
+        <h2 class = "underline">Biographie</h2>
+      </span>
+      <span class = "Objectifs backOpacityBlack">
+        <h2 class = "underline">Mes Objectifs</h2>
       </span>
     </article>
   </section>
-  <section class = "SectionTextCompetence textAlignC">
+  <section class = "SectionTextCompetence flex column alignItemCenter textAlignC">
       <h2>COMPÉTENCES</h2>
     <article class = "ArticlePageCompetence flex column alignItemCenter justifyCenter spaceAround">
       <div class = "HTML styleLien backOpacityBlack">
         <p>HTML</p>
         <i class="fab fa-html5 fa-3x"></i>
-        <p>++</p>
+        <p>Correct</p>
       </div>
       <div class= "CSS styleLien backOpacityBlack">
         <p>CSS</p>
         <i class="fab fa-css3-alt fa-3x"></i>
-        <p>++</p>
+        <p>Correct</p>
       </div>
       <div class = "PHP styleLien backOpacityBlack">
         <p>PHP</p>
         <i class="fab fa-php fa-3x"></i>
-        <p>+</p>
+        <p>Bases</p>
       </div>
     </article>
   </section>
@@ -64,7 +71,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<footer class = "FooterPageProfil flex column  textAlignC white">
+<footer class = "FooterPageProfil textAlignC white">
   <!--
   <h2>Informations</h2>
   <nav class = "flex column justifyCenter alignItemCenter">
