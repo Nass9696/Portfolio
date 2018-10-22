@@ -18,21 +18,53 @@
   <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
 </head>
 
-<body>
+<body class = "BodyRulesIndex">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
-
+  <nav class = "NavigationFixed flex row spaceAround alignItemCenter backOpacityBlack ListStyleNone">
+    <a href = "">Acceuil</a>
+    <a href = "">Réalisations</a>
+    <a href = "">Contacter</a>
+  </nav>
 </header>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main>
-
+<main class = "MainProfil flex column white">
+  <section class = "SectionProfil textAlignC">
+    <h2>Qui suis-je ?</h2>
+    <article class = "ArticlePageProfil flex column spaceAround alignItemCenter backOpacityBlack">
+      <img class = "stylePortrait" src="img/imagestest.png" alt=""/>
+      <span>
+        Bonjour, je m'appelle Nassim etc... balalalal
+      </span>
+    </article>
+  </section>
+  <section class = "SectionTextCompetence textAlignC">
+      <h2>COMPÉTENCES</h2>
+    <article class = "ArticlePageCompetence flex column alignItemCenter justifyCenter spaceAround">
+      <div class = "HTML styleLien backOpacityBlack">
+        <p>HTML</p>
+        <i class="fab fa-html5 fa-3x"></i>
+        <p>++</p>
+      </div>
+      <div class= "CSS styleLien backOpacityBlack">
+        <p>CSS</p>
+        <i class="fab fa-css3-alt fa-3x"></i>
+        <p>++</p>
+      </div>
+      <div class = "PHP styleLien backOpacityBlack">
+        <p>PHP</p>
+        <i class="fab fa-php fa-3x"></i>
+        <p>+</p>
+      </div>
+    </article>
+  </section>
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<footer class = "flex column spaceBetween justifyCenter textAlignC white">
+<footer class = "FooterPageProfil flex column  textAlignC white">
   <!--
   <h2>Informations</h2>
   <nav class = "flex column justifyCenter alignItemCenter">
@@ -40,6 +72,7 @@
     <a class = "styleButton margin" href="tel:+33622752818">TELEPHONE</a>
   </nav>
 -->
+
   <h3>Vous pouvez aussi me retrouver sur :</h3>
   <nav class = "flex row spaceAround justifyCenter">
     <a href = ""><i class="fab fa-twitter fa-2x"></i></a>
