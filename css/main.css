@@ -99,6 +99,13 @@ textarea {
 
 /***************************GENERAL RULES***************************/
 
+.BodyRulesIndex {
+  height: 100%;
+  background-image: url("../img/test1.jpeg");
+  background-size: cover;
+  font-family: 'Trade Winds', cursive;
+}
+
 footer a:hover {
   color: red;
 }
@@ -147,6 +154,7 @@ a {
 .red {
   color: red;
 }
+
 .backred {
   background-color: red;
 }
@@ -229,13 +237,25 @@ a {
 
 .stylePortrait {
   border-radius: 200%;
-  border: 1px solid red;
+  border: 4px solid red;
   height: 10em;
   width: 9em;
 }
 
+.padding {
+  padding: 1em;
+}
+
 .margin {
   margin: 1em;
+}
+
+.marginT {
+  margin-top: 1em;
+}
+
+.marginL {
+  margin-left: 1em;
 }
 
 .styleButton {
@@ -267,13 +287,6 @@ a {
 
 .hoverUnderline a:hover {
   text-decoration: underline;
-}
-
-.BodyRulesIndex {
-  height: 100%;
-  background-image: url("../img/test1.jpeg");
-  background-size: cover;
-  font-family: 'Trade Winds', cursive;
 }
 
 .ZoneClickCircularOption a {
@@ -329,7 +342,9 @@ a {
 
 /************MAIN**********/
 
-
+.SectionProfil {
+  width: 100%;
+}
 .ArticlePageProfil {
   height: 30em;
 }
@@ -338,13 +353,14 @@ a {
  height: 50em;
 }
 
-.Biographie {
-  width: 100%;
+.Biographies {
+  overflow: hidden;
 }
 
 .Objectifs {
   width: 100%;
 }
+
 .HTML, .CSS, .PHP {
   width: 10em;
 }
@@ -420,6 +436,15 @@ a {
   flex-wrap: wrap;
   align-items: center;
 }
+
+.ArticlePageProfil {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Objectifs {
+  width: 20em;
+}
 /************MAIN**********/
 /************FOOTER**********/
 /************FOOTER**********/
@@ -459,10 +484,34 @@ footer {
 /************HEADER**********/
 
 /************HEADER**********/
+
+/************MAIN**********/
+
+.BlockInformations {
+  width: 40em;
+}
+
 .ArticlePageCompetence {
   width: 100%;
   flex-direction: row;
   align-items: center;
+}
+
+.ArticlePageProfil {
+  flex-direction: row;
+}
+
+.stylePortrait {
+  height: 20em;
+  width: 20em;
+}
+
+.ImageBlock {
+  width: 30%;
+}
+
+.Biographies {
+  width: 40em;
 }
 /************MAIN**********/
 

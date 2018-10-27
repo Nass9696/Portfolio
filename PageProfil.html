@@ -33,22 +33,33 @@
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main class = "MainProfil white">
-  <section class = "SectionProfil flex column textAlignC">
-    <h2>Qui suis-je ?</h2>
+  <section class = "SectionProfil flex column">
+    <h2 class = "underline textAlignC">Qui suis-je ?</h2>
     <article class = "ArticlePageProfil flex column spaceAround alignItemCenter">
-      <div>
+      <div class = "ImageBlock Fullwidth flex justifyCenter alignItemCenter">
         <img class = "stylePortrait" src="img/imagestest.png" alt=""/>
       </div>
-      <span class = "Biographie backOpacityBlack">
-        <h2 class = "underline">Biographie</h2>
-      </span>
-      <span class = "Objectifs backOpacityBlack">
-        <h2 class = "underline">Mes Objectifs</h2>
-      </span>
+      <article class = "BlockInformations flex column alignItemCenter backOpacityBlack marginT Fullwidth">
+        <div class = "Biographies">
+          <h2 class = "underline textAlignC">Biographie</h2>
+          <p class = "marginL">
+            Bonjour, je m'appelle Nassim Gacem et je suis un passioné du monde numérique,
+            je nike des mère comme never.
+          </p>
+        </div>
+        <div class = "Objectifs">
+          <h2 class = "underline textAlignC">Mes Objectifs</h2>
+          <ul class = "textAlignC">
+            <li>Objectif</li>
+            <li>Objectif</li>
+            <li>Objectif</li>
+          </ul>
+        </div>
+      </article>
     </article>
   </section>
-  <section class = "SectionTextCompetence flex column alignItemCenter textAlignC">
-      <h2>COMPÉTENCES</h2>
+  <section class = "SectionTextCompetence flex column alignItemCenter textAlignC marginT">
+      <h2 class = "backOpacityBlack Fullwidth underline padding">COMPÉTENCES</h2>
     <article class = "ArticlePageCompetence flex column alignItemCenter justifyCenter spaceAround">
       <div class = "HTML styleLien backOpacityBlack">
         <p>HTML</p>
