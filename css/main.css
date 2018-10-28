@@ -110,6 +110,11 @@ footer a:hover {
   color: red;
 }
 
+a:focus
+{
+outline:0;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -126,7 +131,7 @@ a {
 }
 
 /*********************OTHER PAGES***************/
-.MainProfil {
+.MainOtherPages {
   margin-top: 4em;
 }
 
@@ -291,6 +296,10 @@ a {
 
 .hoverColorRed a:hover {
   color: red;
+}
+
+.hoverIconeColorRed i:hover{
+  color:red
 }
 
 .ZoneClickCircularOption a {
@@ -478,7 +487,7 @@ a {
 
 /************FOOTER**********/
 footer {
-  height: 13em;
+  height: 13.8em;
 }
 /************FOOTER**********/
 
