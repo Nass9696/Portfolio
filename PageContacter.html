@@ -24,7 +24,7 @@
   <aside class = "NavigationFixed backOpacityBlack flex row justifyCenter">
     <nav class = "flex row alignItemCenter spaceAround Fullwidth">
       <a href = "">Réalisations</a>
-      <a href = "">Contacter</a>
+      <a href = "">Mon Profil</a>
       <a href = "index.html"><i class="fas fa-home white"></i></a>
     </nav>
   </aside>
@@ -34,45 +34,51 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main class = "MainProfil">
   <section>
-    <aside class="white">
-      <form class="flex column justifyCenter alignItemCenter spaceAround" action="index.html" method="post">
-        <label for="">Nom :</label>
-        <input type="text" name="" value="">
-        <label for="">Mail :</label>
-        <input type="email" name="" value="">
-        <label for="">Objet :</label>
-        <input type="text" name="" value="">
-        <label for="">Votre Texte :</label>
-        <textarea name ="" id=""></textarea>
+    <h2 class = "textAlignC white underline">Me Contacter</h2>
+    <aside class = "AsideContact white backOpacityBlack padding">
+      <form class = "FormContact flex column justifyCenter alignItemCenter spaceAround" action="index.html" method="post">
+        <label for = "a">Nom :</label>
+        <input type = "text" name="" value="" placeholder="Nom et Prénom.">
+        <label for = "">Mail :</label>
+        <input type = "email" name="" value="" placeholder="Votre adresse mail.">
+        <label for = "">Objet :</label>
+        <input type = "text" name="" value="" placeholder = "Votre Objet.">
+        <label for = "">Votre Texte :</label>
+        <textarea name = "" id = "" placeholder = "Écriver votre texte ici."></textarea>
         <input class = "marginT" type = "submit" name="" value="Envoyer">
       </form>
-
-      <article class="none">
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-      </article>
-
-    </aside>
-  </section>
+    <nav class = "NavButtonContact flex column justifyCenter alignItemCenter backOpacityBlack marginT">
+      <a class = "textAlignC styleButton margin" href="tel:+33622752818">TELEPHONE</a>
+    </nav>
+    <nav class = "NavIconeContact column spaceAround none">
+      <div class = "flex column alignItemCenter hoverColorRed">
+        <h2 class = "underline">Par Téléphone</h2>
+        <a href = "tel:+33622752818"><i class="fas fa-phone-square fa-3x"></i></a>
+        <h2 class = "underline">Par E-mail</h2>
+        <a href = "mailto:dev.nassim.pro@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
+    </div>
+    </nav>
+  </aside>
+</section>
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<footer class = "flex column spaceBetween justifyCenter textAlignC backOpacityBlack white">
-  <!--
-  <h2>Informations</h2>
-  <nav class = "flex column justifyCenter alignItemCenter">
-    <a  class = "styleButton margin" href="mailto:dev.nassim.pro@gmail.com">MAIL</a>
-    <a class = "styleButton margin" href="tel:+33622752818">TELEPHONE</a>
-  </nav>
--->
-  <h3>Vous pouvez aussi me retrouver sur :</h3>
+<footer class = "flex column spaceBetween justifyCenter textAlignC backOpacityBlack white marginT">
+  <h3 class = "underline">Vous pouvez aussi me retrouver sur :</h3>
   <nav class = "flex row spaceAround justifyCenter">
-    <a href = ""><i class="fab fa-twitter fa-2x"></i></a>
-    <a href = ""><i class="fab fa-linkedin-in fa-2x"></i></a>
-    <a href = ""><i class="fab fa-github fa-2x"></i></a>
+    <span>
+      <a href = "#"><i class="fab fa-twitter fa-2x"></i></a>
+      <p>Twitter</p>
+    </span>
+    <span>
+      <a href = "#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+      <p>LinkedIn</p>
+    </span>
+    <span>
+      <a href = "#"><i class="fab fa-github fa-2x"></i></a>
+      <p>GitHub</p>
+    </span>
   </nav>
   <div class = "BlockCopy flex justifyCenter alignItemCenter">
     <div class = "Copy">

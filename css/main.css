@@ -289,6 +289,10 @@ a {
   text-decoration: underline;
 }
 
+.hoverColorRed a:hover {
+  color: red;
+}
+
 .ZoneClickCircularOption a {
   height: 100%;
   width: 100%;
@@ -454,6 +458,7 @@ a {
 /***************************END MEDIA QUERY RÉALISATIONS.HTML**************************/
 
 /***************************START MEDIA QUERY CONTACT.HTML**************************/
+
 /***************************END MEDIA QUERY CONTACT.HTML**************************/
 }
 /***************************====END TOUCHPAD====***************************/
@@ -521,6 +526,21 @@ footer {
 /***************************END MEDIA QUERY RÉALISATIONS.HTML**************************/
 
 /***************************START MEDIA QUERY CONTACT.HTML**************************/
+
+.AsideContact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.NavIconeContact {
+  display: flex;
+}
+
+.NavButtonContact{
+  display: none;
+}
+
 /***************************END MEDIA QUERY CONTACT.HTML**************************/
 
 }
