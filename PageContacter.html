@@ -11,7 +11,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -21,35 +21,47 @@
 <body class = "BodyRulesIndex">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
-  <aside class = "NavigationFixed backOpacityBlack flex row justifyCenter hoverColorRed hoverIconeColorRed">
-    <nav class = "flex row alignItemCenter spaceAround Fullwidth">
-      <a href = "PageRealisations.html">Réalisations</a>
-      <a href = "PageProfil.html">Mon Profil</a>
-      <a href = "index.html"><i class="fas fa-home white hoverColorRed"></i></a>
+  <aside>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent NavigationFixed">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <i class="fas fa-user-alt ml-1 white"></i><a class="nav-item nav-link text-white" href="PageProfil.html">A propos</a>
+          <i class="fas fa-toolbox ml-1 white"><a class="nav-item nav-link text-white" href="PageRealisations.html"></i>Réalisations</a>
+          <i class="fas fa-phone ml-1 white"><a class="nav-item nav-link text-white" href="PageContacter"></i>Contacter</a>
+        </div>
+      </div>
     </nav>
   </aside>
 </header>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main class = "MainOtherPages">
+<main>
   <section>
     <h2 class = "textAlignC white underline">Me Contacter</h2>
     <aside class = "AsideContact white backOpacityBlack padding">
-      <form class = "FormContact flex column justifyCenter alignItemCenter spaceAround" action="index.html" method="post">
-        <label for = "">Nom :</label>
-        <input type = "text" name="" value="" placeholder="Nom et Prénom.">
-        <label for = "">Mail :</label>
-        <input type = "email" name="" value="" placeholder="Votre adresse mail.">
-        <label for = "">Objet :</label>
-        <input type = "text" name="" value="" placeholder = "Votre Objet.">
-        <label for = "">Votre Texte :</label>
-        <textarea name = "" id = "" placeholder = "Écriver votre texte ici."></textarea>
-        <input class = "marginT" type = "submit" name="" value="Envoyer">
+      <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Votre Nom">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Votre Prénom">
+          </div>
+        </div>
+        <div class="form-group mt-4">
+          <label for="exampleFormControlInput1">Votre adresse mail :</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+          <label for="exampleFormControlTextarea1">Votre Text</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <button type="submit" class="btn btn-primary mt-3 bg-transparent border border-danger text-white">Submit</button>
+        </div>
       </form>
-    <nav class = "NavButtonContact flex column justifyCenter alignItemCenter backOpacityBlack marginT">
-      <a class = "textAlignC styleButton margin" href="tel:+33622752818">TELEPHONE</a>
-    </nav>
+
     <nav class = "NavIconeContact column spaceAround none">
       <div class = "flex column alignItemCenter hoverColorRed">
         <h2 class = "underline">Par Téléphone</h2>
@@ -87,9 +99,9 @@
   </div>
 </footer>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
