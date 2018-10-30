@@ -44,7 +44,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid red;
     margin: 1em 0;
     padding: 0;
 }
@@ -97,21 +97,463 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/***************************GENERAL RULES***************************/
+
+.BodyRulesIndex {
+  height: 100%;
+  background-image: url("../img/test1.jpeg");
+  background-size: cover;
+  font-family: 'Trade Winds', cursive;
+}
+
+footer a:hover {
+  color: red;
+}
+
+a:focus
+{
+outline:0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.Cercle {
+  height: 10em;
+  width: 10em;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.Cercle:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/*********************OTHER PAGES***************/
+.MainOtherPages {
+  margin-top: 4em;
+}
+
+.NavigationFixed {
+  border-bottom: 1px solid white;
+  width: 100%;
+  height: 3em;
+  position: fixed;
+  top: 0px;
+}
+
+/*********************OTHER PAGES***************/
+
+/***************************GENERAL RULES***************************/
+
+/***************************COLORS CLASS***************************/
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+.backred {
+  background-color: red;
+}
+
+.backgreen {
+  background-color: green;
+}
+
+.backblue {
+  background-color: blue;
+}
+
+.backyellow {
+  background-color: yellow
+}
+
+.backOpacityBlack {
+  background-color: rgba(0,0,0,0.5);
+}
+/***************************COLORS CLASS***************************/
+
+/***************************UTILITIES CLASS***************************/
+.flex {
+  display: flex;
+}
+
+.none {
+  display: none;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.alignContent {
+  align-content: center;
+}
+
+.alignItemCenter {
+  align-items: center;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.spaceAroundC {
+  align-content: space-around;
+}
+
+.spaceBetweenC {
+  align-content: space-between;
+}
+
+.textAlignC {
+  text-align: center;
+}
+
+.marginAuto {
+  margin:  0 auto;
+}
+
+.styleLien {
+  padding: 1em;
+  border: 1px solid red;
+  border-radius: 200%;
+}
+
+.stylePortrait {
+  border-radius: 200%;
+  border: 4px solid red;
+  height: 10em;
+  width: 9em;
+}
+
+.padding {
+  padding: 1em;
+}
+
+.margin {
+  margin: 1em;
+}
+
+.marginT {
+  margin-top: 1em;
+}
+
+.marginL {
+  margin-left: 1em;
+}
+
+.styleButton {
+  border: 1px solid red;
+  padding: 1em;
+  width: 10em;
+}
+
+.borderT {
+  border-top: 1px solid red;
+}
+
+.Copy {
+  width: 30em;
+}
+
+.indexO {
+  z-index: 0
+}
+
+.indexFirst {
+  z-index: 1;
+}
+
+.absolute {
+  position: absolute;
+  opacity: 0.3;
+}
+
+.hoverUnderline a:hover {
+  text-decoration: underline;
+}
+
+.hoverColorRed a:hover {
+  color: red;
+}
+
+.hoverIconeColorRed i:hover{
+  color:red
+}
+
+.ZoneClickCircularOption a {
+  height: 100%;
+  width: 100%;
+  border-radius: 200%;
+}
+
+.ListStyleNone li{
+  list-style-type: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.Fullwidth {
+  width: 100%;
+}
+
+/***************************UTILITIES CLASS***************************/
+
+/**********************************************************************/
+/***************************|START INDEX.HTML|***************************/
+/**********************************************************************/
+
+/************MAIN**********/
+.Navigation {
+  width: 10em;
+  margin: 1em 0;
+}
+
+/************MAIN**********/
+
+/************FOOTER**********/
+.Copy {
+  border-top: 1px solid red;
+  width: 80%;
+}
+/************FOOTER**********/
+
+/**********************************************************************/
+/***************************|END INDEX.HTML|***************************/
+/**********************************************************************/
 
 
+/**********************************************************************/
+/***************************|START PROFIL.HTML|***************************/
+/**********************************************************************/
 
+/************HEADER**********/
+/************HEADER**********/
 
+/************MAIN**********/
 
+.SectionProfil {
+  width: 100%;
+}
+.ArticlePageProfil {
+  height: 30em;
+}
 
+.ArticlePageCompetence {
+ height: 50em;
+}
 
+.Biographies {
+  overflow: hidden;
+}
 
+.Objectifs {
+  width: 100%;
+}
 
+.HTML, .CSS, .PHP {
+  width: 10em;
+}
+/************MAIN**********/
 
+/************FOOTER**********/
 
+/************FOOTER**********/
 
+/**********************************************************************/
+/***************************|END PROFIL.HTML|***************************/
+/**********************************************************************/
 
+/**********************************************************************/
+/***************************|START RÉALISATIONS.HTML|***************************/
+/**********************************************************************/
 
+/************HEADER**********/
+/************HEADER**********/
 
+/************MAIN**********/
+/************MAIN**********/
+
+/************FOOTER**********/
+/************FOOTER**********/
+
+/**********************************************************************/
+/***************************|END RÉALISATIONS.HTML|***************************/
+/**********************************************************************/
+
+/**********************************************************************/
+/***************************|START CONTACT.HTML|***************************/
+/**********************************************************************/
+
+/************HEADER**********/
+/************HEADER**********/
+
+/************MAIN**********/
+/************MAIN**********/
+
+/************FOOTER**********/
+/************FOOTER**********/
+
+/**********************************************************************/
+/***************************|END CONTACT.HTML|***************************/
+/**********************************************************************/
+
+/***************************====START TOUCHPAD====***************************/
+@media screen and (min-width: 500px) {
+
+/***************************START MEDIA QUERY INDEX.HTML**************************/
+
+/************HEADER**********/
+/************HEADER**********/
+/************MAIN**********/
+.Navigation {
+  width: 30em;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/***************************END MEDIA QUERY INDEX.HTML**************************/
+
+/***************************START MEDIA QUERY PROFIL.HTML**************************/
+/************HEADER**********/
+/************HEADER**********/
+/************MAIN**********/
+
+.ArticlePageCompetence {
+  height: 30em;
+  width: 30em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ArticlePageProfil {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Objectifs {
+  width: 20em;
+}
+/************MAIN**********/
+/************FOOTER**********/
+/************FOOTER**********/
+/***************************END MEDIA QUERY PROFIL.HTML**************************/
+
+/***************************START MEDIA QUERY RÉALISATIONS.HTML**************************/
+/***************************END MEDIA QUERY RÉALISATIONS.HTML**************************/
+
+/***************************START MEDIA QUERY CONTACT.HTML**************************/
+
+/***************************END MEDIA QUERY CONTACT.HTML**************************/
+}
+/***************************====END TOUCHPAD====***************************/
+
+/***************************====START DESKTOP====***************************/
+@media screen and (min-width: 1199px) {
+
+/***************************START MEDIA QUERY INDEX.HTML**************************/
+
+/************MAIN**********/
+.Navigation {
+  width: 100em;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+/************MAIN**********/
+
+/************FOOTER**********/
+footer {
+  height: 13.8em;
+}
+/************FOOTER**********/
+
+/***************************END MEDIA QUERY INDEX.HTML**************************/
+
+/***************************START MEDIA QUERY PROFIL.HTML**************************/
+
+/************HEADER**********/
+
+/************HEADER**********/
+
+/************MAIN**********/
+
+.BlockInformations {
+  width: 40em;
+}
+
+.ArticlePageCompetence {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ArticlePageProfil {
+  flex-direction: row;
+}
+
+.stylePortrait {
+  height: 20em;
+  width: 20em;
+}
+
+.ImageBlock {
+  width: 30%;
+}
+
+.Biographies {
+  width: 40em;
+}
+/************MAIN**********/
+
+/***************************END MEDIA QUERY PROFIL.HTML**************************/
+
+/***************************START MEDIA QUERY RÉALISATIONS.HTML**************************/
+/***************************END MEDIA QUERY RÉALISATIONS.HTML**************************/
+
+/***************************START MEDIA QUERY CONTACT.HTML**************************/
+
+.AsideContact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.NavIconeContact {
+  display: flex;
+}
+
+.NavButtonContact{
+  display: none;
+}
+
+/***************************END MEDIA QUERY CONTACT.HTML**************************/
+
+}
+/***************************====END DESKTOP====***************************/
 
 /* ==========================================================================
    Helper classes
