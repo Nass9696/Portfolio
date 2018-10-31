@@ -22,15 +22,27 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
   <aside>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent NavigationFixed">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent NavigationFixed  indexFull">
+      <button class="navbar-toggler border border-danger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <i class="fas fa-user-alt ml-1 white"></i><a class="nav-item nav-link text-white" href="PageProfil.html">A propos</a>
-          <i class="fas fa-toolbox ml-1 white"><a class="nav-item nav-link text-white" href="PageRealisations.html"></i>Réalisations</a>
-          <i class="fas fa-phone ml-1 white"><a class="nav-item nav-link text-white" href="PageContacter"></i>Contacter</a>
+      <div class = "d-flex justify-content-end d-block hoverIconeColorRed">
+        <a class="nav-item nav-link text-white" href="index.html"><i class="fas fa-home white"></i></a>
+      </div>
+      <div class="NavBarRow collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="NavBar navbar-nav hoverUnderline">
+          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+            <i class="fas fa-user-alt white"></i>
+            <a class="nav-item nav-link text-white ml-2" href="PageProfil.html">A propos</a>
+          </div>
+          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+            <i class="fas fa-toolbox white"></i>
+            <a class="nav-item nav-link text-white ml-2" href="PageRealisations.html">Réalisations</a>
+          </div>
+          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+            <i class="fas fa-phone  white"></i>
+            <a class="nav-item nav-link text-white ml-2" href="PageContacter.html">Contacter</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -40,8 +52,7 @@
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main>
-  <section>
-    <h2 class = "textAlignC white underline">Me Contacter</h2>
+  <section class = "mt-5">
     <aside class = "AsideContact white backOpacityBlack padding">
       <form>
         <div class="row">
@@ -62,7 +73,7 @@
         </div>
       </form>
 
-    <nav class = "NavIconeContact column spaceAround none">
+    <nav class = "NavIconeContact column spaceAround">
       <div class = "flex column alignItemCenter hoverColorRed">
         <h2 class = "underline">Par Téléphone</h2>
         <a href = "tel:+33622752818"><i class="fas fa-phone-square fa-3x"></i></a>

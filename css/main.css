@@ -292,6 +292,10 @@ a {
   z-index: 1;
 }
 
+.indexFull {
+  z-index: 9999;
+}
+
 .absolute {
   position: absolute;
   opacity: 0.3;
@@ -416,6 +420,16 @@ a {
 /**********************************************************************/
 
 /************HEADER**********/
+.NavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.Home {
+  display: none;
+}
 /************HEADER**********/
 
 /************MAIN**********/
@@ -480,7 +494,7 @@ a {
 /***************************====END TOUCHPAD====***************************/
 
 /***************************====START DESKTOP====***************************/
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 992px) {
 
 /***************************START MEDIA QUERY INDEX.HTML**************************/
 
@@ -542,6 +556,15 @@ footer {
 /***************************END MEDIA QUERY RÉALISATIONS.HTML**************************/
 
 /***************************START MEDIA QUERY CONTACT.HTML**************************/
+
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: transparent;
+}
 
 .AsideContact {
   display: flex;

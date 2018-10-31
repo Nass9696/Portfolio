@@ -22,15 +22,27 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
   <aside>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent NavigationFixed">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent NavigationFixed  indexFull">
+      <button class="navbar-toggler border border-danger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link text-white" href="PageProfil.html">A propos</a>
-          <a class="nav-item nav-link text-white" href="PageRealisations.html">Réalisations</a>
-          <a class="nav-item nav-link text-white" href="PageContacter">Contacter</a>
+      <div class = "d-flex justify-content-end d-block hoverIconeColorRed">
+        <a class="nav-item nav-link text-white" href="index.html"><i class="fas fa-home white"></i></a>
+      </div>
+      <div class="NavBarRow collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="NavBar navbar-nav hoverUnderline">
+          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+            <i class="fas fa-user-alt white"></i>
+            <a class="nav-item nav-link text-white ml-2" href="PageProfil.html">A propos</a>
+          </div>
+          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+            <i class="fas fa-toolbox white"></i>
+            <a class="nav-item nav-link text-white ml-2" href="PageRealisations.html">Réalisations</a>
+          </div>
+          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+            <i class="fas fa-phone  white"></i>
+            <a class="nav-item nav-link text-white ml-2" href="PageContacter.html">Contacter</a>
+          </div>
         </div>
       </div>
     </nav>
