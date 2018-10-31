@@ -369,6 +369,7 @@ a {
 .SectionProfil {
   width: 100%;
 }
+
 .ArticlePageProfil {
   height: 30em;
 }
@@ -427,9 +428,6 @@ a {
   background-color: black;
 }
 
-.Home {
-  display: none;
-}
 /************HEADER**********/
 
 /************MAIN**********/
@@ -465,11 +463,12 @@ a {
 
 .ArticlePageCompetence {
   height: 30em;
-  width: 30em;
+  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
+
 
 .ArticlePageProfil {
   flex-direction: row;
@@ -499,6 +498,10 @@ a {
 /***************************START MEDIA QUERY INDEX.HTML**************************/
 
 /************MAIN**********/
+.MainIndex {
+  height: 46vh;
+}
+
 .Navigation {
   width: 100em;
   flex-direction: row;
@@ -562,8 +565,8 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
   background-color: transparent;
+  width: 100%;
 }
 
 .AsideContact {
