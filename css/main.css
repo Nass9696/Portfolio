@@ -101,7 +101,8 @@ textarea {
 
 .BodyRulesIndex {
   height: 100%;
-  background-image: url("../img/test1.jpeg");
+  background-image: url("../img/smoke.jpg");
+  background-position: center;
   background-size: cover;
   font-family: 'Trade Winds', cursive;
 }
@@ -370,14 +371,6 @@ a {
   width: 100%;
 }
 
-.ArticlePageProfil {
-  height: 30em;
-}
-
-.ArticlePageCompetence {
- height: 50em;
-}
-
 .Biographies {
   overflow: hidden;
 }
@@ -461,8 +454,7 @@ a {
 /************HEADER**********/
 /************MAIN**********/
 
-.ArticlePageCompetence {
-  height: 30em;
+.ArticleCompetence {
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
@@ -529,7 +521,7 @@ footer {
   width: 40em;
 }
 
-.ArticlePageCompetence {
+.ArticleCompetence {
   width: 100%;
   flex-direction: row;
   align-items: center;
