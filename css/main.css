@@ -101,7 +101,8 @@ textarea {
 
 .BodyRulesIndex {
   height: 100%;
-  background-image: url("../img/test1.jpeg");
+  background-image: url("../img/smoke.jpg");
+  background-position: center;
   background-size: cover;
   font-family: 'Trade Winds', cursive;
 }
@@ -135,12 +136,19 @@ a {
   margin-top: 4em;
 }
 
+.MainContact {
+
+}
 .NavigationFixed {
   border-bottom: 1px solid white;
   width: 100%;
   height: 3em;
   position: fixed;
   top: 0px;
+}
+
+.RedirectionWidthNavigation a {
+  width: 50%;
 }
 
 /*********************OTHER PAGES***************/
@@ -285,6 +293,10 @@ a {
   z-index: 1;
 }
 
+.indexFull {
+  z-index: 9999;
+}
+
 .absolute {
   position: absolute;
   opacity: 0.3;
@@ -358,13 +370,6 @@ a {
 .SectionProfil {
   width: 100%;
 }
-.ArticlePageProfil {
-  height: 30em;
-}
-
-.ArticlePageCompetence {
- height: 50em;
-}
 
 .Biographies {
   overflow: hidden;
@@ -409,6 +414,13 @@ a {
 /**********************************************************************/
 
 /************HEADER**********/
+.NavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
 /************HEADER**********/
 
 /************MAIN**********/
@@ -442,13 +454,13 @@ a {
 /************HEADER**********/
 /************MAIN**********/
 
-.ArticlePageCompetence {
-  height: 30em;
-  width: 30em;
+.ArticleCompetence {
+  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
+
 
 .ArticlePageProfil {
   flex-direction: row;
@@ -473,11 +485,15 @@ a {
 /***************************====END TOUCHPAD====***************************/
 
 /***************************====START DESKTOP====***************************/
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 992px) {
 
 /***************************START MEDIA QUERY INDEX.HTML**************************/
 
 /************MAIN**********/
+.MainIndex {
+  height: 46vh;
+}
+
 .Navigation {
   width: 100em;
   flex-direction: row;
@@ -505,7 +521,7 @@ footer {
   width: 40em;
 }
 
-.ArticlePageCompetence {
+.ArticleCompetence {
   width: 100%;
   flex-direction: row;
   align-items: center;
@@ -535,6 +551,15 @@ footer {
 /***************************END MEDIA QUERY RÉALISATIONS.HTML**************************/
 
 /***************************START MEDIA QUERY CONTACT.HTML**************************/
+
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  width: 100%;
+}
 
 .AsideContact {
   display: flex;
