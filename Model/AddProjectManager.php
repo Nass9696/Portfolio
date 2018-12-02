@@ -12,5 +12,11 @@ function addProject($project, $lastid, $db){
   return $result;
 }
 
+function getProject($db){
+  $query = $db->query('SELECT * FROM projet');
+  $result = $query->fetchall(PDO::FETCH_ASSOC);
 
+  return $result;
+
+}
  ?>

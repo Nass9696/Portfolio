@@ -1,4 +1,4 @@
-<?php
+00<?php
 //J'envoye les informations de l'image avec son chemin dans la table Image de ma base de donnés
 function addImg($img, $path, $db){
   $query = $db->prepare('INSERT INTO image (img_path, img_name, img_type) VALUES (:img_path, :img_name, :img_type)');

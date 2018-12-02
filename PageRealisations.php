@@ -1,3 +1,11 @@
+<?php
+//Je charge les pages nécessaires
+require "Model/AddProjectManager.php";
+require "Model/db.php";
+//Je me connect à la DB
+$db = connectDataBase();
+$projet = getProject($db);
+ ?>
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -51,21 +59,19 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main class = "MainOtherPages">
-  <section class = "white d-flex spaceAround">
-    <article class = "">
-      <img src="img/oceascreen.png" alt="" width="400"/>
-      <p>Océa</p>
-    </article>
-    <article class="">
-      <img src="img/terredegeek.png" alt="" width="400"/>
-      <p>Terre de Geek</p>
-    </article>
-    <article class="">
-      <img src="img/twitterscreen.png" alt="" width = "400"/>
-      <p>Twitter</p>
-    </article>
-  </section>
+<main class = "MainOtherPages d-flex justify-content-around">
+  <?php foreach ($projet as $key => $value) {
+
+  ?>
+  <div class="card col-2 ">
+    <img class="card-img-top" src="img/espace.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><?php echo $value['projet_name']; ?></h5>
+      <p><?php echo $value['projet_description']; ?></p>
+      <a href="#" class="btn btn-primary">Voir ici !</a>
+    </div>
+  </div>
+  <?php } ?>
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 

@@ -18,6 +18,23 @@ verifUserSession($_SESSION['user']);
 <aside>
   <h2>Projet</h2>
   <a href="AddArticle.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ajouter +</a>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Titre</th>
+        <th scope="col">Image</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+    </table>
 </aside>
 <aside>
   <h2>Biographie</h2>

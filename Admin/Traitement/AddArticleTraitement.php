@@ -12,8 +12,10 @@ $img = $_FILES['project_img'];
 
 if(!empty($img)){
   $path = 'img/' .$img['name'];
+  //Si addImg est a true
   if(addImg($img, $path,$db)){
     $lastid = getLastId($db);
+      //Si lastidest a true
     if(!empty($lastid)){
         if(addProject($form, $lastid, $db)){
           //Chemin dans lequel je vais enregistrer l'image
@@ -26,15 +28,4 @@ if(!empty($img)){
     }
   }
 }
-// if(!empty($form['project_title'])){
-//   addTitle($form['project_title'],$db);
-// }
-//
-// if(!empty($form['project_description'])){
-//   addDescription($form['project_description'],$db);
-// }
-
-
-
-
 ?>
