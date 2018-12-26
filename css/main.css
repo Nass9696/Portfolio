@@ -181,11 +181,11 @@ a {
 }
 
 .backyellow {
-  background-color: yellow
+  background-color: yellow;
 }
 
-.backOpacityBlack {
-  background-color: rgba(0,0,0,0.5);
+.backblack {
+  background-color: black;
 }
 /***************************COLORS CLASS***************************/
 
@@ -424,6 +424,13 @@ a {
 /************HEADER**********/
 
 /************MAIN**********/
+.NavIconeContact {
+  display: flex;
+}
+
+.NavIconeContactDekstop{
+  display: none;
+}
 /************MAIN**********/
 
 /************FOOTER**********/
@@ -479,6 +486,15 @@ a {
 /***************************END MEDIA QUERY RÉALISATIONS.HTML**************************/
 
 /***************************START MEDIA QUERY CONTACT.HTML**************************/
+/***********MAIN***********/
+.NavIconeContact {
+  display: flex;
+}
+
+.NavIconeContactDekstop{
+  display: none;
+}
+/***********MAIN***********/
 
 /***************************END MEDIA QUERY CONTACT.HTML**************************/
 }
@@ -568,6 +584,10 @@ footer {
 }
 
 .NavIconeContact {
+  display: none;
+}
+
+.NavIconeContactDekstop{
   display: flex;
 }
 

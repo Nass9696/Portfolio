@@ -63,7 +63,7 @@
       <p>Twitter</p>
     </span>
     <span>
-      <a href = "#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+      <a href = "https://www.linkedin.com/in/nassim-gacem-5a3375172/"><i class="fab fa-linkedin-in fa-2x"></i></a>
       <p>LinkedIn</p>
     </span>
     <span>

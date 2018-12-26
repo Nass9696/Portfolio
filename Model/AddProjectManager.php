@@ -13,7 +13,7 @@ function addProject($project, $lastid, $db){
 }
 
 function getProject($db){
-  $query = $db->query('SELECT * FROM projet');
+  $query = $db->query('SELECT p.*, i.* FROM projet AS p INNER JOIN image AS i');
   $result = $query->fetchall(PDO::FETCH_ASSOC);
 
   return $result;

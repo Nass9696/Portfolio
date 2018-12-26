@@ -31,7 +31,7 @@ $biographie = getBio($db);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
   <aside>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent NavigationFixed  indexFull">
+    <nav class="navbar navbar-expand-lg navbar-light backblack NavigationFixed  indexFull">
       <button class="navbar-toggler border border-danger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars white"></i>
       </button>
@@ -129,11 +129,11 @@ $biographie = getBio($db);
       <p>Twitter</p>
     </span>
     <span>
-      <a href = "https://github.com/Nass9696"><i class="fab fa-linkedin-in fa-2x"></i></a>
+      <a href = "https://www.linkedin.com/in/nassim-gacem-5a3375172/"><i class="fab fa-linkedin-in fa-2x"></i></a>
       <p>LinkedIn</p>
     </span>
     <span>
-      <a href = "#"><i class="fab fa-github fa-2x"></i></a>
+      <a href = "https://github.com/Nass9696"><i class="fab fa-github fa-2x"></i></a>
       <p>GitHub</p>
     </span>
   </nav>

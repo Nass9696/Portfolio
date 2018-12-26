@@ -30,7 +30,7 @@ $projet = getProject($db);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
   <aside>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent NavigationFixed  indexFull">
+    <nav class="navbar navbar-expand-lg navbar-light backblack NavigationFixed  indexFull">
       <button class="navbar-toggler border border-danger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars white"></i>
       </button>
@@ -61,10 +61,9 @@ $projet = getProject($db);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main class = "MainOtherPages d-flex justify-content-around">
   <?php foreach ($projet as $key => $value) {
-
   ?>
   <div class="card col-2 ">
-    <img class="card-img-top" src="img/espace.jpg" alt="Card image cap">
+    <img class="card-img-top" src=<?php $value['img_path']; ?> alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title"><?php echo $value['projet_name']; ?></h5>
       <p><?php echo $value['projet_description']; ?></p>
@@ -84,7 +83,7 @@ $projet = getProject($db);
       <p>Twitter</p>
     </span>
     <span>
-      <a href = "#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+      <a href = "https://www.linkedin.com/in/nassim-gacem-5a3375172/"><i class="fab fa-linkedin-in fa-2x"></i></a>
       <p>LinkedIn</p>
     </span>
     <span>
