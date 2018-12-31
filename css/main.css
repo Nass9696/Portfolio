@@ -386,6 +386,7 @@ a {
 .HTML, .CSS, .PHP {
   width: 10em;
 }
+
 /************MAIN**********/
 
 /************FOOTER**********/
@@ -443,6 +444,18 @@ a {
 /**********************************************************************/
 /***************************|END CONTACT.HTML|***************************/
 /**********************************************************************/
+/***************************====START MOBIL====***************************/
+@media screen and (min-width: 300px){
+  /***************************START MEDIA QUERY PROFIL.HTML**************************/
+  .ArticleCompetence {
+    height: 35em;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+  }
+  /***************************END MEDIA QUERY PROFIL.HTML**************************/
+}
+/***************************====END MOBIL====***************************/
 
 /***************************====START TOUCHPAD====***************************/
 @media screen and (min-width: 500px) {
@@ -472,10 +485,13 @@ footer {
 /************MAIN**********/
 
 .ArticleCompetence {
+  height: auto;
   width: 100%;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .ArticlePageProfil {
@@ -547,10 +563,11 @@ footer {
 }
 
 .ArticleCompetence {
-  display: flex;
   width: 100%;
   flex-direction: row;
   align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .ArticlePageProfil {

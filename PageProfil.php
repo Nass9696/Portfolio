@@ -97,9 +97,9 @@ $biographie = getBio($db);
       </article>
     </article>
   </section>
-  <section class = "SectionTextCompetence flex column alignItemCenter textAlignC marginT">
-      <h2 class = "Fullwidth underline padding">COMPÉTENCES</h2>
-    <article class = "ArticleCompetence mt-5 mb-5  flex column alignItemCenter justifyCenter spaceAround">
+  <section class = "flex column alignItemCenter textAlignC marginT">
+      <h2 class = "Fullwidth underline">COMPÉTENCES</h2>
+    <article class = "ArticleCompetence flex column alignItemCenter justifyCenter spaceAround">
       <div class = "HTML styleLien">
         <p>HTML</p>
         <i class="fab fa-html5 fa-3x  textAlignC"></i>
