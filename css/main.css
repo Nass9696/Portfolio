@@ -478,7 +478,6 @@ footer {
   align-items: center;
 }
 
-
 .ArticlePageProfil {
   flex-direction: row;
   flex-wrap: wrap;
@@ -548,6 +547,7 @@ footer {
 }
 
 .ArticleCompetence {
+  display: flex;
   width: 100%;
   flex-direction: row;
   align-items: center;
