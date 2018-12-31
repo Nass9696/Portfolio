@@ -18,11 +18,11 @@
   <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
 </head>
 
-<body class = "BodyRulesIndex pt-5">
+<body class = "BodyRulesIndex">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
   <aside>
-    <nav class="navbar navbar-expand-lg navbar-light backblack NavigationFixed  indexFull">
+    <nav class="navbar navbar-expand-lg navbar-light backblack NavigationNoFixed indexFull">
       <button class="navbar-toggler border border-danger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars white"></i>
       </button>
@@ -52,7 +52,7 @@
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main>
-  <section class = "mt-5">
+  <section>
     <aside class = "AsideContact white padding">
       <form>
         <div class="row">
@@ -97,7 +97,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<footer class = "flex column spaceBetween justifyCenter textAlignC backOpacityBlack white marginT">
+<footer class = "flex column spaceBetween justifyCenter textAlignC backOpacityBlack white">
   <h3 class = "underline">Vous pouvez aussi me retrouver sur :</h3>
   <nav class = "flex row spaceAround justifyCenter">
     <span>
