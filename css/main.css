@@ -506,10 +506,6 @@ a {
 /***************************START MEDIA QUERY INDEX.HTML**************************/
 
 /************MAIN**********/
-.MainIndex {
-  height: 46vh;
-}
-
 .Navigation {
   width: 100em;
   flex-direction: row;

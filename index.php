@@ -30,7 +30,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main class = "MainIndex ZoneClickCircularOption flex justifyCenter white">
+<main class = "ZoneClickCircularOption flex justifyCenter white">
   <nav class = "Navigation hoverUnderline flex column spaceAround alignItemCenter">
     <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin textAlignC ">
       <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageProfil.php">
@@ -55,7 +55,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<footer class = "flex column spaceBetween justifyCenter textAlignC backOpacityBlack white marginT">
+<footer class = "flex column spaceBetween justifyCenter textAlignC backOpacityBlack white">
   <h3 class = "underline">Vous pouvez aussi me retrouver sur :</h3>
   <nav class = "flex row spaceAround justifyCenter">
     <span>
