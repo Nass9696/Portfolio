@@ -5,6 +5,7 @@ require "Model/db.php";
 //Je me connect à la DB
 $db = connectDataBase();
 $projet = getProject($db);
+
  ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -16,8 +17,7 @@ $projet = getProject($db);
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="con" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
@@ -62,11 +62,10 @@ $projet = getProject($db);
 <main class = "MainOtherPages d-flex justify-content-around">
   <?php foreach ($projet as $key => $value) {
   ?>
-  <div class="card col-2 ">
-    <img class="card-img-top" src=<?php $value['img_path']; ?> alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title"><?php echo $value['projet_name']; ?></h5>
-      <p><?php echo $value['projet_description']; ?></p>
+  <div class="card col-4 text-light">
+    <h5 class="card-title textAlignC"><?php echo $value['projet_name']; ?></h5>
+    <img class="card-img-top ArticleProjet" src="<?php echo $value['img_path'];?>" alt="Card image cap">
+    <div class="card-body d-flex justify-content-center">
       <a href="#" class="btn btn-primary">Voir ici !</a>
     </div>
   </div>
