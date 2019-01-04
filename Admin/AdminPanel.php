@@ -25,19 +25,20 @@ verifUserSession($_SESSION['user']);
     <tr>
       <th scope="col">#</th>
       <th scope="col">Titre</th>
-      <th scope="col">Description</th>
       <th scope="col">Options</th>
     </tr>
   </thead>
   <tbody>
-    <?php foreach ($project as $key => $value) {?>
+    <?php foreach ($project as $key => $value) {
+    ?>
     <tr>
       <th scope="row"><?php echo $value['projet_id'];?></th>
       <td><?php echo $value['projet_name']; ?></td>
-      <td><?php echo $value['projet_description']; ?></td>
-      <td><?php echo "<a href='#' class='btn bg-warning text-dark' role='button' >Modifier</a>";?></td>
+      <td><?php echo "<a href='#' class='btn bg-warning text-dark mr-1' role='button'>Modifier</a>
+      <a href='#' class='btn bg-danger text-light' role='button'>Supprimer</a>";?></td>
     </tr>
-        <?php } ?>
+      <?php } ?>
+    </tbody>
   </table>
 </aside>
 <aside>

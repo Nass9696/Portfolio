@@ -4,8 +4,7 @@ require "Model/AddProjectManager.php";
 require "Model/db.php";
 //Je me connect à la DB
 $db = connectDataBase();
-$projet = getProject($db);
-
+$projet = joinProjectOnImg($db);
  ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -59,17 +58,22 @@ $projet = getProject($db);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main class = "MainOtherPages d-flex justify-content-around">
+<main class = "MainOtherPages">
+  <aside class="d-flex justify-content-around bg-primary">
+
   <?php foreach ($projet as $key => $value) {
   ?>
-  <div class="card col-4 text-light">
+  <div class="card col-3 ArticleProjet backblack text-light">
     <h5 class="card-title textAlignC"><?php echo $value['projet_name']; ?></h5>
-    <img class="card-img-top ArticleProjet" src="<?php echo $value['img_path'];?>" alt="Card image cap">
-    <div class="card-body d-flex justify-content-center">
+    <div class="">
+      <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap">
+    </div>
+    <div class="card-body">
       <a href="#" class="btn btn-primary">Voir ici !</a>
     </div>
   </div>
   <?php } ?>
+  </aside>
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
