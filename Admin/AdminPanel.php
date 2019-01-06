@@ -11,19 +11,17 @@ $db = connectDataBase();
 $biographie = getBio($db);
 $project = getProject($db);
 
-echo '<pre>';
-var_dump($project);
-echo '</pre>';
 //Je vérifie que l'utilisateur enregistré existe vraiment en BDD
 verifUserSession($_SESSION['user']);
 
  ?>
 <?php include "Template/header.php"; ?>
 
-<a href= "Traitement/SessionTraitement.php" class="btn btn-danger">Déconnexion</a>
 <aside>
-  <h2>Projet</h2>
-  <a href="AddArticle.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ajouter +</a>
+  <div class="d-flex justify-content-between align-items-center">
+    <h2>Projet</h2>
+    <a href="AddArticle.php" role="button" aria-pressed="true">Ajouter +</a>
+  </div>
   <table class="table mt-1">
   <thead class="thead-dark">
     <tr>

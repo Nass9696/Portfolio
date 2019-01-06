@@ -16,6 +16,7 @@ if(isset($_GET['id_projet']) && isset($_GET['id_img'])){
       deleteProjectImg($id_img, $db);
     }
   }
+  //Je redirige vers Panel d'administration
   header('Location: ../AdminPanel.php');
   exit;
 }

@@ -54,7 +54,7 @@
 <main>
   <section>
     <aside class = "AsideContact white padding">
-      <form>
+      <form method="post" action="ContacterTraitement.php">
         <div class="row">
           <div class="col">
             <label for="exampleFormControlTextarea1">Votre Nom :</label>
@@ -67,14 +67,13 @@
         </div>
         <div class="form-group mt-4">
           <label for="exampleFormControlInput1">Votre adresse mail :</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1">
+          <input type="email" class="form-control" id="exampleFormControlInput1" name="adresse_mail">
         </div>
           <label for="exampleFormControlTextarea1">Votre Texte :</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text_mail"></textarea>
           <button type="submit" class="btn btn-primary mt-3 bg-transparent border border-danger text-white">Envoyer</button>
         </div>
       </form>
-
     <nav class = "NavIconeContact column spaceAround">
       <div class = "flex column alignItemCenter hoverColorRed">
         <h2 class = "underline">Par Téléphone</h2>

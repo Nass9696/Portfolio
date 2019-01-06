@@ -59,14 +59,13 @@ $projet = joinProjectOnImg($db);
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main class = "MainOtherPages">
-  <aside class="d-flex justify-content-around bg-primary">
-
+  <aside class="d-flex align-content-lg-center AsideRealisation flex-wrap">
   <?php foreach ($projet as $key => $value) {
   ?>
-  <div class="card col-3 ArticleProjet backblack text-light">
-    <h5 class="card-title textAlignC"><?php echo $value['projet_name']; ?></h5>
+  <div class="card col-3 bg-transparent text-light d-flex flex-column align-items-center">
+    <h5 class="card-title textAlignC mt-1"><?php echo $value['projet_name']; ?></h5>
     <div class="">
-      <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap">
+      <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="170">
     </div>
     <div class="card-body">
       <a href="#" class="btn btn-primary">Voir ici !</a>

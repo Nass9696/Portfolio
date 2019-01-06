@@ -86,14 +86,6 @@ $biographie = getBio($db);
             J'ai toujours envie de savoir ce qui se cache derrière la planéte suivante. -->
           </p>
         </div>
-        <div class = "Objectifs">
-          <h2 class = "underline textAlignC">Mes Objectifs</h2>
-          <ul class = "textAlignC">
-            <li>Objectif</li>
-            <li>Objectif</li>
-            <li>Objectif</li>
-          </ul>
-        </div>
       </article>
     </article>
   </section>
@@ -114,6 +106,16 @@ $biographie = getBio($db);
         <p>PHP</p>
         <i class="fab fa-php fa-3x"></i>
         <p>Bases</p>
+      </div>
+    </article>
+    <article>
+      <div class = "Objectifs">
+        <h2 class = "underline textAlignC">Mes Objectifs</h2>
+        <ul class = "textAlignC">
+          <li>Acquérir de nouvelle compétence sur différents languages</li>
+          <li>Apprendre de nouveaux languages</li>
+          <li>Objectif</li>
+        </ul>
       </div>
     </article>
   </section>

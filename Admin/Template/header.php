@@ -18,10 +18,13 @@
 </head>
 
 <body>
-  <section class="jumbotron jumbotron-fluid darkBg">
+  <header class="jumbotron jumbotron-fluid darkBg">
+    <div class="d-flex justify-content-end">
+      <a href= "Traitement/SessionTraitement.php" class="btn btn-danger mr-1">Déconnexion</a>
+    </div>
     <div class="container">
       <h1 class="display-4">Espace d'administration</h1>
     </div>
-  </section>
+  </header>
 
   <main class="container">
