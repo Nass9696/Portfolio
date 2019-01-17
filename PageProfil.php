@@ -108,16 +108,6 @@ $biographie = getBio($db);
         <p>Bases</p>
       </div>
     </article>
-    <article>
-      <div class = "Objectifs">
-        <h2 class = "underline textAlignC">Mes Objectifs</h2>
-        <ul class = "textAlignC">
-          <li>Acquérir de nouvelle compétence sur différents languages</li>
-          <li>Apprendre de nouveaux languages</li>
-          <li>Objectif</li>
-        </ul>
-      </div>
-    </article>
   </section>
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
