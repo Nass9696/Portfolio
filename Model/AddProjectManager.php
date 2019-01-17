@@ -24,13 +24,25 @@ function getProject($db){
 }
 //Cette jointure permet d'afficher le projet avec son image associés
 function joinProjectOnImg($db){
-  $query = $db->query('SELECT p.projet_name, p.projet_description, i.img_path FROM projet AS p INNER JOIN image AS i ON p.projet_img = i.img_id');
+  $query = $db->query('SELECT p.projet_id, p.projet_name, p.projet_description, i.img_path FROM projet AS p INNER JOIN image AS i ON p.projet_img = i.img_id');
   $result = $query->fetchall(PDO::FETCH_ASSOC);
 
   return $result;
 
   $query->closeCursor();
 }
+
+function showProject($db, $id_projet){
+  $query = $db->prepare('SELECT p.projet_id, p.projet_name, p.projet_description, i.img_path FROM projet AS p INNER JOIN image AS i ON p.projet_img = i.img_id WHERE p.projet_id = ?');
+  $result = $query->execute([$id_projet]);
+  $tableau = $query->fetch(PDO::FETCH_ASSOC);
+
+  return $result;
+
+  $query->closeCursor();
+}
+
+
 //Fonction qui permet de supprimer un projet
 function deleteProject($id_projet, $db){
   $query = $db->prepare('DELETE FROM projet WHERE projet_id = ?');

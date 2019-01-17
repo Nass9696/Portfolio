@@ -59,20 +59,43 @@ $projet = joinProjectOnImg($db);
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main class = "MainOtherPages">
-  <aside class="d-flex align-content-lg-center AsideRealisation flex-wrap">
-  <?php foreach ($projet as $key => $value) {
-  ?>
+  <aside class="d-flex justify-content-center AsideRealisation flex-wrap">
+  <?php foreach ($projet as $key => $value) { ?>
   <div class="card col-3 bg-transparent text-light d-flex flex-column align-items-center">
     <h5 class="card-title textAlignC mt-1"><?php echo $value['projet_name']; ?></h5>
     <div class="">
       <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="170">
     </div>
-    <div class="card-body">
-      <a href="#" class="btn btn-primary">Voir ici !</a>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModalLong">
+      Voir ici !
+    </button>
     </div>
-  </div>
   <?php } ?>
   </aside>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark">
+          <div class="modal-header d-flex justify-content-column">
+            <h5 class="modal-title" id="exampleModalLongTitle"><?php echo $value["projet_name"]; ?></h5>
+            <div class="">
+              <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="170">
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <?php echo $value['projet_description']; ?>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Quitter</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
