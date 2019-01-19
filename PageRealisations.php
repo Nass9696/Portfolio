@@ -59,43 +59,142 @@ $projet = joinProjectOnImg($db);
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main class = "MainOtherPages">
-  <aside class="d-flex justify-content-center AsideRealisation flex-wrap">
-  <?php foreach ($projet as $key => $value) { ?>
-  <div class="card col-3 bg-transparent text-light d-flex flex-column align-items-center">
-    <h5 class="card-title textAlignC mt-1"><?php echo $value['projet_name']; ?></h5>
-    <div class="">
-      <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="170">
-    </div>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="<?php echo "#modal" . $value['projet_id'] ?>">
-      Voir ici !
-    </button>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <div class = "RealisationDesktop">
+    <aside class="d-flex justify-content-center AsideRealisation flex-wrap">
+    <?php foreach ($projet as $key => $value) { ?>
+    <div class="card col-4 bg-transparent text-light d-flex flex-column align-items-center">
+      <h5 class="card-title textAlignC mt-1"><?php echo $value['projet_name']; ?></h5>
+      <div class="">
+        <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="170">
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="<?php echo "#modal" . $value['projet_id'] ?>">
+        Voir ici !
+      </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content bg-dark">
-          <div class="modal-header d-flex justify-content-column">
-            <h5 class="modal-title" id="exampleModalLongTitle"><?php echo $value["projet_name"]; ?></h5>
-            <div class="">
-              <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="170">
+      <!-- Modal -->
+      <div class="modal fade mt-4" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <div class = "container-fluid d-flex flex-column align-items-center">
+                <div>
+                  <h5 class="modal-title" id="exampleModalLongTitle"><?php echo $value["projet_name"]; ?></h5>
+                </div>
+                <div class="">
+                  <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="170">
+                </div>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <?php echo $value['projet_description']; ?>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Quitter</button>
+            <div class="modal-body">
+              <?php echo $value['projet_description']; ?>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Quitter</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <?php } ?>
+    </aside>
   </div>
-  <?php } ?>
-  </aside>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MOBIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class = "RealisationMobil">
+      <aside class="d-flex flex-column align-items-center AsideRealisation">
+      <?php foreach ($projet as $key => $value) { ?>
+      <div class="card col-10 bg-transparent text-light d-flex flex-column align-items-center">
+        <h5 class="card-title textAlignC mt-1"><?php echo $value['projet_name']; ?></h5>
+        <div class="">
+          <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="180">
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary mt-3 mb-3" data-toggle="modal" data-target="<?php echo "#modal" . $value['projet_id'] ?>">
+          Voir ici !
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade mt-4" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="false">
+          <div class="modal" role="document">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <div class = "container-fluid d-flex flex-column align-items-center">
+                  <div>
+                    <h5 class="modal-title" id="exampleModalLongTitle"><?php echo $value["projet_name"]; ?></h5>
+                  </div>
+                  <div class="">
+                    <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="170">
+                  </div>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <?php echo $value['projet_description']; ?>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Quitter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <?php } ?>
+      </aside>
+    </div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MOBIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TOUCHPAD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <div class = "RealisationTouchpad d-flex justify-content-center">
+    <aside class="d-flex justify-content-between AsideRealisation flex-wrap">
+    <?php foreach ($projet as $key => $value) { ?>
+    <div class="card col-6 bg-transparent text-light d-flex flex-column align-items-center">
+      <h5 class="card-title textAlignC mt-1"><?php echo $value['projet_name']; ?></h5>
+      <div class="">
+        <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="170">
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="<?php echo "#modal" . $value['projet_id'] ?>">
+        Voir ici !
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade mt-4" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <div class = "container-fluid d-flex flex-column align-items-center">
+                <div>
+                  <h5 class="modal-title" id="exampleModalLongTitle"><?php echo $value["projet_name"]; ?></h5>
+                </div>
+                <div class="">
+                  <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="170">
+                </div>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <?php echo $value['projet_description']; ?>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Quitter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php } ?>
+    </aside>
+  </div>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TOUCHPAD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
