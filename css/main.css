@@ -257,6 +257,7 @@ a {
   border-radius: 200%;
 }
 
+
 .stylePortrait {
   border-radius: 200%;
   border: 4px solid red;
@@ -348,6 +349,11 @@ a {
 .Cardimg {
   width: 20em;
   height: 20em;
+}
+
+.stylePicture{
+  border-radius: 200%;
+  border: 4px solid red;
 }
 
 
@@ -465,8 +471,13 @@ a {
   .ArticleCompetence {
     height: 35em;
     flex-direction: column;
-    align-content: space-around;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  .stylePicture {
+    height: 20em;
+    width: 15em;
   }
   /***************************END MEDIA QUERY PROFIL.HTML**************************/
 
@@ -605,11 +616,14 @@ footer {
 }
 
 .ArticleCompetence {
-  width: 100%;
+  height: 100%;
+  width: 65%;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   margin-top: 2em;
   margin-bottom: 2em;
+  flex-wrap: wrap;
 }
 
 .ArticlePageProfil {
@@ -627,6 +641,11 @@ footer {
 
 .Biographies {
   width: 40em;
+}
+
+.stylePicture {
+  height: auto;
+  width: auto;
 }
 /************MAIN**********/
 
