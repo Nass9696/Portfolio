@@ -10,34 +10,42 @@ $db = connectDataBase();
 //Je stock la Biographie de ma BDD
 $biographie = getBio($db);
 $project = getProject($db);
+
 //Je vérifie que l'utilisateur enregistré existe vraiment en BDD
 verifUserSession($_SESSION['user']);
 
  ?>
 <?php include "Template/header.php"; ?>
 
-<a href= "Traitement/SessionTraitement.php" class="btn btn-danger">Déconnexion</a>
 <aside>
-  <h2>Projet</h2>
-  <a href="AddArticle.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ajouter +</a>
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex justify-content-end">
+      <a href= "Traitement/SessionTraitement.php" class="btn btn-danger mr-1">Déconnexion</a>
+    </div>
+    <h2>Mes traveaux</h2>
+    <a href="AddArticle.php" role="button" aria-pressed="true">Ajouter +</a>
+  </div>
   <table class="table mt-1">
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
       <th scope="col">Titre</th>
-      <th scope="col">Description</th>
       <th scope="col">Options</th>
     </tr>
   </thead>
   <tbody>
-    <?php foreach ($project as $key => $value) {?>
+    <?php foreach ($project as $key => $value) {
+    ?>
     <tr>
       <th scope="row"><?php echo $value['projet_id'];?></th>
       <td><?php echo $value['projet_name']; ?></td>
-      <td><?php echo $value['projet_description']; ?></td>
-      <td><?php echo "<a href='#' class='btn bg-warning text-dark' role='button' >Modifier</a>";?></td>
+      <td>
+        <a href='#' class='btn bg-warning text-dark mr-1' role='button'>Modifier</a>
+        <a href= 'Traitement/deleteTraitement.php?id_projet=<?php echo htmlspecialchars($value['projet_id']); ?>&amp;id_img=<?php echo htmlspecialchars($value['img_id']); ?>' class='btn bg-danger text-light' role='button'>Supprimer</a>
+      </td>
     </tr>
-        <?php } ?>
+      <?php } ?>
+    </tbody>
   </table>
 </aside>
 <aside>

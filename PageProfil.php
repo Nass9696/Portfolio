@@ -65,7 +65,7 @@ $biographie = getBio($db);
     <h2 class = "underline textAlignC">Qui suis-je ?</h2>
     <article class = "ArticlePageProfil flex column spaceAround alignItemCenter">
       <div class = "ImageBlock Fullwidth flex justifyCenter alignItemCenter">
-        <img class = "stylePortrait" src="img/imagestest.png" alt=""/>
+        <img class = "stylePicture" src="img/nassim.jpg" alt="Photo de profil"/>
       </div>
       <article class = "BlockInformations flex column alignItemCenter  marginT Fullwidth">
         <div class = "Biographies">
@@ -86,34 +86,27 @@ $biographie = getBio($db);
             J'ai toujours envie de savoir ce qui se cache derrière la planéte suivante. -->
           </p>
         </div>
-        <div class = "Objectifs">
-          <h2 class = "underline textAlignC">Mes Objectifs</h2>
-          <ul class = "textAlignC">
-            <li>Objectif</li>
-            <li>Objectif</li>
-            <li>Objectif</li>
-          </ul>
-        </div>
       </article>
     </article>
   </section>
   <section class = "flex column alignItemCenter textAlignC marginT">
       <h2 class = "Fullwidth underline">COMPÉTENCES</h2>
+<<<<<<< HEAD
     <article class = "ArticleCompetence flex column alignItemCenter justifyCenter spaceAround">
+=======
+    <article class = "ArticleCompetence flex column alignItemCenter justifyCenter">
+>>>>>>> 8f4a739a2f0f2339e4ebbc571eeb153f761756e4
       <div class = "HTML styleLien">
         <p>HTML</p>
         <i class="fab fa-html5 fa-3x  textAlignC"></i>
-        <p>Correct</p>
       </div>
       <div class= "CSS styleLien">
         <p>CSS</p>
         <i class="fab fa-css3-alt fa-3x"></i>
-        <p>Correct</p>
       </div>
       <div class = "PHP styleLien">
         <p>PHP</p>
         <i class="fab fa-php fa-3x"></i>
-        <p>Bases</p>
       </div>
     </article>
   </section>
