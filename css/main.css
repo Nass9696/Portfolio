@@ -131,19 +131,27 @@ a {
   background-color: rgba(255,255,255,0.2);
 }
 
+.ArticleProjet {
+  border: 1px solid white;
+}
+
 /*********************OTHER PAGES***************/
 .MainOtherPages {
   margin-top: 4em;
 }
 
-.MainContact {
-
-}
 .NavigationFixed {
   border-bottom: 1px solid white;
   width: 100%;
   height: 3em;
   position: fixed;
+  top: 0px;
+}
+
+.NavigationNoFixed {
+  border-bottom: 1px solid white;
+  width: 100%;
+  height: 3em;
   top: 0px;
 }
 
@@ -181,12 +189,13 @@ a {
 }
 
 .backyellow {
-  background-color: yellow
+  background-color: yellow;
 }
 
-.backOpacityBlack {
-  background-color: rgba(0,0,0,0.5);
+.backblack {
+  background-color: black;
 }
+
 /***************************COLORS CLASS***************************/
 
 /***************************UTILITIES CLASS***************************/
@@ -247,6 +256,7 @@ a {
   border: 1px solid red;
   border-radius: 200%;
 }
+
 
 .stylePortrait {
   border-radius: 200%;
@@ -332,6 +342,21 @@ a {
   width: 100%;
 }
 
+.Fullheight {
+  height: 100%;
+}
+
+.Cardimg {
+  width: 20em;
+  height: 20em;
+}
+
+.stylePicture{
+  border-radius: 200%;
+  border: 4px solid red;
+}
+
+
 /***************************UTILITIES CLASS***************************/
 
 /**********************************************************************/
@@ -382,6 +407,7 @@ a {
 .HTML, .CSS, .PHP {
   width: 10em;
 }
+
 /************MAIN**********/
 
 /************FOOTER**********/
@@ -424,6 +450,13 @@ a {
 /************HEADER**********/
 
 /************MAIN**********/
+.NavIconeContact {
+  display: flex;
+}
+
+.NavIconeContactDekstop{
+  display: none;
+}
 /************MAIN**********/
 
 /************FOOTER**********/
@@ -432,9 +465,45 @@ a {
 /**********************************************************************/
 /***************************|END CONTACT.HTML|***************************/
 /**********************************************************************/
+/***************************====START MOBIL====***************************/
+@media screen and (min-width: 300px){
+  /***************************START MEDIA QUERY PROFIL.HTML**************************/
+  .ArticleCompetence {
+    height: 35em;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .stylePicture {
+    height: 20em;
+    width: 15em;
+  }
+  /***************************END MEDIA QUERY PROFIL.HTML**************************/
+
+  /***************************START MEDIA QUERY REALISATION.HTML**************************/
+  .RealisationDesktop{
+    display: none;
+  }
+  .AsideRealisation {
+  width: 100%;
+}
+  .RealisationTouchpad {
+    display: none;
+  }
+  /***************************END MEDIA QUERY REALISATION.HTML**************************/
+
+}
+/***************************====END MOBIL====***************************/
 
 /***************************====START TOUCHPAD====***************************/
 @media screen and (min-width: 500px) {
+
+/********GENERAL RULES*********/
+footer {
+  height: auto;
+}
+/********GENERAL RULES*********/
 
 /***************************START MEDIA QUERY INDEX.HTML**************************/
 
@@ -455,30 +524,56 @@ a {
 /************MAIN**********/
 
 .ArticleCompetence {
+  height: auto;
   width: 100%;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
-
 
 .ArticlePageProfil {
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.Objectifs {
-  width: 20em;
-}
 /************MAIN**********/
 /************FOOTER**********/
+
 /************FOOTER**********/
 /***************************END MEDIA QUERY PROFIL.HTML**************************/
 
 /***************************START MEDIA QUERY RÉALISATIONS.HTML**************************/
+
+.RealisationMobil {
+  display: none;
+}
+
+.RealisationDesktop{
+  display: none;
+}
+
+.AsideRealisation {
+  width: 100%;
+  height: 100%;
+}
+
+.RealisationTouchpad {
+  display: flex;
+}
 /***************************END MEDIA QUERY RÉALISATIONS.HTML**************************/
 
 /***************************START MEDIA QUERY CONTACT.HTML**************************/
+/***********MAIN***********/
+.NavIconeContact {
+  display: flex;
+}
+
+.NavIconeContactDekstop{
+  display: none;
+}
+/***********MAIN***********/
 
 /***************************END MEDIA QUERY CONTACT.HTML**************************/
 }
@@ -487,13 +582,15 @@ a {
 /***************************====START DESKTOP====***************************/
 @media screen and (min-width: 992px) {
 
+/********GENERAL RULES*********/
+footer {
+  height: auto;
+}
+/********GENERAL RULES*********/
+
 /***************************START MEDIA QUERY INDEX.HTML**************************/
 
 /************MAIN**********/
-.MainIndex {
-  height: 46vh;
-}
-
 .Navigation {
   width: 100em;
   flex-direction: row;
@@ -502,9 +599,6 @@ a {
 /************MAIN**********/
 
 /************FOOTER**********/
-footer {
-  height: 13.8em;
-}
 /************FOOTER**********/
 
 /***************************END MEDIA QUERY INDEX.HTML**************************/
@@ -522,9 +616,14 @@ footer {
 }
 
 .ArticleCompetence {
-  width: 100%;
+  height: 100%;
+  width: 65%;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
 }
 
 .ArticlePageProfil {
@@ -543,12 +642,34 @@ footer {
 .Biographies {
   width: 40em;
 }
+
+.stylePicture {
+  height: auto;
+  width: auto;
+}
 /************MAIN**********/
 
 /***************************END MEDIA QUERY PROFIL.HTML**************************/
 
 /***************************START MEDIA QUERY RÉALISATIONS.HTML**************************/
-/***************************END MEDIA QUERY RÉALISATIONS.HTML**************************/
+.RealisationDesktop{
+  display: flex;
+}
+
+.RealisationMobil{
+  display: none;
+}
+
+.RealisationTouchpad{
+  display: none;
+}
+
+.AsideRealisation {
+  width: 100em;
+  height: 100%;
+}
+
+/***************************END Aside QUERY RÉALISATIONS.HTML**************************/
 
 /***************************START MEDIA QUERY CONTACT.HTML**************************/
 
@@ -568,6 +689,10 @@ footer {
 }
 
 .NavIconeContact {
+  display: none;
+}
+
+.NavIconeContactDekstop{
   display: flex;
 }
 

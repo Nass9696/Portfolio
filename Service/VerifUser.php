@@ -13,6 +13,7 @@ function verifUser($form_user, $db_user){
     else
     {
       header('Location: ../AdminConnexionPage.php');
+      exit;
     }
 }
 

@@ -18,10 +18,10 @@
 </head>
 
 <body>
-  <section class="jumbotron jumbotron-fluid darkBg">
+  <header class="jumbotron jumbotron-fluid darkBg">
     <div class="container">
       <h1 class="display-4">Espace d'administration</h1>
     </div>
-  </section>
+  </header>
 
   <main class="container">

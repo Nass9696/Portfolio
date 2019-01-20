@@ -9,11 +9,12 @@ $db = connectDataBase();
 //Je stock les informations de mon formulaire dans une variable
 $form = $_POST;
 $img = $_FILES['project_img'];
+$img_alt = $_POST['img_alt'];
 
 if(!empty($img)){
   $path = 'img/' .$img['name'];
   //Si addImg est a true
-  if(addImg($img, $path,$db)){
+  if(addImg($img, $path, $img_alt)){
     $lastid = getLastId($db);
       //Si lastidest a true
     if(!empty($lastid)){

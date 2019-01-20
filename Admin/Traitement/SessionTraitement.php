@@ -7,4 +7,5 @@
   session_destroy();
   //On redirige
   header('Location: ../AdminConnexionPage.php');
+  exit;
   ?>

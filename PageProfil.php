@@ -31,7 +31,7 @@ $biographie = getBio($db);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
   <aside>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent NavigationFixed  indexFull">
+    <nav class="navbar navbar-expand-lg navbar-light backblack NavigationFixed  indexFull">
       <button class="navbar-toggler border border-danger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars white"></i>
       </button>
@@ -65,7 +65,7 @@ $biographie = getBio($db);
     <h2 class = "underline textAlignC">Qui suis-je ?</h2>
     <article class = "ArticlePageProfil flex column spaceAround alignItemCenter">
       <div class = "ImageBlock Fullwidth flex justifyCenter alignItemCenter">
-        <img class = "stylePortrait" src="img/imagestest.png" alt=""/>
+        <img class = "stylePicture" src="img/nassim.jpg" alt="Photo de profil"/>
       </div>
       <article class = "BlockInformations flex column alignItemCenter  marginT Fullwidth">
         <div class = "Biographies">
@@ -86,34 +86,23 @@ $biographie = getBio($db);
             J'ai toujours envie de savoir ce qui se cache derrière la planéte suivante. -->
           </p>
         </div>
-        <div class = "Objectifs">
-          <h2 class = "underline textAlignC">Mes Objectifs</h2>
-          <ul class = "textAlignC">
-            <li>Objectif</li>
-            <li>Objectif</li>
-            <li>Objectif</li>
-          </ul>
-        </div>
       </article>
     </article>
   </section>
-  <section class = "SectionTextCompetence flex column alignItemCenter textAlignC marginT">
-      <h2 class = "Fullwidth underline padding">COMPÉTENCES</h2>
-    <article class = "ArticleCompetence mt-5 mb-5  flex column alignItemCenter justifyCenter spaceAround">
+  <section class = "flex column alignItemCenter textAlignC marginT">
+      <h2 class = "Fullwidth underline">COMPÉTENCES</h2>
+    <article class = "ArticleCompetence flex column alignItemCenter justifyCenter">
       <div class = "HTML styleLien">
         <p>HTML</p>
         <i class="fab fa-html5 fa-3x  textAlignC"></i>
-        <p>Correct</p>
       </div>
       <div class= "CSS styleLien">
         <p>CSS</p>
         <i class="fab fa-css3-alt fa-3x"></i>
-        <p>Correct</p>
       </div>
       <div class = "PHP styleLien">
         <p>PHP</p>
         <i class="fab fa-php fa-3x"></i>
-        <p>Bases</p>
       </div>
     </article>
   </section>
@@ -121,7 +110,7 @@ $biographie = getBio($db);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<footer class = "flex column spaceBetween justifyCenter textAlignC backOpacityBlack white marginT">
+<footer class = " footerSize flex column spaceBetween justifyCenter textAlignC backOpacityBlack white marginT">
   <h3 class = "underline">Vous pouvez aussi me retrouver sur :</h3>
   <nav class = "flex row spaceAround justifyCenter">
     <span>
@@ -129,11 +118,11 @@ $biographie = getBio($db);
       <p>Twitter</p>
     </span>
     <span>
-      <a href = "https://github.com/Nass9696"><i class="fab fa-linkedin-in fa-2x"></i></a>
+      <a href = "https://www.linkedin.com/in/nassim-gacem-5a3375172/"><i class="fab fa-linkedin-in fa-2x"></i></a>
       <p>LinkedIn</p>
     </span>
     <span>
-      <a href = "#"><i class="fab fa-github fa-2x"></i></a>
+      <a href = "https://github.com/Nass9696"><i class="fab fa-github fa-2x"></i></a>
       <p>GitHub</p>
     </span>
   </nav>
