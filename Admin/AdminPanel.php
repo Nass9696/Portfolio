@@ -19,7 +19,10 @@ verifUserSession($_SESSION['user']);
 
 <aside>
   <div class="d-flex justify-content-between align-items-center">
-    <h2>Projet</h2>
+    <div class="d-flex justify-content-end">
+      <a href= "Traitement/SessionTraitement.php" class="btn btn-danger mr-1">Déconnexion</a>
+    </div>
+    <h2>Mes traveaux</h2>
     <a href="AddArticle.php" role="button" aria-pressed="true">Ajouter +</a>
   </div>
   <table class="table mt-1">

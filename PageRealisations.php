@@ -66,7 +66,7 @@ $projet = joinProjectOnImg($db);
     <div class="card col-4 bg-transparent text-light d-flex flex-column align-items-center">
       <h5 class="card-title textAlignC mt-1"><?php echo $value['projet_name']; ?></h5>
       <div class="">
-        <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="170">
+        <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
       </div>
       <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="<?php echo "#modal" . $value['projet_id'] ?>">
@@ -83,7 +83,7 @@ $projet = joinProjectOnImg($db);
                   <h5 class="modal-title" id="exampleModalLongTitle"><?php echo $value["projet_name"]; ?></h5>
                 </div>
                 <div class="">
-                  <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="Card image cap" height="180" width="170">
+                  <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
                 </div>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -94,6 +94,7 @@ $projet = joinProjectOnImg($db);
               <?php echo $value['projet_description']; ?>
             </div>
             <div class="modal-footer">
+              <a href = "<?php echo $value['projet_github']; ?>" type="button" class="btn btn-primary">GitHub</a>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Quitter</button>
             </div>
           </div>
