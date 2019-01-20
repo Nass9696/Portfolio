@@ -58,19 +58,15 @@
         <div class="row">
           <div class="col">
             <label for="exampleFormControlTextarea1">Votre Nom :</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="col">
-            <label for="exampleFormControlTextarea1">Prénom :</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" name="nom">
           </div>
         </div>
         <div class="form-group mt-4">
           <label for="exampleFormControlInput1">Votre adresse mail :</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" name="adresse_mail">
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="email">
         </div>
           <label for="exampleFormControlTextarea1">Votre Texte :</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text_mail"></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
           <button type="submit" class="btn btn-primary mt-3 bg-transparent border border-danger text-white">Envoyer</button>
         </div>
       </form>
