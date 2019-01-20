@@ -151,7 +151,7 @@ $projet = joinProjectOnImg($db);
     </div>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MOBIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TOUCHPAD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <div class = "RealisationTouchpad d-flex justify-content-center">
+  <div class = "RealisationTouchpad">
     <aside class="d-flex justify-content-between AsideRealisation flex-wrap">
     <?php foreach ($projet as $key => $value) { ?>
     <div class="card col-6 bg-transparent text-light d-flex flex-column align-items-center">
