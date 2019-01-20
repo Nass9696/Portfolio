@@ -13,7 +13,7 @@ $img = $_FILES['project_img'];
 if(!empty($img)){
   $path = 'img/' .$img['name'];
   //Si addImg est a true
-  if(addImg($img, $path,$db)){
+  if(addImg($img, $path, $form['img_alt'])){
     $lastid = getLastId($db);
       //Si lastidest a true
     if(!empty($lastid)){
