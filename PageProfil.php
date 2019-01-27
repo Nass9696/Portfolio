@@ -92,17 +92,18 @@ $biographie = getBio($db);
   <section class =  "mt-5">
     <h2 class = "text-center">COMPÉTENCES</h2>
     <aside class="container-fluid mt-5">
-      <div class = "d-flex justify-content-between col-12 align-items-center">
+      <div class = "d-flex justify-content-between col-12">
         <article class="col-4 ">
           <div class="d-flex flex-column align-items-center p-3">
             <i class="far fa-eye fa-3x text-center"></i>
             <h4 class = "text-center mt-1">Front-End</h3>
           </div>
           <div class="btRed p-3">
-            <p class = "">HTML, CSS</p>
-            <p class = "">JavaScript</p>
-            <p class = "">BootStrap 4</p>
-            <p class = "">Angular</p>
+            <img src="icon/html.jpg" alt="">HTML</img>
+            <img src="icon/css.jpg" alt="">CSS</img>
+            <img src="icon/html.jpg" alt="">JavaScript</img>
+            <img src="icon/boot.jpg" alt="">BootStrap 4</img>
+            <img src="icon/angular.jpg" alt="">Angular</img>
           </div>
         </article>
         <article class="col-4 ">
@@ -111,9 +112,8 @@ $biographie = getBio($db);
             <h4 class = "text-center mt-1">Back-End</h3>
           </div>
           <div class="btRed p-3">
-            <p class = "">PHP</p>
-            <p class = "">POO</p>
-            <p class = "">Symfony</p>
+            <img src="icon/php.jpg" height = "49" alt="">PHP(POO)</img>
+            <img src="icon/symfony.jpg" alt="" class = "text-light">Symfony</img>
           </div>
         </article>
       </div>
@@ -124,8 +124,8 @@ $biographie = getBio($db);
             <h4 class = "text-center mt-1">Serveur</h3>
           </div>
           <div class="btRed p-3">
-            <p class = "">MySQL</p>
-            <p class = "">SQL</p>
+            <img src="icon/mysql.jpg" alt="">MySQL</img>
+            <img src="icon/sql.jpg" alt="">SQL</img>
           </div>
         </article>
         <article class="col-4 ">
@@ -134,8 +134,8 @@ $biographie = getBio($db);
             <h4 class = "text-center mt-1">Gestion de projet</h3>
           </div>
           <div class="btRed p-3">
-            <p class = "">GitHub</p>
-            <p class = "">Linux</p>
+            <img src="icon/github.jpg" alt="">GitHub</img>
+            <img src="icon/linux.jpg" alt="">Linux</img>
           </div>
         </article>
       </div>
