@@ -89,54 +89,54 @@ $biographie = getBio($db);
       </article>
     </article>
   </section>
-  <section class = "bg-primary mt-5">
+  <section class =  "mt-5">
     <h2 class = "text-center">COMPÉTENCES</h2>
-    <aside class="container-fluid d-flex col-8 flex-wrap mt-5">
+    <aside class="container-fluid mt-5">
       <div class = "d-flex justify-content-between col-12 align-items-center">
-        <article class="col-4">
-          <div class="d-flex flex-column align-items-center">
-            <i class="far fa-eye fa-5x text-center"></i>
-            <h3 class = "text-center mt-1">Front-End</h3>
+        <article class="col-4 ">
+          <div class="d-flex flex-column align-items-center p-3">
+            <i class="far fa-eye fa-3x text-center"></i>
+            <h4 class = "text-center mt-1">Front-End</h3>
           </div>
-          <ul class = "ml-4 mt-1">
-            <li>HTML, CSS</li>
-            <li>BootStrap 4</li>
-            <li>Javascript</li>
-            <li>Angular</li>
-          </ul>
+          <div class="btRed p-3">
+            <p class = "">HTML, CSS</p>
+            <p class = "">JavaScript</p>
+            <p class = "">BootStrap 4</p>
+            <p class = "">Angular</p>
+          </div>
         </article>
-        <article class="col-4">
-          <div class="d-flex flex-column align-items-center">
-            <i class="fas fa-cogs fa-5x"></i>
-            <h3 class = "text-center mt-1">Back-End</h3>
+        <article class="col-4 ">
+          <div class="d-flex flex-column align-items-center p-3">
+            <i class="fas fa-cog fa-3x"></i>
+            <h4 class = "text-center mt-1">Back-End</h3>
           </div>
-          <ul class = "ml-4 mt-1">
-            <li>PHP</li>
-            <li>POO</li>
-            <li>Symphony</li>
-          </ul>
+          <div class="btRed p-3">
+            <p class = "">PHP</p>
+            <p class = "">POO</p>
+            <p class = "">Symfony</p>
+          </div>
         </article>
       </div>
-      <div class = "d-flex justify-content-between col-12 mt-5 align-items-center">
-        <article class="col-4">
-          <div class="d-flex flex-column align-items-center">
-            <i class="fas fa-server fa-5x"></i>
-            <h3 class = "text-center mt-1">Serveur</h3>
+      <div class = "d-flex justify-content-between col-12 mt-5">
+        <article class="col-4 ">
+          <div class="d-flex flex-column align-items-center p-3">
+            <i class="fas fa-server fa-3x"></i>
+            <h4 class = "text-center mt-1">Serveur</h3>
           </div>
-          <ul>
-            <li>SGBD : MySQL</li>
-            <li>SQL</li>
-          </ul>
+          <div class="btRed p-3">
+            <p class = "">MySQL</p>
+            <p class = "">SQL</p>
+          </div>
         </article>
-        <article class="">
-          <div class="d-flex flex-column align-items-center">
-            <i class="fas fa-project-diagram fa-5x"></i>
-            <h3 class = "text-center mt-1">Gestion de projet</h3>
+        <article class="col-4 ">
+          <div class="d-flex flex-column align-items-center p-3">
+            <i class="fas fa-project-diagram fa-3x"></i>
+            <h4 class = "text-center mt-1">Gestion de projet</h3>
           </div>
-          <ul>
-            <li>GitHub</li>
-            <li>Linux</li>
-          </ul>
+          <div class="btRed p-3">
+            <p class = "">GitHub</p>
+            <p class = "">Linux</p>
+          </div>
         </article>
       </div>
     </aside>
