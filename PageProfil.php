@@ -24,8 +24,7 @@ $biographie = getBio($db);
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
-</head>
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Ovo" rel="stylesheet"> </head>
 
 <body class = "BodyRulesIndex pt-5">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -89,53 +88,53 @@ $biographie = getBio($db);
       </article>
     </article>
   </section>
-  <section class =  "mt-5">
-    <h2 class = "text-center">COMPÉTENCES</h2>
+  <section class =  "mt-5 ">
+    <h2 class = "text-center back">COMPÉTENCES</h2>
     <aside class="container-fluid mt-5">
       <div class = "d-flex justify-content-between col-12">
-        <article class="col-4 ">
+        <article class="col-4 backOpacityBlack rounded">
           <div class="d-flex flex-column align-items-center p-3">
             <i class="far fa-eye fa-3x text-center"></i>
             <h4 class = "text-center mt-1">Front-End</h3>
           </div>
-          <div class="btRed p-3">
-            <img src="icon/html.jpg" alt="">HTML</img>
-            <img src="icon/css.jpg" alt="">CSS</img>
-            <img src="icon/html.jpg" alt="">JavaScript</img>
-            <img src="icon/boot.jpg" alt="">BootStrap 4</img>
-            <img src="icon/angular.jpg" alt="">Angular</img>
+          <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
+            <img src="icon/html.jpg" alt="HTML"/>
+            <img src="icon/css.jpg" alt="CSS"/>
+            <img src="icon/js.jpg" alt="JS" height = "45"/>
+            <img src="icon/boot.jpg" alt="Bootstrap"/>
+            <img src="icon/angular.jpg" alt="Angular"/>
           </div>
         </article>
-        <article class="col-4 ">
+        <article class="col-4 backOpacityBlack rounded">
           <div class="d-flex flex-column align-items-center p-3">
             <i class="fas fa-cog fa-3x"></i>
             <h4 class = "text-center mt-1">Back-End</h3>
           </div>
-          <div class="btRed p-3">
-            <img src="icon/php.jpg" height = "49" alt="">PHP(POO)</img>
-            <img src="icon/symfony.jpg" alt="" class = "text-light">Symfony</img>
+          <div class="btRed p-3 d-flex">
+            <img src="icon/php.jpg" height = "49" alt=""/>
+            <img src="icon/symfony.jpg" alt="" class = "text-light"/>
           </div>
         </article>
       </div>
-      <div class = "d-flex justify-content-between col-12 mt-5">
-        <article class="col-4 ">
+      <div class = "d-flex justify-content-between col-12 mt-5 align-items-center">
+        <article class="col-4 backOpacityBlack rounded">
           <div class="d-flex flex-column align-items-center p-3">
             <i class="fas fa-server fa-3x"></i>
             <h4 class = "text-center mt-1">Serveur</h3>
           </div>
           <div class="btRed p-3">
-            <img src="icon/mysql.jpg" alt="">MySQL</img>
-            <img src="icon/sql.jpg" alt="">SQL</img>
+            <img src="icon/mysql.jpg" alt="MySQL"/>
+            <img src="icon/sql.jpg" alt="SQL"/>
           </div>
         </article>
-        <article class="col-4 ">
+        <article class="col-4 backOpacityBlack rounded">
           <div class="d-flex flex-column align-items-center p-3">
             <i class="fas fa-project-diagram fa-3x"></i>
             <h4 class = "text-center mt-1">Gestion de projet</h3>
           </div>
           <div class="btRed p-3">
-            <img src="icon/github.jpg" alt="">GitHub</img>
-            <img src="icon/linux.jpg" alt="">Linux</img>
+            <img src="icon/github.jpg" alt="GitHub"/>
+            <img src="icon/linux.jpg" alt="Linux"/>
           </div>
         </article>
       </div>
@@ -164,7 +163,7 @@ $biographie = getBio($db);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<footer class = " footerSize flex column spaceBetween justifyCenter textAlignC backOpacityBlack white marginT">
+<footer class = " footerSize flex column spaceBetween justifyCenter textAlignC white marginT">
   <h3 class = "underline">Vous pouvez aussi me retrouver sur :</h3>
   <nav class = "flex row spaceAround justifyCenter">
     <span>

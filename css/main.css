@@ -104,7 +104,10 @@ textarea {
   background-image: url("../img/smoke.jpg");
   background-position: center;
   background-size: cover;
-  font-family: cursive;
+  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Ovo', serif;
+
+
 }
 
 footer a:hover {
@@ -196,6 +199,9 @@ a {
   background-color: black;
 }
 
+.backOpacityBlack {
+  background-color: rgba(0,0,0,0.7)
+}
 /***************************COLORS CLASS***************************/
 
 /***************************UTILITIES CLASS***************************/

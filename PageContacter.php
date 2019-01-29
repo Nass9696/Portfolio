@@ -15,8 +15,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
-</head>
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Ovo" rel="stylesheet"> </head>
 
 <body class = "BodyRulesIndex">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -54,7 +53,7 @@
 <main>
   <section>
     <aside class = "AsideContact white padding">
-      <form method="post" action="ContacterTraitement.php">
+      <form method="post" action="ContacterTraitement.php" class = "col-5">
         <div class="row">
           <div class="col">
             <label for="exampleFormControlTextarea1">Votre Nom :</label>
@@ -80,7 +79,7 @@
     </nav>
     <nav class = "NavIconeContactDekstop column spaceAround">
       <div class = "flex column alignItemCenter hoverColorRed">
-        <h2 class = "underline">Par Téléphone</h2>
+        <h2 class = "underline">Portable</h2>
         <p>+33622752818</p>
         <h2 class = "underline">Par E-mail</h2>
         <a href="mailto:dev.nassim.pro@gmail.com">dev.nassim.pro@gmail.com</a>
