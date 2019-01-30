@@ -105,14 +105,19 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Fredericka the Great', cursive;
-  font-family: 'Ovo', serif;
+  font-family: 'Courgette', cursive;
 }
 
 .FullPageContact{
   display: flex;
 	flex-direction: column;
-	min-height: 60vh;
+	min-height: 65vh;
+}
+
+.FullPageRealisation{
+  display: flex;
+	flex-direction: column;
+	min-height: 53.5vh;
 }
 
 footer a:hover {
@@ -300,6 +305,10 @@ a {
 
 .borderT {
   border-top: 1px solid red;
+}
+
+.borderL {
+  border-left: 1px solid red;
 }
 
 .Copy {

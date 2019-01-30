@@ -13,7 +13,7 @@ $biographie = getBio($db);
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>PROFIL</title>
+  <title>NG | Profil</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -24,8 +24,7 @@ $biographie = getBio($db);
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Ovo" rel="stylesheet"> </head>
-
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Courgette" rel="stylesheet">
 <body class = "BodyRulesIndex pt-5">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
@@ -41,15 +40,15 @@ $biographie = getBio($db);
         <div class="NavBar navbar-nav hoverUnderline">
           <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
             <i class="fas fa-user-alt white"></i>
-            <a class="nav-item nav-link text-white ml-2" href="PageProfil.php">A propos</a>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageProfil.php">A propos</a>
           </div>
           <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
             <i class="fas fa-toolbox white"></i>
-            <a class="nav-item nav-link text-white ml-2" href="PageRealisations.php">Réalisations</a>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageRealisations.php">Réalisations</a>
           </div>
           <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
             <i class="fas fa-phone  white"></i>
-            <a class="nav-item nav-link text-white ml-2" href="PageContacter.php">Contacter</a>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageContacter.php">Contacter</a>
           </div>
         </div>
       </div>
@@ -61,15 +60,15 @@ $biographie = getBio($db);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main class = "MainOtherPages white">
   <section class = "SectionProfil flex column">
-    <h2 class = "underline textAlignC">Qui suis-je ?</h2>
+    <h2 class = "underline textAlignC policeTitle">Qui suis-je ?</h2>
     <article class = "ArticlePageProfil flex column spaceAround alignItemCenter">
       <div class = "ImageBlock Fullwidth flex justifyCenter alignItemCenter">
         <img class = "stylePicture" src="img/nassim.jpg" alt="Photo de profil"/>
       </div>
       <article class = "BlockInformations flex column alignItemCenter  marginT Fullwidth">
         <div class = "Biographies">
-          <h2 class = "underline textAlignC">Biographie</h2>
-          <p class = "marginL">
+          <h2 class = "underline textAlignC policeTitle">Biographie</h2>
+          <p class = "marginL policeText">
             <?php echo $biographie['bio_text']; ?>
             <!-- Bonjour, je m'appelle Nassim Gacem et je suis un passioné du monde numérique. On peut dire que, je suis tombé dans la programmation en étant jeune.
             J'ai réalisé mes premier programmes à l'âge de 14 ans, j'ai notemment démarrer avec les languages C++ et Lua, pour ceux qui connaissent j'ai exprimé ma créativité dans Garry's Mod.

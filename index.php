@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>GACEM NASSIM</title>
+  <title>Nassim Gacem | Développeur Web Junior</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -15,14 +15,14 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Ovo" rel="stylesheet"> 
-<body class = "BodyRulesIndex">
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Courgette" rel="stylesheet">
+ <body class = "BodyRulesIndex">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header class = "textAlignC flex justifyCenter alignItemCenter white">
   <section id="landing">
-    <h1>GACEM NASSIM</h1>
+    <h1 class = "policeTitle">GACEM NASSIM</h1>
     <hr>
-    <p>Développeur Web Junior</p>
+    <h3 class = "policeText">Développeur Web Junior</h3>
   </section>
 </header>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -32,19 +32,19 @@
   <nav class = "Navigation hoverUnderline flex column spaceAround alignItemCenter">
     <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin textAlignC ">
       <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageProfil.php">
-        <span>MON PROFIL</span>
+        <span class = "policeTitle">MON PROFIL</span>
       </a>
       <i class="far fa-user-circle fa-8x index0 absolute"></i>
     </div>
     <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
       <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageRealisations.php">
-        <span>RÉALISATIONS</span>
+        <span class = "policeTitle">RÉALISATIONS</span>
       </a>
         <i class="Tools fas fa-toolbox fa-8x index0 absolute"></i>
     </div>
     <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
       <a  class = "flex justifyCenter alignItemCenter indexFirst" href="PageContacter.php">
-        <span>CONTACTER</span>
+        <span class = "policeTitle">CONTACTER</span>
       </a>
       <i class="fas fa-mobile-alt fa-8x index0 absolute"></i>
     </div>

@@ -12,7 +12,7 @@ $projet = joinProjectOnImg($db);
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>RÉALISATIONS</title>
+    <title>NG | Réalisation</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -22,8 +22,7 @@ $projet = joinProjectOnImg($db);
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Ovo" rel="stylesheet">   </head>
-
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Courgette" rel="stylesheet"> 
 <body class = "BodyRulesIndex pt-5">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
@@ -57,7 +56,7 @@ $projet = joinProjectOnImg($db);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main class = "MainOtherPages">
+<main class = "MainOtherPages FullPageRealisation">
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <div class = "d-none d-lg-block">
     <aside class="d-lg-flex justify-content-center AsideRealisation flex-lg-wrap col-12">

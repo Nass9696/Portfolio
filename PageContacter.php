@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>CONTACTER</title>
+  <title>NG | Contacter</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -15,8 +15,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Ovo" rel="stylesheet"> </head>
-
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Courgette" rel="stylesheet"> 
 <body class = "BodyRulesIndex">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
@@ -57,7 +56,7 @@
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP MEDIUM~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <section class = "d-none d-md-block d-md-flex align-items-center">
     <aside class = "d-flex flex-xs-column flex-sm-row justify-content-sm-around align-items-center white">
-      <p class = "col-md-5 col-sm-4">
+      <p class = "col-md-5 col-sm-4 borderL">
         Dans le cadre de ma formation de développeur web, je suis actuellement à la recherche d'un stage à compter d'avril 2019. Surtout, n'hésitez pas à me contacter, je serai ravi de collaborer avec vous afin de développer mes compétences et amener de nouvelles idées.
       </p>
     <nav class = "d-lg-none d-xs-block d-md-none col-6">
