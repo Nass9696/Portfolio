@@ -88,7 +88,7 @@ $biographie = getBio($db);
       </article>
     </article>
   </section>
-  <section class =  "mt-5 ">
+  <section class =  "mt-5">
     <h2 class = "text-center back">COMPÉTENCES</h2>
     <aside class="container-fluid mt-5">
       <div class = "d-flex justify-content-between col-12">

@@ -50,43 +50,68 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main>
-  <section>
-    <aside class = "AsideContact white padding">
-      <form method="post" action="ContacterTraitement.php" class = "col-5">
-        <div class="row">
-          <div class="col">
-            <label for="exampleFormControlTextarea1">Votre Nom :</label>
-            <input type="text" class="form-control" name="nom">
-          </div>
+<main class = "container col-12 row heightEm">
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TouchPad~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <section class = "d-none d-sm-block d-md-none d-sm-flex align-items-center">
+    <aside class = "d-flex flex-xs-column flex-sm-row justify-content-sm-around align-items-center white">
+      <p class = "col-md-5 col-sm-4">
+        Dans le cadre de ma formation de développeur web, je suis actuellement à la recherche d'un stage à compter d'avril 2019. Surtout, n'hésitez pas à me contacter, je serai ravi de collaborer avec vous afin de développer mes compétences et amener de nouvelles idées.
+      </p>
+    <nav class = "d-lg-none d-xs-block col-6">
+      <div class = "d-flex flex-row alignItemCenter justify-content-around hoverColorRed">
+        <div class="d-flex flex-column align-items-center">
+          <h2 class = "underline">Mobil</h2>
+          <a href = "tel:+33622752818"><i class="fas fa-phone-square fa-3x"></i></a>
         </div>
-        <div class="form-group mt-4">
-          <label for="exampleFormControlInput1">Votre adresse mail :</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" name="email">
+        <div class="d-flex flex-column align-items-center">
+          <h2 class = "underline">E-mail</h2>
+          <a href="mailto:dev.nassim.pro@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
         </div>
-          <label for="exampleFormControlTextarea1">Votre Texte :</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
-          <button type="submit" class="btn btn-primary mt-3 bg-transparent border border-danger text-white">Envoyer</button>
-        </div>
-      </form>
-    <nav class = "NavIconeContact column spaceAround">
-      <div class = "flex column alignItemCenter hoverColorRed">
-        <h2 class = "underline">Par Téléphone</h2>
-        <a href = "tel:+33622752818"><i class="fas fa-phone-square fa-3x"></i></a>
-        <h2 class = "underline">Par E-mail</h2>
-        <a href="mailto:dev.nassim.pro@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
       </div>
     </nav>
-    <nav class = "NavIconeContactDekstop column spaceAround">
+    <nav class = "d-none d-lg-block">
       <div class = "flex column alignItemCenter hoverColorRed">
         <h2 class = "underline">Portable</h2>
         <p>+33622752818</p>
-        <h2 class = "underline">Par E-mail</h2>
+        <h2 class = "underline">E-mail</h2>
         <a href="mailto:dev.nassim.pro@gmail.com">dev.nassim.pro@gmail.com</a>
       </div>
     </nav>
   </aside>
 </section>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TouchPad~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Mobil~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <section class = "d-block d-sm-none d-flex align-items-center">
+    <aside class = "d-xs-flex flex-xs-column flex-sm-row white">
+      <p class = "col-md-5 col-sm-4">
+        Dans le cadre de ma formation de développeur web, je suis actuellement à la recherche d'un stage à compter d'avril 2019. Surtout, n'hésitez pas à me contacter, je serai ravi de collaborer avec vous afin de développer mes compétences et amener de nouvelles idées.
+      </p>
+    <nav class = "d-lg-none d-xs-block">
+      <div class = "d-flex flex-row alignItemCenter justify-content-around hoverColorRed col-12">
+        <div class="d-flex flex-column align-items-center">
+          <h2 class = "underline">Mobil</h2>
+          <a href = "tel:+33622752818"><i class="fas fa-phone-square fa-3x"></i></a>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+          <h2 class = "underline">E-mail</h2>
+          <a href="mailto:dev.nassim.pro@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
+        </div>
+      </div>
+    </nav>
+    <nav class = "d-none d-lg-block">
+      <div class = "flex column alignItemCenter hoverColorRed">
+        <h2 class = "underline">Portable</h2>
+        <p>+33622752818</p>
+        <h2 class = "underline">E-mail</h2>
+        <a href="mailto:dev.nassim.pro@gmail.com">dev.nassim.pro@gmail.com</a>
+      </div>
+    </nav>
+  </aside>
+</section>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Mobil~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 

@@ -118,7 +118,7 @@ $projet = joinProjectOnImg($db);
           Voir ici !
         </button>
 
-        <!-- Modal -->
+        <!-- Modal Mobil-->
         <div class="modal fade mt-4" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="false">
           <div class="modal" role="document">
             <div class="modal-content bg-dark">

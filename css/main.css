@@ -357,6 +357,9 @@ a {
   height: 20em;
 }
 
+.heightEm{
+  height: 26em;
+}
 .stylePicture{
 
   border: 3px solid white;
@@ -691,12 +694,6 @@ footer {
   justify-content: space-around;
   background-color: transparent;
   width: 100%;
-}
-
-.AsideContact {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .NavIconeContact {
