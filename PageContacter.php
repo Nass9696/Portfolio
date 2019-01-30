@@ -50,9 +50,39 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main class = "container col-12 row heightEm">
-  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<main class = "FullPageContact justify-content-center">
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP Large~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP Large~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP MEDIUM~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <section class = "d-none d-md-block d-md-flex align-items-center">
+    <aside class = "d-flex flex-xs-column flex-sm-row justify-content-sm-around align-items-center white">
+      <p class = "col-md-5 col-sm-4">
+        Dans le cadre de ma formation de développeur web, je suis actuellement à la recherche d'un stage à compter d'avril 2019. Surtout, n'hésitez pas à me contacter, je serai ravi de collaborer avec vous afin de développer mes compétences et amener de nouvelles idées.
+      </p>
+    <nav class = "d-lg-none d-xs-block d-md-none col-6">
+      <div class = "d-flex flex-row alignItemCenter justify-content-around hoverColorRed">
+        <div class="d-flex flex-column align-items-center">
+          <h2 class = "underline">Mobil</h2>
+          <a href = "tel:+33622752818"><i class="fas fa-phone-square fa-3x"></i></a>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+          <h2 class = "underline">E-mail</h2>
+          <a href="mailto:dev.nassim.pro@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
+        </div>
+      </div>
+    </nav>
+    <nav class = "d-none d-lg-block d-none d-md-block">
+      <div class = "flex column alignItemCenter hoverColorRed">
+        <h2 class = "underline">Portable</h2>
+        <p>+33622752818</p>
+        <h2 class = "underline">E-mail</h2>
+        <a href="mailto:dev.nassim.pro@gmail.com">dev.nassim.pro@gmail.com</a>
+      </div>
+    </nav>
+  </aside>
+</section>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP MEDIUM~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TouchPad~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <section class = "d-none d-sm-block d-md-none d-sm-flex align-items-center">
     <aside class = "d-flex flex-xs-column flex-sm-row justify-content-sm-around align-items-center white">
@@ -86,7 +116,7 @@
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Mobil~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <section class = "d-block d-sm-none d-flex align-items-center">
     <aside class = "d-xs-flex flex-xs-column flex-sm-row white">
-      <p class = "col-md-5 col-sm-4">
+      <p class = "container d-flex">
         Dans le cadre de ma formation de développeur web, je suis actuellement à la recherche d'un stage à compter d'avril 2019. Surtout, n'hésitez pas à me contacter, je serai ravi de collaborer avec vous afin de développer mes compétences et amener de nouvelles idées.
       </p>
     <nav class = "d-lg-none d-xs-block">
