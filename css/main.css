@@ -501,15 +501,9 @@ a {
   /***************************END MEDIA QUERY PROFIL.HTML**************************/
 
   /***************************START MEDIA QUERY REALISATION.HTML**************************/
-  .RealisationDesktop{
-    display: none;
-  }
   .AsideRealisation {
   width: 100%;
 }
-  .RealisationTouchpad {
-    display: none;
-  }
   /***************************END MEDIA QUERY REALISATION.HTML**************************/
 
 }
@@ -565,22 +559,11 @@ footer {
 
 /***************************START MEDIA QUERY RÉALISATIONS.HTML**************************/
 
-.RealisationMobil {
-  display: none;
-}
-
-.RealisationDesktop{
-  display: none;
-}
-
 .AsideRealisation {
   width: 100%;
   height: 100%;
 }
 
-.RealisationTouchpad {
-  display: flex;
-}
 /***************************END MEDIA QUERY RÉALISATIONS.HTML**************************/
 
 /***************************START MEDIA QUERY CONTACT.HTML**************************/
@@ -671,17 +654,6 @@ footer {
 /***************************END MEDIA QUERY PROFIL.HTML**************************/
 
 /***************************START MEDIA QUERY RÉALISATIONS.HTML**************************/
-.RealisationDesktop{
-  display: flex;
-}
-
-.RealisationMobil{
-  display: none;
-}
-
-.RealisationTouchpad{
-  display: none;
-}
 
 .AsideRealisation {
   width: 100em;
