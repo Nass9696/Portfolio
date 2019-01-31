@@ -314,6 +314,14 @@ a {
   border-left: 1px solid red;
 }
 
+.borderB {
+  border-bottom: 1px solid red;
+}
+
+.FullBorder {
+  border: 1px solid red;
+}
+
 .Copy {
   width: 30em;
 }

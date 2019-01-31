@@ -140,21 +140,21 @@ $biographie = getBio($db);
       </div>
     </aside>
     <!---~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBIL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~---------->
-    <aside class="d-block d-sm-none container-fluid bg-danger">
+    <aside class="d-block d-sm-none container-fluid mt-4">
       <!-- FIRST BLOCK -->
-      <div class = " d-flex flex-row justify-content-between align-items-center">
-        <div class="card col-5 bg-primary d-flex flex-column align-items-center">
-          <div class="card-body">
+      <div class = " d-flex flex-row justify-content-between align-items-center mb-5">
+        <div class="card col-5 d-flex flex-column align-items-center backOpacityBlack">
+          <div class="card-body d-flex flex-column align-items-center p-3">
             <h5 class="card-title text-center">Front-end</h5>
+            <i class="far fa-eye fa-2x text-center"></i>
           </div>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm#front">Small modal</button>
+            <button type="button" class="btn rounded-circle FullBorder backblack z-index-1" data-toggle="modal" data-target=".bd-example-modal-sm#front"><i class="far fa-hand-point-up"></i></button>
           </div>
           <!-- MODAL -->
         <div class="modal fade bd-example-modal-sm" id="front" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-            <div class="modal-content text-dark">
-              <hr>
-              <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
+            <div class="modal-body backblack rounded">
+              <div class="btRed borderB p-3 d-flex justify-content-around flex-wrap align-items-center">
                 <img src="icon/html.jpg" alt="HTML"/>
                 <img src="icon/css.jpg" alt="CSS"/>
                 <img src="icon/js.jpg" alt="JS" height = "45"/>
@@ -165,18 +165,18 @@ $biographie = getBio($db);
           </div>
         </div>
 
-        <div class="card col-5 bg-primary d-flex flex-column align-items-center">
-          <div class="card-body">
+        <div class="card col-5 backblack d-flex flex-column align-items-center">
+          <div class="card-body d-flex flex-column align-items-center p-3">
             <h5 class="card-title text-center">Back-end</h5>
+            <i class="fas fa-cog fa-2x"></i>
           </div>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm#back">Small modal</button>
+          <button type="button" class="btn rounded-circle FullBorder backblack" data-toggle="modal" data-target=".bd-example-modal-sm#back"><i class="far fa-hand-point-up"></i></button>
         </div>
 
         <div class="modal fade bd-example-modal-sm" id="back" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-            <div class="modal-content text-dark">
-              <hr>
-              <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center p-3 bg-warning">
+            <div class="modal-body backblack rounded">
+              <div class="btRed borderB p-3 d-flex justify-content-around flex-wrap align-items-center p-3">
                   <img src="icon/php.jpg" height = "49" alt=""/>
                   <img src="icon/symfony.jpg" height = "49" alt="" class = "text-light"/>
               </div>
@@ -185,37 +185,37 @@ $biographie = getBio($db);
         </div>
       </div>
       <!-- SECOND BLOCK -->
-      <div class = " d-flex flex-row justify-content-between align-items-center">
-        <div class="card col-5 bg-primary d-flex flex-column align-items-center">
-          <div class="card-body">
-            <h5 class="card-title text-center">Serveur</h5>
+      <div class = " d-flex flex-row justify-content-between align-items-center mt-5">
+        <div class="card col-5 backOpacityBlack d-flex flex-column align-items-center">
+          <div class="card-body d-flex flex-column align-items-center p-3">
+            <h5 class="card-title text-center">BDD</h5>
+            <i class="fas fa-database fa-2x"></i>
           </div>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm#serveur">Small modal</button>
+          <button type="button" class="btn rounded-circle FullBorder backblack" data-toggle="modal" data-target=".bd-example-modal-sm#serveur"><i class="far fa-hand-point-up"></i></button>
         </div>
         <!-- MODAL -->
         <div class="modal fade bd-example-modal-sm" id= "serveur" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-            <div class="modal-content text-dark">
-              <hr>
-              <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
+          <div class="modal-dialog modal-sm modal-dialog-centered" role="dialog">
+            <div class="modal-body backblack rounded">
+              <div class="btRed borderB p-3 d-flex justify-content-around flex-wrap align-items-center">
                 <img src="icon/mysql.jpg" alt="MySQL"/>
                 <img src="icon/sql.jpg" alt="SQL"/>
               </div>
             </div>
           </div>
         </div>
-        <div class="card col-5 bg-primary d-flex flex-column align-items-center">
-          <div class="card-body">
+        <div class="card col-5 backOpacityBlack d-flex flex-column align-items-center">
+          <div class="card-body d-flex flex-column align-items-center p-3">
             <h5 class="card-title text-center">Autres...</h5>
+            <i class="fas fa-project-diagram fa-2x"></i>
           </div>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm#autre">Small modal</button>
+          <button type="button" class="btn rounded-circle FullBorder backblack" data-toggle="modal" data-target=".bd-example-modal-sm#autre"><i class="far fa-hand-point-up"></i></button>
 
           <!-- MODAL -->
           <div class="modal fade bd-example-modal-sm" id= "autre" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-              <div class="modal-content text-dark">
-                <hr>
-                <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
+              <div class="modal-body backblack rounded">
+                <div class="btRed borderB p-3 d-flex justify-content-around flex-wrap align-items-center">
                   <img src="icon/github.jpg" alt="GitHub"/>
                   <img src="icon/linux.jpg" alt="Linux"/>
                   <img src="icon/git.jpg" alt="Linux"/>
