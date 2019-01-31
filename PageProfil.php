@@ -61,9 +61,9 @@ $biographie = getBio($db);
 <main class = "MainOtherPages white">
   <section class = "SectionProfil flex column">
     <h2 class = "underline textAlignC policeTitle">Qui suis-je ?</h2>
-    <article class = "ArticlePageProfil flex column spaceAround alignItemCenter">
+    <article class = "ArticlePageProfil flex column spaceAround alignItemCenter mt-5">
       <div class = "ImageBlock Fullwidth flex justifyCenter alignItemCenter">
-        <img class = "stylePicture" src="img/nassim.jpg" alt="Photo de profil" height="100"/>
+        <img class = "stylePicture" src="img/nassim.jpg" alt="Photo de profil"/>
       </div>
       <article class = "BlockInformations flex column alignItemCenter  marginT Fullwidth">
         <div class = "Biographies">
@@ -89,8 +89,8 @@ $biographie = getBio($db);
   </section>
   <section class =  "mt-5">
     <h2 class = "text-center back">COMPÉTENCES</h2>
-    <aside class="container-fluid mt-5">
-      <div class = "d-flex justify-content-between col-12">
+    <aside class="container-fluid mt-5 bg-primary d-none d-sm-block">
+      <div class = "d-flex justify-content-sm-between justify-content-md-between justify-content-lg-between">
         <article class="col-4 backOpacityBlack rounded">
           <div class="d-flex flex-column align-items-center p-3">
             <i class="far fa-eye fa-3x text-center"></i>
@@ -104,24 +104,24 @@ $biographie = getBio($db);
             <img src="icon/angular.jpg" alt="Angular"/>
           </div>
         </article>
-        <article class="col-4 backOpacityBlack rounded">
+        <article class="col-4 backOpacityBlack">
           <div class="d-flex flex-column align-items-center p-3">
             <i class="fas fa-cog fa-3x"></i>
             <h4 class = "text-center mt-1">Back-End</h3>
           </div>
-          <div class="btRed p-3 d-flex">
-            <img src="icon/php.jpg" height = "49" alt=""/>
-            <img src="icon/symfony.jpg" alt="" class = "text-light"/>
+          <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center p-3 bg-warning">
+              <img src="icon/php.jpg" height = "49" alt=""/>
+              <img src="icon/symfony.jpg" height = "49" alt="" class = "text-light"/>
           </div>
         </article>
       </div>
-      <div class = "d-flex justify-content-between col-12 mt-5 align-items-center">
+      <div class = "d-flex justify-content-sm-between justify-content-md-between justify-content-lg-between">
         <article class="col-4 backOpacityBlack rounded">
           <div class="d-flex flex-column align-items-center p-3">
-            <i class="fas fa-server fa-3x"></i>
+            <i class="fas fa-database fa-3x"></i>
             <h4 class = "text-center mt-1">Base de données</h3>
           </div>
-          <div class="btRed p-3">
+          <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
             <img src="icon/mysql.jpg" alt="MySQL"/>
             <img src="icon/sql.jpg" alt="SQL"/>
           </div>
@@ -131,12 +131,100 @@ $biographie = getBio($db);
             <i class="fas fa-project-diagram fa-3x"></i>
             <h4 class = "text-center mt-1">Autres..</h3>
           </div>
-          <div class="btRed p-3">
+          <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
             <img src="icon/github.jpg" alt="GitHub"/>
             <img src="icon/linux.jpg" alt="Linux"/>
+            <img src="icon/git.jpg" alt="Linux"/>
           </div>
         </article>
       </div>
+    </aside>
+    <!---~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBIL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~---------->
+    <aside class="d-block d-sm-none container-fluid bg-danger">
+      <!-- FIRST BLOCK -->
+      <div class = " d-flex flex-row justify-content-between align-items-center">
+        <div class="card col-5 bg-primary d-flex flex-column align-items-center">
+          <div class="card-body">
+            <h5 class="card-title text-center">Front-end</h5>
+          </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm#front">Small modal</button>
+          </div>
+          <!-- MODAL -->
+        <div class="modal fade bd-example-modal-sm" id="front" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content text-dark">
+              <hr>
+              <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
+                <img src="icon/html.jpg" alt="HTML"/>
+                <img src="icon/css.jpg" alt="CSS"/>
+                <img src="icon/js.jpg" alt="JS" height = "45"/>
+                <img src="icon/boot.jpg" alt="Bootstrap"/>
+                <img src="icon/angular.jpg" alt="Angular"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card col-5 bg-primary d-flex flex-column align-items-center">
+          <div class="card-body">
+            <h5 class="card-title text-center">Back-end</h5>
+          </div>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm#back">Small modal</button>
+        </div>
+
+        <div class="modal fade bd-example-modal-sm" id="back" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content text-dark">
+              <hr>
+              <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center p-3 bg-warning">
+                  <img src="icon/php.jpg" height = "49" alt=""/>
+                  <img src="icon/symfony.jpg" height = "49" alt="" class = "text-light"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECOND BLOCK -->
+      <div class = " d-flex flex-row justify-content-between align-items-center">
+        <div class="card col-5 bg-primary d-flex flex-column align-items-center">
+          <div class="card-body">
+            <h5 class="card-title text-center">Serveur</h5>
+          </div>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm#serveur">Small modal</button>
+        </div>
+        <!-- MODAL -->
+        <div class="modal fade bd-example-modal-sm" id= "serveur" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content text-dark">
+              <hr>
+              <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
+                <img src="icon/mysql.jpg" alt="MySQL"/>
+                <img src="icon/sql.jpg" alt="SQL"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-5 bg-primary d-flex flex-column align-items-center">
+          <div class="card-body">
+            <h5 class="card-title text-center">Autres...</h5>
+          </div>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm#autre">Small modal</button>
+
+          <!-- MODAL -->
+          <div class="modal fade bd-example-modal-sm" id= "autre" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+              <div class="modal-content text-dark">
+                <hr>
+                <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
+                  <img src="icon/github.jpg" alt="GitHub"/>
+                  <img src="icon/linux.jpg" alt="Linux"/>
+                  <img src="icon/git.jpg" alt="Linux"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
     </aside>
   </section>
   <!--

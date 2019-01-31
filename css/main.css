@@ -172,6 +172,9 @@ a {
   width: 50%;
 }
 
+.phone{
+  @media screen
+}
 /*********************OTHER PAGES***************/
 
 /***************************GENERAL RULES***************************/
@@ -494,6 +497,7 @@ a {
 /***************************|END CONTACT.HTML|***************************/
 /**********************************************************************/
 /***************************====START MOBIL====***************************/
+}
 @media screen and (min-width: 300px){
   /***************************START MEDIA QUERY PROFIL.HTML**************************/
   .ArticleCompetence {
@@ -504,7 +508,7 @@ a {
   }
 
   .stylePicture {
-    height: 20em;
+    height: 22em;
     width: 15em;
   }
   /***************************END MEDIA QUERY PROFIL.HTML**************************/
@@ -647,7 +651,7 @@ footer {
 }
 
 .ImageBlock {
-  width: 30%;
+  width: 22%;
 }
 
 .Biographies {
