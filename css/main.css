@@ -172,9 +172,6 @@ a {
   width: 50%;
 }
 
-.phone{
-  @media screen
-}
 /*********************OTHER PAGES***************/
 
 /***************************GENERAL RULES***************************/
@@ -515,10 +512,6 @@ a {
     align-items: center;
   }
 
-  .stylePicture {
-    height: 22em;
-    width: 15em;
-  }
   /***************************END MEDIA QUERY PROFIL.HTML**************************/
 
   /***************************START MEDIA QUERY REALISATION.HTML**************************/
@@ -571,6 +564,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 
 /************MAIN**********/
 /************FOOTER**********/
@@ -658,18 +652,13 @@ footer {
   width: 20em;
 }
 
-.ImageBlock {
-  width: 22%;
-}
+
 
 .Biographies {
   width: 40em;
 }
 
-.stylePicture {
-  height: auto;
-  width: auto;
-}
+
 /************MAIN**********/
 
 /***************************END MEDIA QUERY PROFIL.HTML**************************/

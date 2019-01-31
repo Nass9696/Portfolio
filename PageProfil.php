@@ -62,7 +62,7 @@ $biographie = getBio($db);
   <section class = "SectionProfil flex column">
     <h2 class = "underline textAlignC policeTitle">Qui suis-je ?</h2>
     <article class = "ArticlePageProfil flex column spaceAround alignItemCenter mt-5">
-      <div class = "ImageBlock Fullwidth flex justifyCenter alignItemCenter">
+      <div class = "ImageBlock col-7 col-md-3 Fullwidth flex justifyCenter alignItemCenter">
         <img class = "stylePicture" src="img/nassim.jpg" alt="Photo de profil"/>
       </div>
       <article class = "BlockInformations flex column alignItemCenter  marginT Fullwidth">
