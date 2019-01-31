@@ -56,7 +56,7 @@ $projet = joinProjectOnImg($db);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main class = "MainOtherPages FullPageRealisation">
+<main class = "MainOtherPages ">
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <div class = "d-none d-lg-block">
     <aside class="d-lg-flex justify-content-center AsideRealisation flex-lg-wrap col-12">

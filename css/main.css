@@ -114,10 +114,9 @@ textarea {
 	min-height: 65vh;
 }
 
-.FullPageRealisation{
-  display: flex;
-	flex-direction: column;
-	min-height: 53.5vh;
+main {
+	flex: 1;
+  padding: 2rem;
 }
 
 footer a:hover {
@@ -527,9 +526,9 @@ a {
 @media screen and (min-width: 500px) {
 
 /********GENERAL RULES*********/
-footer {
+/* footer {
   height: auto;
-}
+} */
 /********GENERAL RULES*********/
 
 /***************************START MEDIA QUERY INDEX.HTML**************************/
@@ -600,9 +599,9 @@ footer {
 @media screen and (min-width: 992px) {
 
 /********GENERAL RULES*********/
-footer {
+/* footer {
   height: auto;
-}
+} */
 /********GENERAL RULES*********/
 
 /***************************START MEDIA QUERY INDEX.HTML**************************/
