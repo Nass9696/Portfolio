@@ -120,8 +120,6 @@
     </nav>
     <nav class = "d-none d-lg-block">
       <div class = "flex column alignItemCenter hoverColorRed">
-        <h2 class = "underline">Portable</h2>
-        <p>+33622752818</p>
         <h2 class = "underline">E-mail</h2>
         <a href="mailto:dev.nassim.pro@gmail.com">dev.nassim.pro@gmail.com</a>
       </div>

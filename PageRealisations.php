@@ -22,7 +22,7 @@ $projet = joinProjectOnImg($db);
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Cookie|Courgette" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Courgette" rel="stylesheet">
 <body class = "BodyRulesIndex pt-5">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
@@ -67,14 +67,14 @@ $projet = joinProjectOnImg($db);
         <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
       </div>
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="<?php echo "#modal" . $value['projet_id'] ?>">
+      <button type="button" class="btn FullBorder mt-3 backblack text-light" data-toggle="modal" data-target="<?php echo "#modal" . $value['projet_id'] ?>">
         Voir ici !
       </button>
 
       <!-- Modal -->
       <div class="modal fade mt-4" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog model-lg" role="document">
-          <div class="modal-content bg-dark">
+          <div class="modal-content backblack">
             <div class="modal-header">
               <div class = "container-fluid d-flex flex-column align-items-center">
                 <div>
@@ -84,7 +84,7 @@ $projet = joinProjectOnImg($db);
                   <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
                 </div>
               </div>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -92,8 +92,8 @@ $projet = joinProjectOnImg($db);
               <?php echo $value['projet_description']; ?>
             </div>
             <div class="modal-footer">
-              <a href = "<?php echo $value['projet_github']; ?>" type="button" class="btn btn-primary">GitHub</a>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Quitter</button>
+              <a href = "<?php echo $value['projet_github']; ?>" type="button" class="btn FullBorder mt-3 backblack text-light">GitHub</a>
+              <button type="button" class="btn btn-secondary FullBorder mt-3 backblack text-light" data-dismiss="modal">Quitter</button>
             </div>
           </div>
         </div>
