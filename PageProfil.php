@@ -89,8 +89,8 @@ $biographie = getBio($db);
   </section>
   <section class =  "mt-5">
     <h2 class = "text-center back">COMPÉTENCES</h2>
-    <aside class="container-fluid mt-5 bg-primary d-none d-sm-block">
-      <div class = "d-flex justify-content-sm-between justify-content-md-between justify-content-lg-between">
+    <aside class="container-fluid mt-5 d-none d-sm-block">
+      <div class = "d-flex justify-content-sm-between justify-content-md-between justify-content-lg-between mb-5">
         <article class="col-4 backOpacityBlack rounded">
           <div class="d-flex flex-column align-items-center p-3">
             <i class="far fa-eye fa-3x text-center"></i>
@@ -109,13 +109,13 @@ $biographie = getBio($db);
             <i class="fas fa-cog fa-3x"></i>
             <h4 class = "text-center mt-1">Back-End</h3>
           </div>
-          <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center p-3 bg-warning">
+          <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center p-3">
               <img src="icon/php.jpg" height = "49" alt=""/>
               <img src="icon/symfony.jpg" height = "49" alt="" class = "text-light"/>
           </div>
         </article>
       </div>
-      <div class = "d-flex justify-content-sm-between justify-content-md-between justify-content-lg-between">
+      <div class = "mt-5 d-flex justify-content-sm-between justify-content-md-between justify-content-lg-between">
         <article class="col-4 backOpacityBlack rounded">
           <div class="d-flex flex-column align-items-center p-3">
             <i class="fas fa-database fa-3x"></i>
@@ -134,7 +134,8 @@ $biographie = getBio($db);
           <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
             <img src="icon/github.jpg" alt="GitHub"/>
             <img src="icon/linux.jpg" alt="Linux"/>
-            <img src="icon/git.jpg" alt="Linux"/>
+            <img src="icon/git.jpg" alt="Git"/>
+            <img src="icon/slack.jpg" alt="Slack"/>
           </div>
         </article>
       </div>
@@ -143,7 +144,7 @@ $biographie = getBio($db);
     <aside class="d-block d-sm-none container-fluid mt-4">
       <!-- FIRST BLOCK -->
       <div class = " d-flex flex-row justify-content-between align-items-center mb-5">
-        <div class="card col-5 d-flex flex-column align-items-center backOpacityBlack">
+        <div class="card col-5 d-flex flex-column align-items-center backblack p-3 FullBorder">
           <div class="card-body d-flex flex-column align-items-center p-3">
             <h5 class="card-title text-center">Front-end</h5>
             <i class="far fa-eye fa-2x text-center"></i>
@@ -165,7 +166,7 @@ $biographie = getBio($db);
           </div>
         </div>
 
-        <div class="card col-5 backblack d-flex flex-column align-items-center">
+        <div class="card col-5 backblack d-flex flex-column align-items-center backblack p-3 FullBorder">
           <div class="card-body d-flex flex-column align-items-center p-3">
             <h5 class="card-title text-center">Back-end</h5>
             <i class="fas fa-cog fa-2x"></i>
@@ -185,8 +186,8 @@ $biographie = getBio($db);
         </div>
       </div>
       <!-- SECOND BLOCK -->
-      <div class = " d-flex flex-row justify-content-between align-items-center mt-5">
-        <div class="card col-5 backOpacityBlack d-flex flex-column align-items-center">
+      <div class = " d-flex flex-row justify-content-between align-items-center mt-5 backblack border-top border-light pt-5">
+        <div class="card col-5 backOpacityBlack d-flex flex-column align-items-center FullBorder p-3">
           <div class="card-body d-flex flex-column align-items-center p-3">
             <h5 class="card-title text-center">BDD</h5>
             <i class="fas fa-database fa-2x"></i>
@@ -204,12 +205,12 @@ $biographie = getBio($db);
             </div>
           </div>
         </div>
-        <div class="card col-5 backOpacityBlack d-flex flex-column align-items-center">
+        <div class="card col-5 backblack FullBorder d-flex flex-column align-items-center p-3">
           <div class="card-body d-flex flex-column align-items-center p-3">
             <h5 class="card-title text-center">Autres...</h5>
             <i class="fas fa-project-diagram fa-2x"></i>
           </div>
-          <button type="button" class="btn rounded-circle FullBorder backblack" data-toggle="modal" data-target=".bd-example-modal-sm#autre"><i class="far fa-hand-point-up"></i></button>
+          <button type="button" class="btn rounded-circle FullBorder backblack " data-toggle="modal" data-target=".bd-example-modal-sm#autre"><i class="far fa-hand-point-up"></i></button>
 
           <!-- MODAL -->
           <div class="modal fade bd-example-modal-sm" id= "autre" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
@@ -218,7 +219,8 @@ $biographie = getBio($db);
                 <div class="btRed borderB p-3 d-flex justify-content-around flex-wrap align-items-center">
                   <img src="icon/github.jpg" alt="GitHub"/>
                   <img src="icon/linux.jpg" alt="Linux"/>
-                  <img src="icon/git.jpg" alt="Linux"/>
+                  <img src="icon/git.jpg" alt="Git"/>
+                  <img src="icon/slack.jpg" alt="Slack"/>
                 </div>
               </div>
             </div>
