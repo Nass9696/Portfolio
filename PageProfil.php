@@ -63,7 +63,7 @@ $biographie = getBio($db);
     <h2 class = "underline textAlignC policeTitle">Qui suis-je ?</h2>
     <article class = "ArticlePageProfil flex column spaceAround alignItemCenter">
       <div class = "ImageBlock Fullwidth flex justifyCenter alignItemCenter">
-        <img class = "stylePicture" src="img/nassim.jpg" alt="Photo de profil"/>
+        <img class = "stylePicture" src="img/nassim.jpg" alt="Photo de profil" height="100"/>
       </div>
       <article class = "BlockInformations flex column alignItemCenter  marginT Fullwidth">
         <div class = "Biographies">
@@ -119,7 +119,7 @@ $biographie = getBio($db);
         <article class="col-4 backOpacityBlack rounded">
           <div class="d-flex flex-column align-items-center p-3">
             <i class="fas fa-server fa-3x"></i>
-            <h4 class = "text-center mt-1">Serveur</h3>
+            <h4 class = "text-center mt-1">Base de données</h3>
           </div>
           <div class="btRed p-3">
             <img src="icon/mysql.jpg" alt="MySQL"/>
@@ -129,7 +129,7 @@ $biographie = getBio($db);
         <article class="col-4 backOpacityBlack rounded">
           <div class="d-flex flex-column align-items-center p-3">
             <i class="fas fa-project-diagram fa-3x"></i>
-            <h4 class = "text-center mt-1">Gestion de projet</h3>
+            <h4 class = "text-center mt-1">Autres..</h3>
           </div>
           <div class="btRed p-3">
             <img src="icon/github.jpg" alt="GitHub"/>
