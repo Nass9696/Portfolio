@@ -127,7 +127,11 @@ textarea {
 
 main {
 	flex: 1;
-  padding: 2rem;
+  padding: 3rem;
+}
+
+footer{
+  padding: 0.5rem;
 }
 
 footer a:hover {

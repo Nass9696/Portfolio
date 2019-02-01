@@ -11,7 +11,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -28,27 +28,81 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main class = "ZoneClickCircularOption flex justifyCenter white">
-  <nav class = "Navigation hoverUnderline flex column spaceAround alignItemCenter">
-    <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin textAlignC ">
-      <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageProfil.php">
-        <span class = "policeTitle">MON PROFIL</span>
-      </a>
-      <i class="far fa-user-circle fa-8x index0 absolute"></i>
-    </div>
-    <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
-      <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageRealisations.php">
-        <span class = "policeTitle">RÉALISATIONS</span>
-      </a>
-        <i class="Tools fas fa-toolbox fa-8x index0 absolute"></i>
-    </div>
-    <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
-      <a  class = "flex justifyCenter alignItemCenter indexFirst" href="PageContacter.php">
-        <span class = "policeTitle">CONTACTER</span>
-      </a>
-      <i class="fas fa-mobile-alt fa-8x index0 absolute"></i>
+<main class = "ZoneClickCircularOption container-fluid white">
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <nav class = "d-none d-md-block hoverUnderline bg-warning">
+    <div class="d-flex flex-row justify-content-around align-items-center">
+      <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin textAlignC">
+        <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageProfil.php">
+          <span class = "policeTitle">MON PROFIL</span>
+        </a>
+        <i class="far fa-user-circle fa-8x index0 absolute"></i>
+      </div>
+      <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
+        <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageRealisations.php">
+          <span class = "policeTitle">RÉALISATIONS</span>
+        </a>
+          <i class="Tools fas fa-toolbox fa-8x index0 absolute"></i>
+      </div>
+      <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
+        <a  class = "flex justifyCenter alignItemCenter indexFirst" href="PageContacter.php">
+          <span class = "policeTitle">CONTACTER</span>
+        </a>
+        <i class="fas fa-mobile-alt fa-8x index0 absolute"></i>
+      </div>
     </div>
   </nav>
+
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TOUCHPAD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <nav class = "d-none d-sm-block d-md-none hoverUnderline bg-danger">
+    <div class="d-flex flex-row justify-content-around align-items-center flex-wrap">
+      <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin textAlignC">
+        <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageProfil.php">
+          <span class = "policeTitle">MON PROFIL</span>
+        </a>
+        <i class="far fa-user-circle fa-8x index0 absolute"></i>
+      </div>
+      <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
+        <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageRealisations.php">
+          <span class = "policeTitle">RÉALISATIONS</span>
+        </a>
+          <i class="Tools fas fa-toolbox fa-8x index0 absolute"></i>
+      </div>
+      <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
+        <a  class = "flex justifyCenter alignItemCenter indexFirst" href="PageContacter.php">
+          <span class = "policeTitle">CONTACTER</span>
+        </a>
+        <i class="fas fa-mobile-alt fa-8x index0 absolute"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TOUCHPAD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MOBIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <nav class = "hoverUnderline d-block d-sm-none bg-primary">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <div class = "Cercle d-flex flex-column justify-content-center align-items-center styleLien margin textAlignC">
+          <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageProfil.php">
+            <span class = "policeTitle">MON PROFIL</span>
+          </a>
+          <i class="far fa-user-circle fa-8x index0 absolute"></i>
+        </div>
+        <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
+          <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageRealisations.php">
+            <span class = "policeTitle">RÉALISATIONS</span>
+          </a>
+            <i class="Tools fas fa-toolbox fa-8x index0 absolute"></i>
+        </div>
+        <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
+          <a  class = "flex justifyCenter alignItemCenter indexFirst" href="PageContacter.php">
+            <span class = "policeTitle">CONTACTER</span>
+          </a>
+          <i class="fas fa-mobile-alt fa-8x index0 absolute"></i>
+        </div>
+      </div>
+    </nav>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MOBIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -76,10 +130,9 @@
   </div>
 </footer>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>  <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

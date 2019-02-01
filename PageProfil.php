@@ -31,12 +31,12 @@ $biographie = getBio($db);
 <header>
   <aside>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <nav class = "container-fluid d-block d-sm-none NavigationFixed backblack p-1">
+    <nav class = "container-fluid d-block d-sm-none NavigationFixed backblack p-1 indexFull">
       <div class="dropdown d-flex justify-content-between">
         <button class="btn dropdown-toggle FullBorder backblack" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-bars white"></i>
         </button>
-        <div class="dropdown-menu backOpacityBlack container-fluid text-center text-white " aria-labelledby="dropdownMenuButton">
+        <div class="dropdown-menu backblack container-fluid text-center text-white " aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item text-white" href="PageProfil.php">Profil</a>
           <hr class = "border-top border-danger">
           <a class="dropdown-item text-white" href="PageRealisations.php">Réalisation</a>
