@@ -31,7 +31,7 @@ $biographie = getBio($db);
 <header>
   <aside>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <nav class = "container-fluid d-block d-sm-none bg-primary">
+    <nav class = "container-fluid d-block d-sm-none NavigationFixed mt-1">
       <div class="dropdown d-flex justify-content-between">
         <button class="btn dropdown-toggle FullBorder backblack" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-bars white"></i>
@@ -46,29 +46,29 @@ $biographie = getBio($db);
     </nav>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP TOUCHPAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <nav class="d-none d-sm-block navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <nav class="container-fluid d-none d-sm-block navbar navbar-expand-lg navbar-light backOpacityBlack NavigationFixed text-white">
+        <div class="container navbar-nav d-flex flex-row justify-content-between">
+          <div class="d-flex flex-row justify-content-center align-items-center hoverIconeColorRed">
+            <a class="nav-item ml-2" href="index.php"><i class="fas fa-home white mr-1"></i></a>
+          </div>
+          <div class="d-flex flex-row justify-content-center align-items-center hoverUnderline">
+            <i class="fas fa-user-alt white"></i>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageProfil.php">A propos</a>
+          </div>
+          <div class="d-flex flex-row justify-content-center align-items-center hoverUnderline">
+            <i class="fas fa-toolbox white"></i>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageRealisations.php">Réalisations</a>
+          </div>
+          <div class="d-flex flex-row justify-content-center align-items-center hoverUnderline">
+            <i class="fas fa-phone  white"></i>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageContacter.php">Contacter</a>
+          </div>
         </div>
       </div>
     </nav>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP TOUCHPAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   </aside>
 </header>
-<!-- <i class="fas fa-user-alt white"></i>
-<a class="nav-item nav-link text-white ml-2 policeTitle" href="PageProfil.php">A propos</a> -->
-<!-- <i class="fas fa-toolbox white"></i>
-<a class="nav-item nav-link text-white ml-2 policeTitle" href="PageRealisations.php">Réalisations</a> -->
-<!-- <i class="fas fa-phone  white"></i>
-<a class="nav-item nav-link text-white ml-2 policeTitle" href="PageContacter.php">Contacter</a> -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
