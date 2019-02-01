@@ -17,6 +17,7 @@ $biographie = getBio($db);
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -29,32 +30,45 @@ $biographie = getBio($db);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
   <aside>
-    <nav class="navbar navbar-expand-lg navbar-light backblack NavigationFixed  indexFull">
-      <button class="navbar-toggler border border-danger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars white"></i>
-      </button>
-      <div class = "d-flex justify-content-end d-block hoverIconeColorRed">
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <nav class = "container-fluid d-block d-sm-none bg-primary">
+      <div class="dropdown d-flex justify-content-between">
+        <button class="btn dropdown-toggle FullBorder backblack" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-bars white"></i>
+        </button>
+        <div class="dropdown-menu backblack bg-primary container-fluid text-center" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Profil</a>
+          <a class="dropdown-item" href="#">Réalisation</a>
+          <a class="dropdown-item" href="#">Contact</a>
+        </div>
         <a class="nav-item nav-link text-white" href="index.php"><i class="fas fa-home white"></i></a>
       </div>
-      <div class="NavBarRow collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="NavBar navbar-nav hoverUnderline">
-          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
-            <i class="fas fa-user-alt white"></i>
-            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageProfil.php">A propos</a>
-          </div>
-          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
-            <i class="fas fa-toolbox white"></i>
-            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageRealisations.php">Réalisations</a>
-          </div>
-          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
-            <i class="fas fa-phone  white"></i>
-            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageContacter.php">Contacter</a>
-          </div>
+    </nav>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP TOUCHPAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <nav class="d-none d-sm-block navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </div>
       </div>
     </nav>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP TOUCHPAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   </aside>
 </header>
+<!-- <i class="fas fa-user-alt white"></i>
+<a class="nav-item nav-link text-white ml-2 policeTitle" href="PageProfil.php">A propos</a> -->
+<!-- <i class="fas fa-toolbox white"></i>
+<a class="nav-item nav-link text-white ml-2 policeTitle" href="PageRealisations.php">Réalisations</a> -->
+<!-- <i class="fas fa-phone  white"></i>
+<a class="nav-item nav-link text-white ml-2 policeTitle" href="PageContacter.php">Contacter</a> -->
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -62,8 +76,8 @@ $biographie = getBio($db);
   <section class = "SectionProfil flex column">
     <h2 class = "underline textAlignC policeTitle">Qui suis-je ?</h2>
     <article class = "ArticlePageProfil flex column spaceAround alignItemCenter mt-5">
-      <div class = "ImageBlock col-7 col-md-3 Fullwidth flex justifyCenter alignItemCenter">
-        <img class = "stylePicture" src="img/nassim.jpg" alt="Photo de profil"/>
+      <div class = "ImageBlock col-4 col-lg-3 flex justifyCenter alignItemCenter">
+        <!-- <img class = "stylePicture" src="img/nassim.jpg" alt="Photo de profil"/> -->
       </div>
       <article class = "BlockInformations flex column alignItemCenter  marginT Fullwidth">
         <div class = "Biographies">
@@ -149,7 +163,7 @@ $biographie = getBio($db);
             <h5 class="card-title text-center">Front-end</h5>
             <i class="far fa-eye fa-2x text-center"></i>
           </div>
-            <button type="button" class="btn rounded-circle FullBorder backblack z-index-1" data-toggle="modal" data-target=".bd-example-modal-sm#front"><i class="far fa-hand-point-up"></i></button>
+            <button type="button" class="btn rounded-circle FullBorder backblack z-index-1" data-toggle="modal" data-target=".bd-example-modal-sm#front"><i class="far fa-hand-point-up text-white"></i></button>
           </div>
           <!-- MODAL -->
         <div class="modal fade bd-example-modal-sm" id="front" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
@@ -171,11 +185,11 @@ $biographie = getBio($db);
             <h5 class="card-title text-center">Back-end</h5>
             <i class="fas fa-cog fa-2x"></i>
           </div>
-          <button type="button" class="btn rounded-circle FullBorder backblack" data-toggle="modal" data-target=".bd-example-modal-sm#back"><i class="far fa-hand-point-up"></i></button>
+          <button type="button" class="btn rounded-circle FullBorder backblack" data-toggle="modal" data-target=".bd-example-modal-sm#back"><i class="far fa-hand-point-up text-white"></i></button>
         </div>
 
         <div class="modal fade bd-example-modal-sm" id="back" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-dialog modal-sm modal-dialog-centered" role="dialog">
             <div class="modal-body backblack rounded">
               <div class="btRed borderB p-3 d-flex justify-content-around flex-wrap align-items-center p-3">
                   <img src="icon/php.jpg" height = "49" alt=""/>
@@ -186,13 +200,13 @@ $biographie = getBio($db);
         </div>
       </div>
       <!-- SECOND BLOCK -->
-      <div class = " d-flex flex-row justify-content-between align-items-center mt-5 backblack border-top border-light pt-5">
+      <div class = " d-flex flex-row justify-content-between align-items-center mt-5 border-top border-light pt-5">
         <div class="card col-5 backOpacityBlack d-flex flex-column align-items-center FullBorder p-3">
           <div class="card-body d-flex flex-column align-items-center p-3">
             <h5 class="card-title text-center">BDD</h5>
             <i class="fas fa-database fa-2x"></i>
           </div>
-          <button type="button" class="btn rounded-circle FullBorder backblack" data-toggle="modal" data-target=".bd-example-modal-sm#serveur"><i class="far fa-hand-point-up"></i></button>
+          <button type="button" class="btn rounded-circle FullBorder backblack" data-toggle="modal" data-target=".bd-example-modal-sm#serveur"><i class="far fa-hand-point-up text-white"></i></button>
         </div>
         <!-- MODAL -->
         <div class="modal fade bd-example-modal-sm" id= "serveur" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
@@ -210,7 +224,7 @@ $biographie = getBio($db);
             <h5 class="card-title text-center">Autres...</h5>
             <i class="fas fa-project-diagram fa-2x"></i>
           </div>
-          <button type="button" class="btn rounded-circle FullBorder backblack " data-toggle="modal" data-target=".bd-example-modal-sm#autre"><i class="far fa-hand-point-up"></i></button>
+          <button type="button" class="btn rounded-circle FullBorder backblack " data-toggle="modal" data-target=".bd-example-modal-sm#autre"><i class="far fa-hand-point-up text-white"></i></button>
 
           <!-- MODAL -->
           <div class="modal fade bd-example-modal-sm" id= "autre" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
