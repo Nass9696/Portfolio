@@ -20,30 +20,45 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
   <aside>
-    <nav class="navbar navbar-expand-lg navbar-light backblack NavigationNoFixed indexFull">
-      <button class="navbar-toggler border border-danger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars white"></i>
-      </button>
-      <div class = "d-flex justify-content-end d-block hoverIconeColorRed">
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <nav class = "container-fluid d-block d-sm-none NavigationFixed backblack p-1">
+      <div class="dropdown d-flex justify-content-between">
+        <button class="btn dropdown-toggle FullBorder backblack" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-bars white"></i>
+        </button>
+        <div class="dropdown-menu backOpacityBlack container-fluid text-center text-white " aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item text-white" href="PageProfil.php">Profil</a>
+          <hr class = "border-top border-danger">
+          <a class="dropdown-item text-white" href="PageRealisations.php">Réalisation</a>
+          <hr class = "border-top border-danger">
+          <a class="dropdown-item text-white" href="PageContacter.php">Contact</a>
+        </div>
         <a class="nav-item nav-link text-white" href="index.php"><i class="fas fa-home white"></i></a>
       </div>
-      <div class="NavBarRow collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="NavBar navbar-nav hoverUnderline">
-          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+    </nav>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP TOUCHPAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <nav class="container-fluid d-none d-sm-block navbar navbar-expand-lg navbar-light backOpacityBlack NavigationFixed text-white">
+        <div class="container navbar-nav d-flex flex-row justify-content-between">
+          <div class="d-flex flex-row justify-content-center align-items-center hoverIconeColorRed">
+            <a class="nav-item ml-2" href="index.php"><i class="fas fa-home white mr-1"></i></a>
+          </div>
+          <div class="d-flex flex-row justify-content-center align-items-center hoverUnderline">
             <i class="fas fa-user-alt white"></i>
-            <a class="nav-item nav-link text-white ml-2" href="PageProfil.php">A propos</a>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageProfil.php">A propos</a>
           </div>
-          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+          <div class="d-flex flex-row justify-content-center align-items-center hoverUnderline">
             <i class="fas fa-toolbox white"></i>
-            <a class="nav-item nav-link text-white ml-2" href="PageRealisations.php">Réalisations</a>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageRealisations.php">Réalisations</a>
           </div>
-          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+          <div class="d-flex flex-row justify-content-center align-items-center hoverUnderline">
             <i class="fas fa-phone  white"></i>
-            <a class="nav-item nav-link text-white ml-2" href="PageContacter.php">Contacter</a>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageContacter.php">Contacter</a>
           </div>
         </div>
       </div>
     </nav>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP TOUCHPAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   </aside>
 </header>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->

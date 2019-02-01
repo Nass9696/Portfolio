@@ -401,7 +401,15 @@ a {
   border-top : 1px solid red;
 }
 
+.responsiveImg{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
 
+.fontRed {
+  color: red;
+}
 /***************************UTILITIES CLASS***************************/
 
 /**********************************************************************/
@@ -569,12 +577,6 @@ a {
   margin-bottom: 2em;
 }
 
-.ArticlePageProfil {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-
 /************MAIN**********/
 /************FOOTER**********/
 
@@ -637,10 +639,6 @@ a {
 
 /************MAIN**********/
 
-.BlockInformations {
-  width: 40em;
-}
-
 .ArticleCompetence {
   height: 100%;
   width: 65%;
@@ -650,10 +648,6 @@ a {
   margin-top: 2em;
   margin-bottom: 2em;
   flex-wrap: wrap;
-}
-
-.ArticlePageProfil {
-  flex-direction: row;
 }
 
 .stylePortrait {

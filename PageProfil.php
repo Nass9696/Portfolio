@@ -31,15 +31,17 @@ $biographie = getBio($db);
 <header>
   <aside>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <nav class = "container-fluid d-block d-sm-none NavigationFixed mt-1">
+    <nav class = "container-fluid d-block d-sm-none NavigationFixed backblack p-1">
       <div class="dropdown d-flex justify-content-between">
         <button class="btn dropdown-toggle FullBorder backblack" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-bars white"></i>
         </button>
-        <div class="dropdown-menu backblack bg-primary container-fluid text-center" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Profil</a>
-          <a class="dropdown-item" href="#">Réalisation</a>
-          <a class="dropdown-item" href="#">Contact</a>
+        <div class="dropdown-menu backOpacityBlack container-fluid text-center text-white " aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item text-white" href="PageProfil.php">Profil</a>
+          <hr class = "border-top border-danger">
+          <a class="dropdown-item text-white" href="PageRealisations.php">Réalisation</a>
+          <hr class = "border-top border-danger">
+          <a class="dropdown-item text-white" href="PageContacter.php">Contact</a>
         </div>
         <a class="nav-item nav-link text-white" href="index.php"><i class="fas fa-home white"></i></a>
       </div>
@@ -73,16 +75,16 @@ $biographie = getBio($db);
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main class = "MainOtherPages white">
-  <section class = "SectionProfil flex column">
-    <h2 class = "underline textAlignC policeTitle">Qui suis-je ?</h2>
-    <article class = "ArticlePageProfil flex column spaceAround alignItemCenter mt-5">
-      <div class = "ImageBlock col-4 col-lg-3 flex justifyCenter alignItemCenter">
-        <!-- <img class = "stylePicture" src="img/nassim.jpg" alt="Photo de profil"/> -->
-      </div>
-      <article class = "BlockInformations flex column alignItemCenter  marginT Fullwidth">
-        <div class = "Biographies">
+  <section class = "container-fluid">
+    <h2 class = "underline textAlignC policeTitle mb-5">Qui suis-je ?</h2>
+    <article class="d-block d-sm-none d-flex flex-column justify-content-center align-items-center">
+      <img class = "responsiveImg border border-white" src="img/nassim.jpg" alt="Photo de profil"/>
+    </article>
+    <article class = "mt-5">
+        <img class = "responsiveImg d-none d-sm-block float-sm-left mr-sm-4 border border-white" src="img/nassim.jpg" alt="Photo de profil"/>
+        <div class = "container">
           <h2 class = "underline textAlignC policeTitle">Biographie</h2>
-          <p class = "marginL policeText">
+          <p>
             <?php echo $biographie['bio_text']; ?>
             <!-- Bonjour, je m'appelle Nassim Gacem et je suis un passioné du monde numérique. On peut dire que, je suis tombé dans la programmation en étant jeune.
             J'ai réalisé mes premier programmes à l'âge de 14 ans, j'ai notemment démarrer avec les languages C++ et Lua, pour ceux qui connaissent j'ai exprimé ma créativité dans Garry's Mod.
@@ -99,7 +101,6 @@ $biographie = getBio($db);
           </p>
         </div>
       </article>
-    </article>
   </section>
   <section class =  "mt-5">
     <h2 class = "text-center back">COMPÉTENCES</h2>
@@ -118,7 +119,7 @@ $biographie = getBio($db);
             <img src="icon/angular.jpg" alt="Angular"/>
           </div>
         </article>
-        <article class="col-4 backOpacityBlack">
+        <article class="col-4 backOpacityBlack rounded">
           <div class="d-flex flex-column align-items-center p-3">
             <i class="fas fa-cog fa-3x"></i>
             <h4 class = "text-center mt-1">Back-End</h3>
