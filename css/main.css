@@ -117,9 +117,9 @@ textarea {
 .modal-dialog {
   position: absolute;
   top: -5em;
-  right: 5em;
+  right: 50px;
   bottom: 20em;
-  left: 5em;
+  left: 50px;
   z-index: 10040;
   overflow: auto;
   overflow-y: auto;
@@ -150,7 +150,7 @@ a {
 
 .Cercle {
   height: 10em;
-  width: 10em;
+  width: 11em;
   background-color: rgba(0,0,0,0.8);
 }
 

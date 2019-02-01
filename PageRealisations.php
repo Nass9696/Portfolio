@@ -16,6 +16,7 @@ $projet = joinProjectOnImg($db);
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="SHORTCUT ICON" href="http://nassim-developpeur-web-junior.000webhostapp.com/img/favicon.ico">
     <link rel="manifest" href="con" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -45,7 +46,7 @@ $projet = joinProjectOnImg($db);
     </nav>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP TOUCHPAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <nav class="container-fluid d-none d-sm-block navbar navbar-expand-lg navbar-light backOpacityBlack NavigationFixed text-white">
+    <nav class="container-fluid d-none d-sm-block navbar navbar-expand-lg navbar-light backOpacityBlack NavigationFixed text-white indexFull">
         <div class="container navbar-nav d-flex flex-row justify-content-between">
           <div class="d-flex flex-row justify-content-center align-items-center hoverIconeColorRed">
             <a class="nav-item ml-2" href="index.php"><i class="fas fa-home white mr-1"></i></a>
@@ -88,7 +89,7 @@ $projet = joinProjectOnImg($db);
 
       <!-- Modal -->
       <div class="modal fade mt-4" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog model-lg" role="document">
+        <div class="modal-dialog model-lg modal-dialog-centered" role="document">
           <div class="modal-content backblack">
             <div class="modal-header">
               <div class = "container-fluid d-flex flex-column align-items-center">
@@ -128,14 +129,14 @@ $projet = joinProjectOnImg($db);
             <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="150" width="130">
           </div>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target=".bd-example-modal-sm<?php echo "#modal" . $value['projet_id'] ?>">
+          <button type="button" class="btn btn-primary FullBorder mt-3 backblack text-light" data-toggle="modal" data-target=".bd-example-modal-sm<?php echo "#modal" . $value['projet_id'] ?>">
             Voir ici !
           </button>
 
           <!-- Modal -->
           <div class="modal fade bd-example-modal-sm mt-4" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog model-sm" role="document">
-              <div class="modal-content bg-dark">
+            <div class="modal-dialog model-sm modal-dialog-centered" role="document">
+              <div class="modal-content backblack">
                 <div class="modal-header">
                   <div class = "container-fluid d-flex flex-column align-items-center">
                     <div>
@@ -153,8 +154,8 @@ $projet = joinProjectOnImg($db);
                   <?php echo $value['projet_description']; ?>
                 </div>
                 <div class="modal-footer">
-                  <a href = "<?php echo $value['projet_github']; ?>" type="button" class="btn btn-primary">GitHub</a>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Quitter</button>
+                  <a href = "<?php echo $value['projet_github']; ?>" type="button" class="btn FullBorder mt-3 backblack text-light">GitHub</a>
+                  <button type="button" class="btn btn-secondary FullBorder mt-3 backblack text-light" data-dismiss="modal">Quitter</button>
                 </div>
               </div>
             </div>
@@ -174,14 +175,14 @@ $projet = joinProjectOnImg($db);
           <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="150" width="130">
         </div>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target=".bd-example-modal-lg<?php echo "#modal" . $value['projet_id'] ?>">
+        <button type="button" class="btn FullBorder mt-3 backblack text-light" data-toggle="modal" data-target=".bd-example-modal-lg<?php echo "#modal" . $value['projet_id'] ?>">
           Voir ici !
         </button>
 
         <!-- Modal -->
         <div class="modal fade bd-example-modal-lg mt-4" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-          <div class="modal-dialog model-sm" role="document">
-            <div class="modal-content bg-dark">
+          <div class="modal-dialog model-sm modal-dialog-centered" role="document">
+            <div class="modal-content backblack">
               <div class="modal-header">
                 <div class = "container-fluid d-flex flex-column align-items-center">
                   <div>
@@ -199,8 +200,8 @@ $projet = joinProjectOnImg($db);
                 <?php echo $value['projet_description']; ?>
               </div>
               <div class="modal-footer">
-                <a href = "<?php echo $value['projet_github']; ?>" type="button" class="btn btn-primary">GitHub</a>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Quitter</button>
+                <a href = "<?php echo $value['projet_github']; ?>" type="button" class="btn FullBorder mt-3 backblack text-light">GitHub</a>
+                <button type="button" class="btn btn-secondary FullBorder mt-3 backblack text-light" data-dismiss="modal">Quitter</button>
               </div>
             </div>
           </div>

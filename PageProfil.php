@@ -17,7 +17,7 @@ $biographie = getBio($db);
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
+  <link rel="SHORTCUT ICON" href="http://nassim-developpeur-web-junior.000webhostapp.com/img/favicon.ico">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -48,7 +48,7 @@ $biographie = getBio($db);
     </nav>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP TOUCHPAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <nav class="container-fluid d-none d-sm-block navbar navbar-expand-lg navbar-light backOpacityBlack NavigationFixed text-white">
+    <nav class="container-fluid d-none d-sm-block navbar navbar-expand-lg navbar-light backOpacityBlack NavigationFixed text-white indexFull">
         <div class="container navbar-nav d-flex flex-row justify-content-between">
           <div class="d-flex flex-row justify-content-center align-items-center hoverIconeColorRed">
             <a class="nav-item ml-2" href="index.php"><i class="fas fa-home white mr-1"></i></a>
@@ -77,11 +77,11 @@ $biographie = getBio($db);
 <main class = "MainOtherPages white">
   <section class = "container-fluid">
     <h2 class = "underline textAlignC policeTitle mb-5">Qui suis-je ?</h2>
-    <article class="d-block d-sm-none d-flex flex-column justify-content-center align-items-center">
-      <img class = "responsiveImg border border-white" src="img/nassim.jpg" alt="Photo de profil"/>
+    <article class="container d-block d-sm-none d-flex flex-column justify-content-center align-items-center ">
+      <img class = "responsiveImg border border-white" src="img/nassim.jpg" alt="Photo de profil" height="210"/>
     </article>
     <article class = "mt-5">
-        <img class = "responsiveImg d-none d-sm-block float-sm-left mr-sm-4 border border-white" src="img/nassim.jpg" alt="Photo de profil"/>
+        <img class = "responsiveImg d-none d-sm-block float-sm-left mr-sm-4 border border-white" src="img/nassim.jpg" alt="Photo de profil" height="510"/>
         <div class = "container">
           <h2 class = "underline textAlignC policeTitle">Biographie</h2>
           <p>

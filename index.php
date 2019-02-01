@@ -8,6 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <link rel="SHORTCUT ICON" href="http://nassim-developpeur-web-junior.000webhostapp.com/img/favicon.ico">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -30,21 +31,21 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main class = "ZoneClickCircularOption container-fluid white">
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <nav class = "d-none d-md-block hoverUnderline bg-warning">
+  <nav class = "d-none d-md-block hoverUnderline">
     <div class="d-flex flex-row justify-content-around align-items-center">
-      <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin textAlignC">
+      <div class = "Cercle flex justifyCenter alignItemCenter styleLien textAlignC">
         <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageProfil.php">
           <span class = "policeTitle">MON PROFIL</span>
         </a>
         <i class="far fa-user-circle fa-8x index0 absolute"></i>
       </div>
-      <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
+      <div class = "Cercle flex justifyCenter alignItemCenter styleLien">
         <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageRealisations.php">
-          <span class = "policeTitle">RÉALISATIONS</span>
+          <span class = "policeTitle mt-3">RÉALISATIONS</span>
         </a>
-          <i class="Tools fas fa-toolbox fa-8x index0 absolute"></i>
+          <i class="Tools fas fa-toolbox fa-8x mb-4 index0 absolute"></i>
       </div>
-      <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
+      <div class = "Cercle flex justifyCenter alignItemCenter styleLien">
         <a  class = "flex justifyCenter alignItemCenter indexFirst" href="PageContacter.php">
           <span class = "policeTitle">CONTACTER</span>
         </a>
@@ -55,7 +56,7 @@
 
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TOUCHPAD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <nav class = "d-none d-sm-block d-md-none hoverUnderline bg-danger">
+  <nav class = "d-none d-sm-block d-md-none hoverUnderline">
     <div class="d-flex flex-row justify-content-around align-items-center flex-wrap">
       <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin textAlignC">
         <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageProfil.php">
@@ -80,7 +81,7 @@
 
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TOUCHPAD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MOBIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <nav class = "hoverUnderline d-block d-sm-none bg-primary">
+  <nav class = "hoverUnderline d-block d-sm-none">
       <div class="d-flex flex-column justify-content-center align-items-center">
         <div class = "Cercle d-flex flex-column justify-content-center align-items-center styleLien margin textAlignC">
           <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageProfil.php">
