@@ -34,19 +34,19 @@
   <nav class = "d-none d-md-block hoverUnderline">
     <div class="d-flex flex-row justify-content-around align-items-center">
       <div class = "Cercle flex justifyCenter alignItemCenter styleLien textAlignC">
-        <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageProfil.php">
+        <a class = "flex justifyCenter alignItemCenter indexFirst hoverColorWhite" href="PageProfil.php">
           <span class = "policeTitle">MON PROFIL</span>
         </a>
         <i class="far fa-user-circle fa-8x index0 absolute"></i>
       </div>
       <div class = "Cercle flex justifyCenter alignItemCenter styleLien">
-        <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageRealisations.php">
+        <a class = "flex justifyCenter alignItemCenter indexFirst hoverColorWhite" href="PageRealisations.php">
           <span class = "policeTitle mt-3">RÉALISATIONS</span>
         </a>
           <i class="Tools fas fa-toolbox fa-8x mb-4 index0 absolute"></i>
       </div>
       <div class = "Cercle flex justifyCenter alignItemCenter styleLien">
-        <a  class = "flex justifyCenter alignItemCenter indexFirst" href="PageContacter.php">
+        <a  class = "flex justifyCenter alignItemCenter indexFirst hoverColorWhite" href="PageContacter.php">
           <span class = "policeTitle">CONTACTER</span>
         </a>
         <i class="fas fa-mobile-alt fa-8x index0 absolute"></i>
@@ -59,19 +59,19 @@
   <nav class = "d-none d-sm-block d-md-none hoverUnderline">
     <div class="d-flex flex-row justify-content-around align-items-center flex-wrap">
       <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin textAlignC">
-        <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageProfil.php">
+        <a class = "flex justifyCenter alignItemCenter indexFirst hoverColorWhite" href="PageProfil.php">
           <span class = "policeTitle">MON PROFIL</span>
         </a>
         <i class="far fa-user-circle fa-8x index0 absolute"></i>
       </div>
       <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
-        <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageRealisations.php">
-          <span class = "policeTitle">RÉALISATIONS</span>
+        <a class = "flex justifyCenter alignItemCenter indexFirst hoverColorWhite" href="PageRealisations.php">
+          <span class = "policeTitle mt-3">RÉALISATIONS</span>
         </a>
-          <i class="Tools fas fa-toolbox fa-8x index0 absolute"></i>
+          <i class="Tools fas fa-toolbox fa-8x index0 absolute mb-4"></i>
       </div>
       <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
-        <a  class = "flex justifyCenter alignItemCenter indexFirst" href="PageContacter.php">
+        <a  class = "flex justifyCenter alignItemCenter indexFirst hoverColorWhite" href="PageContacter.php">
           <span class = "policeTitle">CONTACTER</span>
         </a>
         <i class="fas fa-mobile-alt fa-8x index0 absolute"></i>
@@ -84,22 +84,22 @@
   <nav class = "hoverUnderline d-block d-sm-none">
       <div class="d-flex flex-column justify-content-center align-items-center">
         <div class = "Cercle d-flex flex-column justify-content-center align-items-center styleLien margin textAlignC">
-          <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageProfil.php">
+          <a class = "flex justifyCenter alignItemCenter indexFirst hoverColorWhite" href="PageProfil.php">
             <span class = "policeTitle">MON PROFIL</span>
           </a>
           <i class="far fa-user-circle fa-8x index0 absolute"></i>
         </div>
         <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
-          <a class = "flex justifyCenter alignItemCenter indexFirst" href="PageRealisations.php">
-            <span class = "policeTitle">RÉALISATIONS</span>
+          <a class = "flex justifyCenter alignItemCenter indexFirst hoverColorWhite" href="PageRealisations.php">
+            <span class = "policeTitle mt-3">RÉALISATIONS</span>
           </a>
-            <i class="Tools fas fa-toolbox fa-8x index0 absolute"></i>
+            <i class="Tools fas fa-toolbox fa-8x index0 absolute mb-3"></i>
         </div>
         <div class = "Cercle flex justifyCenter alignItemCenter styleLien margin">
-          <a  class = "flex justifyCenter alignItemCenter indexFirst" href="PageContacter.php">
+          <a  class = "flex justifyCenter alignItemCenter indexFirst hoverColorWhite" href="PageContacter.php">
             <span class = "policeTitle">CONTACTER</span>
           </a>
-          <i class="fas fa-mobile-alt fa-8x index0 absolute"></i>
+          <i class="fas fa-mobile-alt fa-8x index0 absolute "></i>
         </div>
       </div>
     </nav>

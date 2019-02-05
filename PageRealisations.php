@@ -79,8 +79,8 @@ $projet = joinProjectOnImg($db);
     <?php foreach ($projet as $key => $value) { ?>
     <div class="card col-4 bg-transparent text-light d-flex flex-column align-items-center">
       <h5 class="card-title textAlignC mt-1"><?php echo $value['projet_name']; ?></h5>
-      <div class="">
-        <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
+      <div class="container-fluid">
+        <img class="card-img-top" src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>">
       </div>
       <!-- Button trigger modal -->
       <button type="button" class="btn FullBorder mt-3 backblack text-light" data-toggle="modal" data-target="<?php echo "#modal" . $value['projet_id'] ?>">
@@ -120,13 +120,13 @@ $projet = joinProjectOnImg($db);
   </div>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MOBIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <div class = "d-block d-sm-block d-md-none">
-        <aside class="d-lg-flex AsideRealisation d-flex justify-content-between flex-row flex-wrap col-12">
+      <div class = "d-block d-sm-none">
+        <aside class="d-flex flex-column justify-content-between align-items-center">
         <?php foreach ($projet as $key => $value) { ?>
-        <div class="card col-6 bg-transparent text-light d-flex align-items-center">
+        <div class="card col-10 bg-transparent text-light d-flex align-items-center">
           <h5 class="card-title textAlignC mt-1"><?php echo $value['projet_name']; ?></h5>
-          <div class="">
-            <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="150" width="130">
+          <div class="container-fluid">
+            <img class="card-img-top" src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>">
           </div>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary FullBorder mt-3 backblack text-light" data-toggle="modal" data-target=".bd-example-modal-sm<?php echo "#modal" . $value['projet_id'] ?>">
@@ -166,7 +166,7 @@ $projet = joinProjectOnImg($db);
       </div>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MOBIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TOUCHPAD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div class = "d-none d-md-block d-lg-none">
+    <div class = "d-none d-sm-block d-lg-none">
       <aside class="AsideRealisation d-flex justify-content-between flex-row flex-wrap col-12">
       <?php foreach ($projet as $key => $value) { ?>
       <div class="card col-6 bg-transparent text-light d-flex align-items-center">
@@ -211,7 +211,6 @@ $projet = joinProjectOnImg($db);
       </aside>
     </div>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TOUCHPAD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 

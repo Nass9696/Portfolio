@@ -138,10 +138,7 @@ footer a:hover {
   color: red;
 }
 
-a:focus
-{
-outline:0;
-}
+
 
 a {
   text-decoration: none;
@@ -183,6 +180,10 @@ a {
 
 .RedirectionWidthNavigation a {
   width: 50%;
+}
+
+.hoverColorWhite:hover{
+  color: white;
 }
 
 /*********************OTHER PAGES***************/
@@ -536,9 +537,7 @@ a {
   /***************************END MEDIA QUERY PROFIL.HTML**************************/
 
   /***************************START MEDIA QUERY REALISATION.HTML**************************/
-  .AsideRealisation {
-  width: 100%;
-}
+
   /***************************END MEDIA QUERY REALISATION.HTML**************************/
 
 }
@@ -589,10 +588,7 @@ a {
 
 /***************************START MEDIA QUERY RÉALISATIONS.HTML**************************/
 
-.AsideRealisation {
-  width: 100%;
-  height: 100%;
-}
+
 
 /***************************END MEDIA QUERY RÉALISATIONS.HTML**************************/
 
@@ -672,10 +668,6 @@ a {
 
 /***************************START MEDIA QUERY RÉALISATIONS.HTML**************************/
 
-.AsideRealisation {
-  width: 100em;
-  height: 100%;
-}
 
 /***************************END Aside QUERY RÉALISATIONS.HTML**************************/
 
