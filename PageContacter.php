@@ -4,10 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>CONTACTER</title>
+  <title>NG | Contacter</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <link rel="SHORTCUT ICON" href="http://nassim-developpeur-web-junior.000webhostapp.com/img/favicon.ico">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -15,79 +16,133 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
-</head>
-
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Courgette" rel="stylesheet">
 <body class = "BodyRulesIndex">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
   <aside>
-    <nav class="navbar navbar-expand-lg navbar-light backblack NavigationNoFixed indexFull">
-      <button class="navbar-toggler border border-danger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars white"></i>
-      </button>
-      <div class = "d-flex justify-content-end d-block hoverIconeColorRed">
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <nav class = "container-fluid d-block d-sm-none NavigationFixed backblack p-1 indexFull">
+      <div class="dropdown d-flex justify-content-between">
+        <button class="btn dropdown-toggle FullBorder backblack" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-bars white"></i>
+        </button>
+        <div class="dropdown-menu backblack container-fluid text-center text-white " aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item text-white" href="PageProfil.php">Profil</a>
+          <hr class = "border-top border-danger">
+          <a class="dropdown-item text-white" href="PageRealisations.php">Réalisation</a>
+          <hr class = "border-top border-danger">
+          <a class="dropdown-item text-white" href="PageContacter.php">Contact</a>
+        </div>
         <a class="nav-item nav-link text-white" href="index.php"><i class="fas fa-home white"></i></a>
       </div>
-      <div class="NavBarRow collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="NavBar navbar-nav hoverUnderline">
-          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+    </nav>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP TOUCHPAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <nav class="container-fluid d-none d-sm-block navbar navbar-expand-lg navbar-light backOpacityBlack NavigationFixed text-white indexFull">
+        <div class="container navbar-nav d-flex flex-row justify-content-between">
+          <div class="d-flex flex-row justify-content-center align-items-center hoverIconeColorRed">
+            <a class="nav-item ml-2" href="index.php"><i class="fas fa-home white mr-1"></i></a>
+          </div>
+          <div class="d-flex flex-row justify-content-center align-items-center hoverUnderline">
             <i class="fas fa-user-alt white"></i>
-            <a class="nav-item nav-link text-white ml-2" href="PageProfil.php">A propos</a>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageProfil.php">A propos</a>
           </div>
-          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+          <div class="d-flex flex-row justify-content-center align-items-center hoverUnderline">
             <i class="fas fa-toolbox white"></i>
-            <a class="nav-item nav-link text-white ml-2" href="PageRealisations.php">Réalisations</a>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageRealisations.php">Réalisations</a>
           </div>
-          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+          <div class="d-flex flex-row justify-content-center align-items-center hoverUnderline">
             <i class="fas fa-phone  white"></i>
-            <a class="nav-item nav-link text-white ml-2" href="PageContacter.php">Contacter</a>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageContacter.php">Contacter</a>
           </div>
         </div>
       </div>
     </nav>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP TOUCHPAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   </aside>
 </header>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main>
-  <section>
-    <aside class = "AsideContact white padding">
-      <form method="post" action="ContacterTraitement.php">
-        <div class="row">
-          <div class="col">
-            <label for="exampleFormControlTextarea1">Votre Nom :</label>
-            <input type="text" class="form-control" name="nom">
-          </div>
+<main class = "FullPageContact justify-content-center">
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP Large~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP Large~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP MEDIUM~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <section class = "d-none d-md-block d-md-flex align-items-center">
+    <aside class = "d-flex flex-xs-column flex-sm-row justify-content-sm-around align-items-center white">
+      <p class = "col-md-5 col-sm-4 borderL">
+        Dans le cadre de ma formation de développeur web, je suis actuellement à la recherche d'un stage à compter d'avril 2019. Surtout, n'hésitez pas à me contacter, je serai ravi de collaborer avec vous afin de développer mes compétences et amener de nouvelles idées.
+      </p>
+    <nav class = "d-lg-none d-xs-block d-md-none col-6">
+      <div class = "d-flex flex-row alignItemCenter justify-content-around hoverColorRed">
+        <div class="d-flex flex-column align-items-center">
+          <h2 class = "underline">Mobil</h2>
+          <a href = "tel:+33622752818"><i class="fas fa-phone-square fa-3x"></i></a>
         </div>
-        <div class="form-group mt-4">
-          <label for="exampleFormControlInput1">Votre adresse mail :</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" name="email">
+        <div class="d-flex flex-column align-items-center">
+          <h2 class = "underline">E-mail</h2>
+          <a href="mailto:dev.nassim.pro@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
         </div>
-          <label for="exampleFormControlTextarea1">Votre Texte :</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
-          <button type="submit" class="btn btn-primary mt-3 bg-transparent border border-danger text-white">Envoyer</button>
-        </div>
-      </form>
-    <nav class = "NavIconeContact column spaceAround">
-      <div class = "flex column alignItemCenter hoverColorRed">
-        <h2 class = "underline">Par Téléphone</h2>
-        <a href = "tel:+33622752818"><i class="fas fa-phone-square fa-3x"></i></a>
-        <h2 class = "underline">Par E-mail</h2>
-        <a href="mailto:dev.nassim.pro@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
       </div>
     </nav>
-    <nav class = "NavIconeContactDekstop column spaceAround">
+    <nav class = "d-none d-lg-block d-none d-md-block">
       <div class = "flex column alignItemCenter hoverColorRed">
-        <h2 class = "underline">Par Téléphone</h2>
-        <p>+33622752818</p>
-        <h2 class = "underline">Par E-mail</h2>
+        <h2 class = "underline">E-mail</h2>
         <a href="mailto:dev.nassim.pro@gmail.com">dev.nassim.pro@gmail.com</a>
       </div>
     </nav>
   </aside>
 </section>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP MEDIUM~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TouchPad~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <section class = "d-none d-sm-block d-md-none d-sm-flex align-items-center">
+    <aside class = "d-flex flex-xs-column flex-sm-row justify-content-sm-around align-items-center white">
+      <p class = "col-md-5 col-sm-4">
+        Dans le cadre de ma formation de développeur web, je suis actuellement à la recherche d'un stage à compter d'avril 2019. Surtout, n'hésitez pas à me contacter, je serai ravi de collaborer avec vous afin de développer mes compétences et amener de nouvelles idées.
+      </p>
+    <nav class = "d-lg-none d-xs-block col-6">
+      <div class = "d-flex flex-row alignItemCenter justify-content-around hoverColorRed">
+        <div class="d-flex flex-column align-items-center">
+          <h2 class = "underline">E-mail</h2>
+          <a href="mailto:dev.nassim.pro@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
+        </div>
+      </div>
+    </nav>
+    <nav class = "d-none d-lg-block">
+      <div class = "flex column alignItemCenter hoverColorRed">
+        <h2 class = "underline">E-mail</h2>
+        <a href="mailto:dev.nassim.pro@gmail.com">dev.nassim.pro@gmail.com</a>
+      </div>
+    </nav>
+  </aside>
+</section>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TouchPad~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Mobil~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <section class = "d-block d-sm-none d-flex align-items-center">
+    <aside class = "d-xs-flex flex-xs-column flex-sm-row white">
+      <p class = "container d-flex">
+        Dans le cadre de ma formation de développeur web, je suis actuellement à la recherche d'un stage à compter d'avril 2019. Surtout, n'hésitez pas à me contacter, je serai ravi de collaborer avec vous afin de développer mes compétences et amener de nouvelles idées.
+      </p>
+    <nav class = "d-lg-none d-xs-block">
+      <div class = "d-flex flex-row alignItemCenter justify-content-around hoverColorRed col-12">
+        <div class="d-flex flex-column align-items-center">
+          <h2 class = "underline">E-mail</h2>
+          <a href="mailto:dev.nassim.pro@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
+        </div>
+      </div>
+    </nav>
+    <nav class = "d-none d-lg-block">
+      <div class = "flex column alignItemCenter hoverColorRed">
+        <h2 class = "underline">E-mail</h2>
+        <a href="mailto:dev.nassim.pro@gmail.com">dev.nassim.pro@gmail.com</a>
+      </div>
+    </nav>
+  </aside>
+</section>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Mobil~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 

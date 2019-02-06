@@ -52,7 +52,6 @@ verifUserSession($_SESSION['user']);
   <h2>Biographie</h2>
   <form class="" action="Traitement/BiographieTraitement.php" method="post">
     <div class="form-group">
-      <label for="exampleFormControlTextarea1">test</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="9" name = "text_area">
         <?php echo $biographie['bio_text']; ?>
       </textarea>

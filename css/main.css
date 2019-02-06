@@ -100,21 +100,45 @@ textarea {
 /***************************GENERAL RULES***************************/
 
 .BodyRulesIndex {
-  height: 100%;
+  margin: 0;
   background-image: url("../img/smoke.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Trade Winds', cursive;
+  font-family: 'Courgette', cursive;
+}
+
+.FullPageContact{
+  display: flex;
+	flex-direction: column;
+	min-height: 65vh;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: -5em;
+  right: 50px;
+  bottom: 20em;
+  left: 50px;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+}
+
+main {
+	flex: 1;
+  padding: 3rem;
+}
+
+footer{
+  padding: 0.5rem;
 }
 
 footer a:hover {
   color: red;
 }
 
-a:focus
-{
-outline:0;
-}
+
 
 a {
   text-decoration: none;
@@ -123,7 +147,7 @@ a {
 
 .Cercle {
   height: 10em;
-  width: 10em;
+  width: 11em;
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -142,7 +166,6 @@ a {
 
 .NavigationFixed {
   border-bottom: 1px solid white;
-  width: 100%;
   height: 3em;
   position: fixed;
   top: 0px;
@@ -157,6 +180,10 @@ a {
 
 .RedirectionWidthNavigation a {
   width: 50%;
+}
+
+.hoverColorWhite:hover{
+  color: white;
 }
 
 /*********************OTHER PAGES***************/
@@ -196,6 +223,9 @@ a {
   background-color: black;
 }
 
+.backOpacityBlack {
+  background-color: rgba(0,0,0,0.7)
+}
 /***************************COLORS CLASS***************************/
 
 /***************************UTILITIES CLASS***************************/
@@ -291,6 +321,18 @@ a {
   border-top: 1px solid red;
 }
 
+.borderL {
+  border-left: 1px solid red;
+}
+
+.borderB {
+  border-bottom: 1px solid red;
+}
+
+.FullBorder {
+  border: 1px solid red;
+}
+
 .Copy {
   width: 30em;
 }
@@ -351,12 +393,28 @@ a {
   height: 20em;
 }
 
+.heightEm{
+  height: 26em;
+}
 .stylePicture{
-  border-radius: 200%;
-  border: 4px solid red;
+
+  border: 3px solid white;
 }
 
 
+.btRed {
+  border-top : 1px solid red;
+}
+
+.responsiveImg{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.fontRed {
+  color: red;
+}
 /***************************UTILITIES CLASS***************************/
 
 /**********************************************************************/
@@ -466,7 +524,8 @@ a {
 /***************************|END CONTACT.HTML|***************************/
 /**********************************************************************/
 /***************************====START MOBIL====***************************/
-@media screen and (min-width: 300px){
+}
+@media screen and (max-width: 540px){
   /***************************START MEDIA QUERY PROFIL.HTML**************************/
   .ArticleCompetence {
     height: 35em;
@@ -481,22 +540,10 @@ a {
     align-items: center;
   }
 
-  .stylePicture {
-    height: 20em;
-    width: 15em;
-  }
   /***************************END MEDIA QUERY PROFIL.HTML**************************/
 
   /***************************START MEDIA QUERY REALISATION.HTML**************************/
-  .RealisationDesktop{
-    display: none;
-  }
-  .AsideRealisation {
-  width: 100%;
-}
-  .RealisationTouchpad {
-    display: none;
-  }
+
   /***************************END MEDIA QUERY REALISATION.HTML**************************/
 
 >>>>>>> 8f4a739a2f0f2339e4ebbc571eeb153f761756e4
@@ -504,12 +551,12 @@ a {
 /***************************====END MOBIL====***************************/
 
 /***************************====START TOUCHPAD====***************************/
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 720px) {
 
 /********GENERAL RULES*********/
-footer {
+/* footer {
   height: auto;
-}
+} */
 /********GENERAL RULES*********/
 
 /***************************START MEDIA QUERY INDEX.HTML**************************/
@@ -540,11 +587,6 @@ footer {
   margin-bottom: 2em;
 }
 
-.ArticlePageProfil {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 /************MAIN**********/
 /************FOOTER**********/
 
@@ -553,22 +595,8 @@ footer {
 
 /***************************START MEDIA QUERY RÉALISATIONS.HTML**************************/
 
-.RealisationMobil {
-  display: none;
-}
 
-.RealisationDesktop{
-  display: none;
-}
 
-.AsideRealisation {
-  width: 100%;
-  height: 100%;
-}
-
-.RealisationTouchpad {
-  display: flex;
-}
 /***************************END MEDIA QUERY RÉALISATIONS.HTML**************************/
 
 /***************************START MEDIA QUERY CONTACT.HTML**************************/
@@ -587,12 +615,12 @@ footer {
 /***************************====END TOUCHPAD====***************************/
 
 /***************************====START DESKTOP====***************************/
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 960px) {
 
 /********GENERAL RULES*********/
-footer {
+/* footer {
   height: auto;
-}
+} */
 /********GENERAL RULES*********/
 
 /***************************START MEDIA QUERY INDEX.HTML**************************/
@@ -618,10 +646,6 @@ footer {
 
 /************MAIN**********/
 
-.BlockInformations {
-  width: 40em;
-}
-
 .ArticleCompetence {
 <<<<<<< HEAD
   width: 100%;
@@ -641,48 +665,24 @@ footer {
 >>>>>>> 8f4a739a2f0f2339e4ebbc571eeb153f761756e4
 }
 
-.ArticlePageProfil {
-  flex-direction: row;
-}
-
 .stylePortrait {
   height: 20em;
   width: 20em;
 }
 
-.ImageBlock {
-  width: 30%;
-}
+
 
 .Biographies {
   width: 40em;
 }
 
-.stylePicture {
-  height: auto;
-  width: auto;
-}
+
 /************MAIN**********/
 
 /***************************END MEDIA QUERY PROFIL.HTML**************************/
 
 /***************************START MEDIA QUERY RÉALISATIONS.HTML**************************/
-.RealisationDesktop{
-  display: flex;
-}
 
-.RealisationMobil{
-  display: none;
-}
-
-.RealisationTouchpad{
-  display: none;
-}
-
-.AsideRealisation {
-  width: 100em;
-  height: 100%;
-}
 
 /***************************END Aside QUERY RÉALISATIONS.HTML**************************/
 
@@ -695,12 +695,6 @@ footer {
   justify-content: space-around;
   background-color: transparent;
   width: 100%;
-}
-
-.AsideContact {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .NavIconeContact {

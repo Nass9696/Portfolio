@@ -13,10 +13,11 @@ $biographie = getBio($db);
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>PROFIL</title>
+  <title>NG | Profil</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <link rel="SHORTCUT ICON" href="http://nassim-developpeur-web-junior.000webhostapp.com/img/favicon.ico">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -24,53 +25,66 @@ $biographie = getBio($db);
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
-</head>
-
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Courgette" rel="stylesheet">
 <body class = "BodyRulesIndex pt-5">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <header>
   <aside>
-    <nav class="navbar navbar-expand-lg navbar-light backblack NavigationFixed  indexFull">
-      <button class="navbar-toggler border border-danger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars white"></i>
-      </button>
-      <div class = "d-flex justify-content-end d-block hoverIconeColorRed">
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <nav class = "container-fluid d-block d-sm-none NavigationFixed backblack p-1 indexFull">
+      <div class="dropdown d-flex justify-content-between">
+        <button class="btn dropdown-toggle FullBorder backblack" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-bars white"></i>
+        </button>
+        <div class="dropdown-menu backblack container-fluid text-center text-white " aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item text-white" href="PageProfil.php">Profil</a>
+          <hr class = "border-top border-danger">
+          <a class="dropdown-item text-white" href="PageRealisations.php">Réalisation</a>
+          <hr class = "border-top border-danger">
+          <a class="dropdown-item text-white" href="PageContacter.php">Contact</a>
+        </div>
         <a class="nav-item nav-link text-white" href="index.php"><i class="fas fa-home white"></i></a>
       </div>
-      <div class="NavBarRow collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="NavBar navbar-nav hoverUnderline">
-          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+    </nav>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ XS Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP TOUCHPAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <nav class="container-fluid d-none d-sm-block navbar navbar-expand-lg navbar-light backOpacityBlack NavigationFixed text-white indexFull">
+        <div class="container navbar-nav d-flex flex-row justify-content-between">
+          <div class="d-flex flex-row justify-content-center align-items-center hoverIconeColorRed">
+            <a class="nav-item ml-2" href="index.php"><i class="fas fa-home white mr-1"></i></a>
+          </div>
+          <div class="d-flex flex-row justify-content-center align-items-center hoverUnderline">
             <i class="fas fa-user-alt white"></i>
-            <a class="nav-item nav-link text-white ml-2" href="PageProfil.php">A propos</a>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageProfil.php">A propos</a>
           </div>
-          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+          <div class="d-flex flex-row justify-content-center align-items-center hoverUnderline">
             <i class="fas fa-toolbox white"></i>
-            <a class="nav-item nav-link text-white ml-2" href="PageRealisations.php">Réalisations</a>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageRealisations.php">Réalisations</a>
           </div>
-          <div class = "flex row justifyCenter spaceAround alignItemCenter ml-1">
+          <div class="d-flex flex-row justify-content-center align-items-center hoverUnderline">
             <i class="fas fa-phone  white"></i>
-            <a class="nav-item nav-link text-white ml-2" href="PageContacter.php">Contacter</a>
+            <a class="nav-item nav-link text-white ml-2 policeTitle" href="PageContacter.php">Contacter</a>
           </div>
         </div>
       </div>
     </nav>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP TOUCHPAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   </aside>
 </header>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main class = "MainOtherPages white">
-  <section class = "SectionProfil flex column">
-    <h2 class = "underline textAlignC">Qui suis-je ?</h2>
-    <article class = "ArticlePageProfil flex column spaceAround alignItemCenter">
-      <div class = "ImageBlock Fullwidth flex justifyCenter alignItemCenter">
-        <img class = "stylePicture" src="img/nassim.jpg" alt="Photo de profil"/>
-      </div>
-      <article class = "BlockInformations flex column alignItemCenter  marginT Fullwidth">
-        <div class = "Biographies">
-          <h2 class = "underline textAlignC">Biographie</h2>
-          <p class = "marginL">
+  <section class = "container-fluid">
+    <h2 class = "underline textAlignC policeTitle mb-5">Qui suis-je ?</h2>
+    <article class="container d-block d-sm-none d-flex flex-column justify-content-center align-items-center ">
+      <img class = "responsiveImg border border-white" src="img/nassim.jpg" alt="Photo de profil" height="210"/>
+    </article>
+    <article class = "mt-5">
+        <img class = "responsiveImg d-none d-sm-block float-sm-left mr-sm-4 border border-white" src="img/nassim.jpg" alt="Photo de profil" height="510"/>
+        <div class = "container">
+          <h2 class = "underline textAlignC policeTitle">Biographie</h2>
+          <p>
             <?php echo $biographie['bio_text']; ?>
             <!-- Bonjour, je m'appelle Nassim Gacem et je suis un passioné du monde numérique. On peut dire que, je suis tombé dans la programmation en étant jeune.
             J'ai réalisé mes premier programmes à l'âge de 14 ans, j'ai notemment démarrer avec les languages C++ et Lua, pour ceux qui connaissent j'ai exprimé ma créativité dans Garry's Mod.
@@ -87,8 +101,150 @@ $biographie = getBio($db);
           </p>
         </div>
       </article>
-    </article>
   </section>
+  <section class =  "mt-5">
+    <h2 class = "text-center back">COMPÉTENCES</h2>
+    <aside class="container-fluid mt-5 d-none d-sm-block">
+      <div class = "d-flex justify-content-sm-between justify-content-md-between justify-content-lg-between mb-5">
+        <article class="col-4 backOpacityBlack rounded">
+          <div class="d-flex flex-column align-items-center p-3">
+            <i class="far fa-eye fa-3x text-center"></i>
+            <h4 class = "text-center mt-1">Front-End</h3>
+          </div>
+          <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
+            <img src="icon/html.jpg" alt="HTML"/>
+            <img src="icon/css.jpg" alt="CSS"/>
+            <img src="icon/js.jpg" alt="JS" height = "45"/>
+            <img src="icon/boot.jpg" alt="Bootstrap"/>
+            <img src="icon/angular.jpg" alt="Angular"/>
+          </div>
+        </article>
+        <article class="col-4 backOpacityBlack rounded">
+          <div class="d-flex flex-column align-items-center p-3">
+            <i class="fas fa-cog fa-3x"></i>
+            <h4 class = "text-center mt-1">Back-End</h3>
+          </div>
+          <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center p-3">
+              <img src="icon/php.jpg" height = "49" alt=""/>
+              <img src="icon/symfony.jpg" height = "49" alt="" class = "text-light"/>
+          </div>
+        </article>
+      </div>
+      <div class = "mt-5 d-flex justify-content-sm-between justify-content-md-between justify-content-lg-between">
+        <article class="col-4 backOpacityBlack rounded">
+          <div class="d-flex flex-column align-items-center p-3">
+            <i class="fas fa-database fa-3x"></i>
+            <h4 class = "text-center mt-1">Base de données</h3>
+          </div>
+          <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
+            <img src="icon/mysql.jpg" alt="MySQL"/>
+            <img src="icon/sql.jpg" alt="SQL"/>
+          </div>
+        </article>
+        <article class="col-4 backOpacityBlack rounded">
+          <div class="d-flex flex-column align-items-center p-3">
+            <i class="fas fa-project-diagram fa-3x"></i>
+            <h4 class = "text-center mt-1">Autres..</h3>
+          </div>
+          <div class="btRed p-3 d-flex justify-content-around flex-wrap align-items-center">
+            <img src="icon/github.jpg" alt="GitHub"/>
+            <img src="icon/linux.jpg" alt="Linux"/>
+            <img src="icon/git.jpg" alt="Git"/>
+            <img src="icon/slack.jpg" alt="Slack"/>
+          </div>
+        </article>
+      </div>
+    </aside>
+    <!---~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBIL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~---------->
+    <aside class="d-block d-sm-none container-fluid mt-4">
+      <!-- FIRST BLOCK -->
+      <div class = " d-flex flex-row justify-content-between align-items-center mb-5">
+        <div class="card col-5 d-flex flex-column align-items-center backblack p-3 FullBorder">
+          <div class="card-body d-flex flex-column align-items-center p-3">
+            <h5 class="card-title text-center">Front-end</h5>
+            <i class="far fa-eye fa-2x text-center"></i>
+          </div>
+            <button type="button" class="btn rounded-circle FullBorder backblack z-index-1" data-toggle="modal" data-target=".bd-example-modal-sm#front"><i class="far fa-hand-point-up text-white"></i></button>
+          </div>
+          <!-- MODAL -->
+        <div class="modal fade bd-example-modal-sm" id="front" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-body backblack rounded">
+              <div class="btRed borderB p-3 d-flex justify-content-around flex-wrap align-items-center">
+                <img src="icon/html.jpg" alt="HTML"/>
+                <img src="icon/css.jpg" alt="CSS"/>
+                <img src="icon/js.jpg" alt="JS" height = "45"/>
+                <img src="icon/boot.jpg" alt="Bootstrap"/>
+                <img src="icon/angular.jpg" alt="Angular"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card col-5 backblack d-flex flex-column align-items-center backblack p-3 FullBorder">
+          <div class="card-body d-flex flex-column align-items-center p-3">
+            <h5 class="card-title text-center">Back-end</h5>
+            <i class="fas fa-cog fa-2x"></i>
+          </div>
+          <button type="button" class="btn rounded-circle FullBorder backblack" data-toggle="modal" data-target=".bd-example-modal-sm#back"><i class="far fa-hand-point-up text-white"></i></button>
+        </div>
+
+        <div class="modal fade bd-example-modal-sm" id="back" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm modal-dialog-centered" role="dialog">
+            <div class="modal-body backblack rounded">
+              <div class="btRed borderB p-3 d-flex justify-content-around flex-wrap align-items-center p-3">
+                  <img src="icon/php.jpg" height = "49" alt=""/>
+                  <img src="icon/symfony.jpg" height = "49" alt="" class = "text-light"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECOND BLOCK -->
+      <div class = " d-flex flex-row justify-content-between align-items-center mt-5 border-top border-light pt-5">
+        <div class="card col-5 backOpacityBlack d-flex flex-column align-items-center FullBorder p-3">
+          <div class="card-body d-flex flex-column align-items-center p-3">
+            <h5 class="card-title text-center">BDD</h5>
+            <i class="fas fa-database fa-2x"></i>
+          </div>
+          <button type="button" class="btn rounded-circle FullBorder backblack" data-toggle="modal" data-target=".bd-example-modal-sm#serveur"><i class="far fa-hand-point-up text-white"></i></button>
+        </div>
+        <!-- MODAL -->
+        <div class="modal fade bd-example-modal-sm" id= "serveur" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm modal-dialog-centered" role="dialog">
+            <div class="modal-body backblack rounded">
+              <div class="btRed borderB p-3 d-flex justify-content-around flex-wrap align-items-center">
+                <img src="icon/mysql.jpg" alt="MySQL"/>
+                <img src="icon/sql.jpg" alt="SQL"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-5 backblack FullBorder d-flex flex-column align-items-center p-3">
+          <div class="card-body d-flex flex-column align-items-center p-3">
+            <h5 class="card-title text-center">Autres...</h5>
+            <i class="fas fa-project-diagram fa-2x"></i>
+          </div>
+          <button type="button" class="btn rounded-circle FullBorder backblack " data-toggle="modal" data-target=".bd-example-modal-sm#autre"><i class="far fa-hand-point-up text-white"></i></button>
+
+          <!-- MODAL -->
+          <div class="modal fade bd-example-modal-sm" id= "autre" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+              <div class="modal-body backblack rounded">
+                <div class="btRed borderB p-3 d-flex justify-content-around flex-wrap align-items-center">
+                  <img src="icon/github.jpg" alt="GitHub"/>
+                  <img src="icon/linux.jpg" alt="Linux"/>
+                  <img src="icon/git.jpg" alt="Git"/>
+                  <img src="icon/slack.jpg" alt="Slack"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </aside>
+  </section>
+  <!--
   <section class = "flex column alignItemCenter textAlignC marginT">
       <h2 class = "Fullwidth underline">COMPÉTENCES</h2>
 <<<<<<< HEAD
@@ -110,11 +266,12 @@ $biographie = getBio($db);
       </div>
     </article>
   </section>
+  -->
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<footer class = " footerSize flex column spaceBetween justifyCenter textAlignC backOpacityBlack white marginT">
+<footer class = " footerSize flex column spaceBetween justifyCenter textAlignC white marginT">
   <h3 class = "underline">Vous pouvez aussi me retrouver sur :</h3>
   <nav class = "flex row spaceAround justifyCenter">
     <span>
