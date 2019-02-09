@@ -88,8 +88,8 @@ $projet = joinProjectOnImg($db);
       </button>
 
       <!-- Modal -->
-      <div class="modal fade mt-4" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog model-lg modal-dialog-centered" role="document">
+      <div class="modal fade mt-5" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog model-lg" role="document">
           <div class="modal-content backblack">
             <div class="modal-header">
               <div class = "container-fluid d-flex flex-column align-items-center">

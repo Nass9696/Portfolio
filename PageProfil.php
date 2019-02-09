@@ -102,8 +102,10 @@ $biographie = getBio($db);
         </div>
       </article>
   </section>
-  <section class =  "mt-5">
-    <h2 class = "text-center back">COMPÉTENCES</h2>
+  <section class =  "container-fluid m-t8">
+    <div class="d-flex justify-content-center">
+      <h2 class = "text-center back mt-3">COMPÉTENCES</h2>
+    </div>
     <aside class="container-fluid mt-5 d-none d-sm-block">
       <div class = "d-flex justify-content-sm-between justify-content-md-between justify-content-lg-between mb-5">
         <article class="col-4 backOpacityBlack rounded">
