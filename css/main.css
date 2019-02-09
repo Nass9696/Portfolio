@@ -114,16 +114,6 @@ textarea {
 	min-height: 65vh;
 }
 
-.modal-dialog {
-  position: absolute;
-  top: -5em;
-  right: 50px;
-  bottom: 20em;
-  left: 50px;
-  z-index: 10040;
-  overflow: auto;
-  overflow-y: auto;
-}
 
 main {
 	flex: 1;
@@ -167,6 +157,7 @@ a {
 .m-t8 {
   margin-top: 8em
 }
+
 .NavigationFixed {
   border-bottom: 1px solid white;
   height: 3em;
