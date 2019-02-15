@@ -83,13 +83,13 @@ $projet = joinProjectOnImg($db);
         <img class="card-img-top" src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>">
       </div>
       <!-- Button trigger modal -->
-      <button type="button" class="btn FullBorder mt-3 backblack text-light" data-toggle="modal" data-target="<?php echo "#modal" . $value['projet_id'] ?>">
+      <button type="button" class="btn FullBorder mt-3 backblack text-light col-10" data-toggle="modal" data-target="<?php echo "#modal" . $value['projet_id'] ?>">
         Voir ici !
       </button>
 
       <!-- Modal -->
-      <div class="modal fade mt-5" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog model-lg" role="document">
+      <div class="modal fade mt-3" id="<?php echo "modal" . $value['projet_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered model-lg" role="document">
           <div class="modal-content backblack">
             <div class="modal-header">
               <div class = "container-fluid d-flex flex-column align-items-center">

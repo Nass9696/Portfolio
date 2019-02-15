@@ -128,8 +128,6 @@ footer a:hover {
   color: red;
 }
 
-
-
 a {
   text-decoration: none;
   color: white;
@@ -178,6 +176,10 @@ a {
 
 .hoverColorWhite:hover{
   color: white;
+}
+
+.color-Ocea {
+  color: rgb(237, 0, 140);
 }
 
 /*********************OTHER PAGES***************/

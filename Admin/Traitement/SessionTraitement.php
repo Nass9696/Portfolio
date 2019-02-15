@@ -6,6 +6,6 @@
   //On détruit la session
   session_destroy();
   //On redirige
-  header('Location: ../AdminConnexionPage.php');
+  header('Location: ../index.php');
   exit;
   ?>

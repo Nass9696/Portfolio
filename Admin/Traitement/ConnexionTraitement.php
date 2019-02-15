@@ -15,4 +15,5 @@ $user = getUser($db);
 
 //Je vérifie si les informations rentrées dans le champs correspondent bien à ceux dans la BDD
 verifUser($form_user, $user);
+
  ?>
