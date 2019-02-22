@@ -111,7 +111,13 @@ textarea {
 .FullPageContact{
   display: flex;
 	flex-direction: column;
-	min-height: 65vh;
+	min-height: 70.9vh;
+}
+
+.FullPageHome{
+  display: flex;
+	flex-direction: column;
+	min-height: 48vh;
 }
 
 
@@ -526,23 +532,15 @@ a {
   .ArticleCompetence {
     height: 35em;
     flex-direction: column;
-<<<<<<< HEAD
     align-content: space-around;
     align-items: center;
   }
-  /***************************END MEDIA QUERY PROFIL.HTML**************************/
-=======
-    justify-content: space-between;
-    align-items: center;
-  }
-
   /***************************END MEDIA QUERY PROFIL.HTML**************************/
 
   /***************************START MEDIA QUERY REALISATION.HTML**************************/
 
   /***************************END MEDIA QUERY REALISATION.HTML**************************/
 
->>>>>>> 8f4a739a2f0f2339e4ebbc571eeb153f761756e4
 }
 /***************************====END MOBIL====***************************/
 

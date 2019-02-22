@@ -29,7 +29,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<main class = "ZoneClickCircularOption container-fluid white">
+<main class = "FullPageHome ZoneClickCircularOption container-fluid white d-flex justify-content-center">
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <nav class = "d-none d-md-block hoverUnderline">
     <div class="d-flex flex-row justify-content-around align-items-center">
