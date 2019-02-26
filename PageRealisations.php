@@ -77,7 +77,7 @@ $projet = joinProjectOnImg($db);
   <div class = "d-none d-lg-block">
     <aside class="d-lg-flex justify-content-center AsideRealisation flex-lg-wrap col-12">
     <?php foreach ($projet as $key => $value) { ?>
-    <div class="card col-4 bg-transparent text-light d-flex flex-column align-items-center">
+    <div class="card col-4 bg-transparent text-light d-flex flex-column align-items-center mt-3">
       <h5 class="card-title textAlignC mt-1"><?php echo $value['projet_name']; ?></h5>
       <div class="container-fluid">
         <img class="card-img-top" src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>">
@@ -96,8 +96,8 @@ $projet = joinProjectOnImg($db);
                 <div>
                   <h5 class="modal-title" id="exampleModalLongTitle"><?php echo $value["projet_name"]; ?></h5>
                 </div>
-                <div class="">
-                  <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
+                <div>
+                  <img class="card-img-top mt-3" src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
                 </div>
               </div>
               <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
@@ -143,7 +143,7 @@ $projet = joinProjectOnImg($db);
                       <h5 class="modal-title" id="exampleModalLongTitle"><?php echo $value["projet_name"]; ?></h5>
                     </div>
                     <div class="">
-                      <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
+                      <img class="card-img-top mt-3" src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
                     </div>
                   </div>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -189,7 +189,7 @@ $projet = joinProjectOnImg($db);
                     <h5 class="modal-title" id="exampleModalLongTitle"><?php echo $value["projet_name"]; ?></h5>
                   </div>
                   <div class="">
-                    <img class="card-img-top " src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
+                    <img class="card-img-top mt-3" src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
                   </div>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
