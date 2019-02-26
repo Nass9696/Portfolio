@@ -137,6 +137,7 @@ footer a:hover {
 a {
   text-decoration: none;
   color: white;
+  outline:none;
 }
 
 .Cercle {
