@@ -165,7 +165,7 @@
   </nav>
   <div class = "BlockCopy flex justifyCenter alignItemCenter">
     <div class = "Copy">
-      <p>Copyright Nassim 2018</p>
+      <p class = "mt-1">© Copyright 2019 N. GACEM</p>
     </div>
   </div>
 </footer>
