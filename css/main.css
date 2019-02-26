@@ -641,13 +641,11 @@ a {
 /************MAIN**********/
 
 .ArticleCompetence {
-<<<<<<< HEAD
   width: 100%;
   flex-direction: row;
   align-items: center;
   margin-top: 2em;
   margin-bottom: 2em;
-=======
   height: 100%;
   width: 65%;
   flex-direction: row;
@@ -656,7 +654,6 @@ a {
   margin-top: 2em;
   margin-bottom: 2em;
   flex-wrap: wrap;
->>>>>>> 8f4a739a2f0f2339e4ebbc571eeb153f761756e4
 }
 
 .stylePortrait {
