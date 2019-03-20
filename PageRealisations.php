@@ -37,9 +37,9 @@ $projet = joinProjectOnImg($db);
         <div class="dropdown-menu backblack container-fluid text-center text-white z-indexFull" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item text-white" href="PageProfil.php">Profil</a>
           <hr class = "border-top border-danger">
-          <a class="dropdown-item text-white" href="PageRealisations.php">Réalisation</a>
+          <a class="dropdown-item text-white" href="PageRealisations.php">Réalisations</a>
           <hr class = "border-top border-danger">
-          <a class="dropdown-item text-white" href="PageContacter.php">Contact</a>
+          <a class="dropdown-item text-white" href="PageContacter.php">Contacter</a>
         </div>
         <a class="nav-item nav-link text-white" href="index.php"><i class="fas fa-home white"></i></a>
       </div>
@@ -146,7 +146,7 @@ $projet = joinProjectOnImg($db);
                       <img class="card-img-top mt-3" src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
                     </div>
                   </div>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
