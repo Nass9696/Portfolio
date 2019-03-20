@@ -39,9 +39,9 @@ $biographie = getBio($db);
         <div class="dropdown-menu backblack container-fluid text-center text-white " aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item text-white" href="PageProfil.php">Profil</a>
           <hr class = "border-top border-danger">
-          <a class="dropdown-item text-white" href="PageRealisations.php">Réalisation</a>
+          <a class="dropdown-item text-white" href="PageRealisations.php">Réalisations</a>
           <hr class = "border-top border-danger">
-          <a class="dropdown-item text-white" href="PageContacter.php">Contact</a>
+          <a class="dropdown-item text-white" href="PageContacter.php">Contacter</a>
         </div>
         <a class="nav-item nav-link text-white" href="index.php"><i class="fas fa-home white"></i></a>
       </div>
