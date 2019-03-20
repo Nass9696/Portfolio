@@ -12,7 +12,7 @@ $projet = joinProjectOnImg($db);
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>NG | Réalisation</title>
+    <title>NG | Réalisations</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -108,7 +108,7 @@ $projet = joinProjectOnImg($db);
               <?php echo $value['projet_description']; ?>
             </div>
             <div class="modal-footer">
-              <a href = "<?php echo $value['projet_github']; ?>" type="button" class="btn FullBorder mt-3 backblack text-light">GitHub</a>
+              <a href = "<?php echo $value['projet_github']; ?>" type="button" class="btn btn-secondary FullBorder mt-3 backblack text-light">GitHub</a>
               <button type="button" class="btn btn-secondary FullBorder mt-3 backblack text-light" data-dismiss="modal">Quitter</button>
             </div>
           </div>
@@ -146,7 +146,7 @@ $projet = joinProjectOnImg($db);
                       <img class="card-img-top mt-3" src="<?php echo $value['img_path'];?>" alt="<?php echo $value['img_alt']; ?>" height="180" width="170">
                     </div>
                   </div>
-                  <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
