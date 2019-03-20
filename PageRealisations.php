@@ -108,7 +108,7 @@ $projet = joinProjectOnImg($db);
               <?php echo $value['projet_description']; ?>
             </div>
             <div class="modal-footer">
-              <a href = "<?php echo $value['projet_github']; ?>" type="button" class="btn FullBorder mt-3 backblack text-light">GitHub</a>
+              <a href = "<?php echo $value['projet_github']; ?>" type="button" class="btn btn-secondary FullBorder mt-3 backblack text-light">GitHub</a>
               <button type="button" class="btn btn-secondary FullBorder mt-3 backblack text-light" data-dismiss="modal">Quitter</button>
             </div>
           </div>
