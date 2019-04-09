@@ -34,11 +34,11 @@ function joinProjectOnImg($db){
 }
 
 function showProject($db, $id_projet){
-  $query = $db->prepare('SELECT p.projet_id, p.projet_name, p.projet_description, i.img_path FROM projet AS p INNER JOIN image AS i ON p.projet_img = i.img_id WHERE p.projet_id = ?');
+  $query = $db->prepare('SELECT p.projet_id, p.projet_name, p.projet_description, p.projet_github, i.img_path, i.img_alt FROM projet AS p INNER JOIN image AS i ON p.projet_img = i.img_id WHERE p.projet_id = ?');
   $result = $query->execute([$id_projet]);
   $tableau = $query->fetch(PDO::FETCH_ASSOC);
 
-  return $result;
+  return $tableau;
 
   $query->closeCursor();
 }

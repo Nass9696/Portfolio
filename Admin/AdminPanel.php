@@ -40,7 +40,7 @@ verifUserSession($_SESSION['user']);
       <th scope="row"><?php echo $value['projet_id'];?></th>
       <td><?php echo $value['projet_name']; ?></td>
       <td>
-        <a href='#' class='btn bg-warning text-dark mr-1' role='button'>Modifier</a>
+        <a href='UpdateArticle.php?id_projet=<?php echo htmlspecialchars($value['projet_id']); ?>' class='btn bg-warning text-dark mr-1' role='button'>Modifier</a>
         <a href= 'Traitement/deleteTraitement.php?id_projet=<?php echo htmlspecialchars($value['projet_id']); ?>&amp;id_img=<?php echo htmlspecialchars($value['img_id']); ?>' class='btn bg-danger text-light' role='button'>Supprimer</a>
       </td>
     </tr>
