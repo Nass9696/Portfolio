@@ -14,6 +14,22 @@ function addProject($project, $lastid, $db){
 
   return $result;
 }
+
+//Function pour modifier un projet
+function updateProject($project, $lastid, $db){
+  $query = $db->prepare('UPDATE projet SET projet_name = :project_name, projet_github = :project_github, projet_description = :project_description WHERE projet_id = :project_id');
+  $result = $query->execute([
+    'project_name' => $project['project_name'],
+    'project_github' => $project['project_github'],
+    'project_description' => $project['project_description'],
+    'project_id' => $lastid
+  ]);
+
+  $query->closeCursor();
+
+  return $result;
+}
+
 //Fonction qui retourne les colonnes projet_name et projet_id de ma table projet
 function getProject($db){
   $query = $db->query('SELECT p.projet_name, p.projet_id, p.projet_img, i.img_id FROM projet AS p INNER JOIN image AS i ON p.projet_img = i.img_id');
@@ -23,6 +39,7 @@ function getProject($db){
   return $result;
 
 }
+
 //Cette jointure permet d'afficher le projet avec son image associés
 function joinProjectOnImg($db){
   $query = $db->query('SELECT p.projet_id, p.projet_name, p.projet_description,p.projet_github, i.img_path, i.img_alt FROM projet AS p INNER JOIN image AS i ON p.projet_img = i.img_id');
@@ -33,6 +50,7 @@ function joinProjectOnImg($db){
   $query->closeCursor();
 }
 
+//Cette jointure permet d'afficher les informations du projet et de son image associée
 function showProject($db, $id_projet){
   $query = $db->prepare('SELECT p.projet_id, p.projet_name, p.projet_description, p.projet_github, i.img_path, i.img_alt FROM projet AS p INNER JOIN image AS i ON p.projet_img = i.img_id WHERE p.projet_id = ?');
   $result = $query->execute([$id_projet]);
@@ -53,6 +71,7 @@ function deleteProject($id_projet, $db){
 
   $query->closeCursor();
 }
+
 //Fonction qui permet de supprimer une image associé à un projet
 function deleteProjectImg($id_img, $db){
   $query = $db->prepare('DELETE FROM image WHERE img_id = ?');
@@ -62,6 +81,4 @@ function deleteProjectImg($id_img, $db){
 
   $query->closeCursor();
 }
-
-
  ?>

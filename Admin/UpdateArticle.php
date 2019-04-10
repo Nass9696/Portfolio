@@ -10,20 +10,12 @@ $db = connectDataBase();
 $id_project = $_GET['id_projet'];
 //Je récupère le projet selectionné par son ID
 $project = showProject($db, $id_project);
-var_dump($project);
  ?>
 <?php include "Template/header.php" ?>
-<form method="post" action="Traitement/AddArticleTraitement.php" enctype="multipart/form-data">
+<form method="post" action="Traitement/UpdateTraitement.php?id_project=<?php echo htmlspecialchars($id_project); ?>" enctype="multipart/form-data">
   <div class="form-group">
     <label for="formGroupExampleInput">Titre :</label>
     <input type="text" class="form-control" id="formGroupExampleInput" name = "project_name" value="<?php echo $project['projet_name'];  ?>">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlFile1">Image : <strong><?php echo $project['img_path'];  ?></strong></label>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlFile1">Alt de l'image :</label>
-    <input type="text" class="form-control-file" id="exampleFormControlFile1" name = "img_alt" value=" <?php echo $project['img_alt'];  ?>">
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Description :</label>
