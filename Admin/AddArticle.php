@@ -14,7 +14,7 @@
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Description :</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" name = "project_description" rows="3"></textarea>
+    <textarea class="form-control" id="addProject" name = "project_description" rows="7"></textarea>
   </div>
   <div class="form-group">
     <label for="exampleFormControlFile1">Lien GitHub :</label>

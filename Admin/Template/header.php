@@ -15,6 +15,18 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=3615dugu60rhrlq623rvflkrtxxpulo442l7xkmb7dps7im0"></script>
+  <script>
+  tinymce.init({
+    selector: '#updateArea'
+    });
+  tinymce.init({
+    selector: '#addProject'
+    });
+  tinymce.init({
+    selector: '#biographie'
+    });
+  </script>
 </head>
 
 <body>

@@ -19,7 +19,7 @@ $project = showProject($db, $id_project);
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Description :</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" name = "project_description" rows="3" value=" <?php echo $project['projet_description'];  ?>"></textarea>
+    <textarea class="form-control" id="updateArea" name = "project_description" rows="7"><?php echo $project['projet_description'];  ?></textarea>
   </div>
   <div class="form-group">
     <label for="exampleFormControlFile1">Lien GitHub :</label>
