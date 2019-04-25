@@ -1,6 +1,6 @@
 <?php
 //Je charge les pages nécessaires
-require "Model/AddProjectManager.php";
+require "Model/ProjectManager.php";
 require "Model/db.php";
 //Je me connect à la DB
 $db = connectDataBase();

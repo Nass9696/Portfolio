@@ -1,6 +1,6 @@
 <?php
 require "../../Model/db.php";
-require "../../Model/AddProjectManager.php";
+require "../../Model/ProjectManager.php";
 
 //Je me connect à la BDD
 $db = connectDataBase();

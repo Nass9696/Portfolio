@@ -4,7 +4,7 @@ session_start();
 require "../Service/VerifUser.php";
 require "../Model/BiographieManager.php";
 require "../Model/db.php";
-require "../Model/AddProjectManager.php";
+require "../Model/ProjectManager.php";
 //Je me connect à la base de données
 $db = connectDataBase();
 //Je stock la Biographie de ma BDD

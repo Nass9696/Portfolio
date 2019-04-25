@@ -12,7 +12,7 @@ function verifUser($form_user, $db_user){
     }
     else
     {
-      header('Location: ../AdminConnexionPage.php');
+      header('Location: ../index.php');
       exit;
     }
 }
@@ -21,7 +21,7 @@ function verifUser($form_user, $db_user){
 
 function verifUserSession($User_Session){
   if(!isset($User_Session) || empty($User_Session)){
-    header('Location: AdminConnexionPage.php');
+    header('Location: index.php');
     exit;
   }
 }

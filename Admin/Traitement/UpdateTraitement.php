@@ -1,5 +1,5 @@
 <?php
-require "../../Model/AddProjectManager.php";
+require "../../Model/ProjectManager.php";
 require "../../Model/db.php";
 
 if(!empty($_POST)){

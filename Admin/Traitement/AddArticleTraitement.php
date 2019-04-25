@@ -3,7 +3,7 @@
 require "../../Model/db.php";
 require "../../Model/ConnexionManager.php";
 require "../../Model/ImgManager.php";
-require "../../Model/AddProjectManager.php";
+require "../../Model/ProjectManager.php";
 //Je me connect à la BDD
 $db = connectDataBase();
 //Je stock les informations de mon formulaire dans une variable
